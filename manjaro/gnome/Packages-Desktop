@@ -128,7 +128,7 @@ gedit
 #gnome-multi-writer
 #gnome-nettool
 #gnome-recipes
-#gnome-sound-recorder
+gnome-sound-recorder
 gnome-terminal
 gnome-tweaks
 #gnome-usage
@@ -231,6 +231,37 @@ polkit-gnome
 >extra touche
 >extra webapp-manager
 xdg-utils
+
+##My Additions
+kooha
+yt-dlp
+youtube-dl
+scrcpy
+aria2
+vlc
+blanket
+kdenlive
+handbrake
+okular
+qbittorrent
+pdfarranger
+gimp
+krita
+drawing
+kate
+lutris
+wine
+winetricks
+aisleriot
+gnome-break-timer
+blender
+gcolor3     #color picker
+audacity
+obs-studio
+gnome-sound-recorder
+inkscape
+darktable
+celluloid
 
 ## Optional dependencies for file-roller
 >extra lrzip
