@@ -144,7 +144,7 @@ gnome-tweaks
 >extra gnome-mines
 #gnome-nibbles
 #gnome-robots
-#gnome-sudoku
+gnome-sudoku
 #gnome-taquin
 #gnome-tetravex
 #hitori
@@ -261,6 +261,9 @@ obs-studio
 inkscape
 darktable
 celluloid
+python-pip            #for pip3 instals
+python-wheel          #for pip3 instals
+python-setuptools    #for pip3 instals
 
 ## Optional dependencies for file-roller
 >extra lrzip
