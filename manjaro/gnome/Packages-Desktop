@@ -263,7 +263,7 @@ darktable
 celluloid
 python-pip            #for pip3 instals
 python-wheel          #for pip3 instals
-python-setuptools    #for pip3 instals
+#python-setuptools    #Already included in defualt install #for pip3 instals
 
 ## Optional dependencies for file-roller
 >extra lrzip
