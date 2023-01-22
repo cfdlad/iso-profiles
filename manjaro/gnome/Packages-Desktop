@@ -264,6 +264,13 @@ celluloid
 python-pip            #for pip3 instals
 python-wheel          #for pip3 instals
 #python-setuptools    #Already included in defualt install #for pip3 instals
+clementine
+projectm
+haruna
+neofetch
+code
+fd                    #alternative to find (cli)
+exa                   #ls replacement (cli)
 
 ## Optional dependencies for file-roller
 >extra lrzip
