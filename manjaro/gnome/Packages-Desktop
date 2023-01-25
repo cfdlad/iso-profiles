@@ -271,6 +271,8 @@ neofetch
 code
 fd                    #alternative to find (cli)
 exa                   #ls replacement (cli)
+iftop                 #Network monitor (cli)
+nethogs               #Network monitor (cli)
 
 ## Optional dependencies for file-roller
 >extra lrzip
