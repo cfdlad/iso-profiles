@@ -234,10 +234,11 @@ xdg-utils
 
 ##My Additions
 kooha
-yt-dlp
-youtube-dl
-scrcpy
-aria2
+yt-dlp              #video downloader (cli)
+youtube-dl          #video downloader (cli)
+scrcpy              #android screen mirror software (cli)
+aria2               #download manager (cli)
+axel                #download accelerator (cli)
 vlc
 blanket
 kdenlive
@@ -255,24 +256,26 @@ winetricks
 aisleriot
 gnome-break-timer
 blender
-gcolor3     #color picker
+gcolor3               #color picker
 audacity
 obs-studio
 inkscape
 darktable
 celluloid
-python-pip            #for pip3 instals
-python-wheel          #for pip3 instals
-#python-setuptools    #Already included in defualt install #for pip3 instals
+python-pip            #for pip3 installs
+python-wheel          #for pip3 installs
+#python-setuptools    #Already included in defualt install #for pip3 installs
+rust                   #for rust installs
 clementine
 projectm
 haruna
-neofetch
-code
+neofetch              #system info (cli)
+code                  #visual studio code
 fd                    #alternative to find (cli)
 exa                   #ls replacement (cli)
 iftop                 #Network monitor (cli)
 nethogs               #Network monitor (cli)
+
 
 ## Optional dependencies for file-roller
 >extra lrzip
