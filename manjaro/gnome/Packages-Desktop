@@ -298,3 +298,6 @@ xorg-server                        # required by gdm
 #xorg-twm                          # antiquated; optional for xorg-xinit
 #xorg-xinit                        # not needed by anything
 
+################## My Additions ##################
+#just testing chaotic aur
+>extra cozy                #no cozy in the manjaro repo and arch repo (in aur chaotic)
