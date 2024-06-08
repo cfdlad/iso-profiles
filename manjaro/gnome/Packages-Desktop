@@ -300,4 +300,4 @@ xorg-server                        # required by gdm
 
 ################## My Additions ##################
 #just testing chaotic aur
->extra cozy-audiobooks                #no cozy in the manjaro repo and arch repo (in aur chaotic)
+cozy-audiobooks                #no cozy in the manjaro repo and arch repo (in aur chaotic)
