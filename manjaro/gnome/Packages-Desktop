@@ -296,3 +296,11 @@ xorg-server                        # required by gdm
 #xorg-twm                          # antiquated; optional for xorg-xinit
 #xorg-xinit                        # not needed by anything
 
+
+
+################## My Additions ##################
+#just testing chaotic aur
+cozy-audiobooks                #no cozy in the manjaro repo and arch repo (in aur chaotic)
+zsh-autocomplete               #In my repo
+cheat                          #In my repo
+opera-beta                     # In archlinuxcn.org
