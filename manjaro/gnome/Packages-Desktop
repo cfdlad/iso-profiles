@@ -303,4 +303,3 @@ xorg-server                        # required by gdm
 cozy-audiobooks                #no cozy in the manjaro repo and arch repo (in aur chaotic)
 zsh-autocomplete               #In my repo
 cheat                          #In my repo
-opera-beta                     # In archlinuxcn.org
