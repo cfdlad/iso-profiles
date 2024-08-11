@@ -1,0 +1,7 @@
+To install, enter the opensnitch_AUR_PKGs folder, open the terminal and run this command
+
+sudo pacman -U ./*
+sudo pacman -U ./*zst
+
+-To install all files with zst extention
+

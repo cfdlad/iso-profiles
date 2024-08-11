@@ -1,0 +1,11 @@
+change time (hh:mm:ss)
+sudo timedatectl set-time 2:19:05
+
+change date (yyyy-mm-dd)
+sudo timedatectl set-time 2023-12-16
+
+deactive ntp
+sudo timedatectl set-ntp false
+
+reactivate ntp
+sudo timedatectl set-ntp true

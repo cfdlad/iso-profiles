@@ -1,0 +1,25 @@
+1. Connect switched off phone to computer using usb cable, 
+2. Hold the down volume button before charging commence untill you enter the test service screen
+3. The phone should now fully connect to the laptop or computer
+4. On the phone, an option may appear asking for permision to allow computer to connect - click OK to allow this computer to access the phone via usb debugging
+5. Open cmd.exe (command promt) in scrcpy folder where the adb.exe is
+6. In the cmd promt type:    adb devices
+7. The DEVICE_ID (phone identification code) for the phone will be displayed, copy it
+8. Now type in the cmd promt:   adb -s DEVICE_ID reboot
+9. Replace "DEVICE_ID" in the above command with the phone identification code you copied
+10. For example:  adb -s S48HJVQOVKQK7HQC reboot
+11. Where S48HJVQOVKQK7HQC is the serial code for the lenovo tablet phone
+12. Press enter on the computr keyboard
+13. The phone should now reboot
+
+
+The Commands
+
+adb devices
+To get list of devices id code
+				
+adb -s S48HJVQOVKQK7HQC reboot		
+To reboot the phone
+
+adb -s 0123456789ABCDEF reboot
+0123456789ABCDEF

@@ -1,0 +1,2 @@
+##To extract appimage
+./gedit-x86_64.AppImage --appimage-extract

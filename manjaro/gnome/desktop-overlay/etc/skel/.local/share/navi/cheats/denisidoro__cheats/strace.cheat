@@ -1,0 +1,13 @@
+% strace
+# Display system calls for a command
+
+strace <CMD>
+strace <QUIET> -p <PID>
+
+;$ CMD: echo -e 'firefox\nkate'
+$ CMD: echo -e 'firefox kate' | tr ' ' '\n'
+;$ PID: echo {0..32768} | tr ' ' '\n' --- --prevent-extra
+
+$ PID: ps aux | grep -v PID | awk '{print $2"   "$11}'--- --column 1 --prevent-extra
+
+$ QUIET: echo -e '\t\tNo Supression;-q\t\tSuppress attach/detach message;-qq\t\tAlso Suppress exit statuses;-qqq\t\tSuppress every suppressible message' | tr ';' '\n' --- --column 1 --prevent-extra

@@ -1,0 +1,53 @@
+EXAMPLES:
+
+- The Alias (fuzn and fuzd are mine)
+    fuz             #Search text in all files from default path (which is /home)
+    fuzs            #Same as above but also sort files by date modified
+    fuze            #Searches file name only (fsearch) in '/home' (Opens file with vim)
+    fuzr            #Searches file name only (fsearch) in '/' (Root folder)
+    fuzp		    #Searches text in all files for the current path
+
+    
+- Search for files names only from default path (which is /home)
+    fuz -n				(text in the files is not search) (similar to everything search and fsearch)
+
+- Search specific path (eg. computer)
+    fuz --path /			         (To linux root)
+    fuz -p /			"            (To linux root)
+    fuz -p /home/zorin/apps          (to the home apps folder)
+    fuz -n -p /				         (Search for files names only in root folder) (everything search and fsearch)
+    fuz -n -p /home/zorin/apps		 (Search for files names only in apps folder) (everything search and fsearch)
+
+- Search filenames to edit with vim:
+    fuz --edit
+    
+- To exit press esc
+
+- Open matches with system default text editor
+    fuz --open
+
+KEY BINDINGS:
+  CTRL+O             Open in vim
+  CTRL+L             View with less
+  CTRL+J             MOVE down
+  CTRL+K             MOVE up
+
+ALTERNATIVE TERMINAL EDITOR:
+# add to .bashrc/.zshrc (currently supports neovim, macvim or vim):
+export FUZ_EDITOR=nvim
+
+OPTIONS:
+  --setup            Set fuz default search directory in .zsh/.bashrc
+  -p, --path         Directory to search
+  -o, --open         Open search directory or file with system default application
+  -e, --edit         Open file with vim editor (instead of 'less'), enables --names option
+  -n, --names        Only show filenames
+  -c, --create       Create new file in search directory: --create <FILENAME>
+  -d, --max-depth    Max search depth (5)
+  -m, --max-lines    Max lines read per file (50000)
+  -s, --max-size     Max file-size to search (1M)
+  -f, --fuzzy-search Enable fuzzy instead of exact search
+  --sorttime         Sort files by date modified, preserve line order (single threaded, slow)
+  --vimsearch        Search lines and open in vim
+  --dir              Print and open search directory
+  -h, --help         Print this help and exit

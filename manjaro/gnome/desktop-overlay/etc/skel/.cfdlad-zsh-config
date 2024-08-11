@@ -1,0 +1,191 @@
+#########################################################################################################################################################
+# cfdlad-zsh-config
+
+# For zsh-autocomplete, add its source at or near the top of your `.zshrc` file (_before_ any calls to `compdef`). [its at the top]
+# For zsh-autocomplete, remove any calls to `compinit` from your `.zshrc` file.  [no calls to cominit in here]
+# For zsh-autocomplete, comment out  [zstyle ':completion:*' menu select] b/c of interferance. [no calls to zstyle in here]
+########################################################################################################################################################
+
+### EXPORT
+export TERM="xterm-256color"                      # getting proper colors
+export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
+#export EDITOR=/usr/bin/micro
+export VISUAL=/usr/bin/micro
+
+### Use zsh_autocomplete (mine)
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
+## Use zsh-autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+### FZF path
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+### FZF settings
+#export FZF_BASE="$HOME/.fzf"
+export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
+export FZF_DEFAULT_OPTS='--height 60% --layout=reverse --border'
+
+### PATH
+# Not needed by me for now
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/.emacs.d/bin" ] ;
+  then PATH="$HOME/.emacs.d/bin:$PATH"
+fi
+
+if [ -d "$HOME/Applications" ] ;
+  then PATH="$HOME/Applications:$PATH"
+fi
+
+if [ -d "/var/lib/flatpak/exports/bin/" ] ;
+  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
+
+if [ -d "$HOME/.config/emacs/bin/" ] ;
+  then PATH="$HOME/.config/emacs/bin/:$PATH"
+fi
+
+### ALIASES
+
+# vim
+alias vim="nvim"
+
+# "apt", "apt-get" and "dpkg"
+#alias sau='sudo apt update'                 	# apt, update pkgs
+#alias said='sudo apt install ./*deb'           	# apt, install all debs in current folder
+#alias sagid='sudo apt-get install ./*deb'      	# apt-get, install all debs in current folder
+#alias sado='sudo apt --download-only install'        	# apt, download the debs only (no install)
+#alias dpkgid='dpkg -i ./*deb'                	# dpkg, install all debs in current folder
+
+# pacman
+alias pacu='sudo pacman -U ./*zst'
+alias pacud='sudo pacman -U -d ./*zst'
+alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
+alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
+alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
+alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)l'
+
+# Changing "ls" to "eza" (see if exa can be installed in ubuntu 22.04, brew, pacstall, binary etc)
+alias ll='eza -al --icons --color=always --group-directories-first' # column (all files and dirs)
+alias ls='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
+alias la='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
+alias lt='eza -aT --color=always --group-directories-first' # tree listing
+alias l.='eza -a | egrep "^\."'
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# cheat and fzf
+alias ch='cheat -l | fzf --preview="cheat {1}"'		# Preview only
+alias chh="cheat -l | awk '{print \$1}' | fzf --preview='cheat {}'| xargs -I{} cheat {}"	# Preview and paste code
+alias chp="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"		# No preview, only path and paste code
+
+# for ranger, to exit or cd into the current folder
+alias ranger='source ranger'
+
+# ps
+alias psa="ps auxf"
+alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias psmem='ps auxf | sort -nr -k 4'
+alias pscpu='ps auxf | sort -nr -k 3'
+
+# git
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias stat='git status'  # 'status' is protected name so using 'stat' instead
+alias tag='git tag'
+alias newtag='git tag -a'
+
+# get error messages from journalctl
+alias jctl="journalctl -p 3 -xb"
+
+# gpg encryption
+# verify signature for isos
+alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+# receive the key of a developer
+alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+
+# switch between shells
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+
+# vte fix for tillix (ubuntu only)
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+#        source /etc/profile.d/vte-2.91.sh
+#fi
+
+### Setting the starship prompt ###
+# It is set in .zshrc file
+#eval "$(starship init zsh)"
+
+# fuz (fzf and ripgrep search script)
+alias fuz='~/Applications/fuz-main/fuz --path "/home"'	#Searches text in all files in /home
+alias fuzs='fuz --sorttime'					#Same as above but also sort files by date modified (fuzt: s is for sort time)
+alias fuze='fuz --edit'						#Searches file name only (fsearch) in '/home' (Open file with vim) (fuze: e is for edit with vim)
+alias fuzr='fuz --names --path /'			#Searches file name only (fsearch) in '/' (Root folder)  (fuzr: r is for root)
+alias fuzp='fuz --path ./'				        #Searches text in all files for the current directory   (fuzp: p is for path)
+
+### EXTRACT ###
+# Function 'extract' for common file formats
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
+function extract {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
+ else
+    for n in "$@"
+    do
+      if [ -f "$n" ] ; then
+          case "${n%,}" in
+            *.cbt|*.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
+                         tar xvf "$n"       ;;
+            *.lzma)      unlzma ./"$n"      ;;
+            *.bz2)       bunzip2 ./"$n"     ;;
+            *.cbr|*.rar)       unrar x -ad ./"$n" ;;
+            *.gz)        gunzip ./"$n"      ;;
+            *.cbz|*.epub|*.zip)       unzip ./"$n"       ;;
+            *.z)         uncompress ./"$n"  ;;
+            *.7z|*.arj|*.cab|*.cb7|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.pkg|*.rpm|*.udf|*.wim|*.xar)
+                         7z x ./"$n"        ;;
+            *.xz)        unxz ./"$n"        ;;
+            *.exe)       cabextract ./"$n"  ;;
+            *.cpio)      cpio -id < ./"$n"  ;;
+            *.cba|*.ace)      unace x ./"$n"      ;;
+            *)
+                         echo "extract: '$n' - unknown archive method"
+                         return 1
+                         ;;
+          esac
+      else
+          echo "'$n' - file does not exist"
+          return 1
+      fi
+    done
+fi
+}
+
+IFS=$SAVEIFS

@@ -1,0 +1,2 @@
+cp -r /media/zorin/EFI-LIVE/Shows/haruna /home/zorin/.config
+cp -r /run/media/manjaro/EFI-LIVE/Shows/haruna /home/manjaro/.config

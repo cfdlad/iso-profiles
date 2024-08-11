@@ -1,0 +1,20 @@
+ 
+sudo apt install ./*deb
+sudo dpkg -i ./*deb
+sudo apt-get install ./*deb
+
+
+sudo dpkg --force-all -i ./*deb
+
+crtl l (for inputting directory address)
+
+sudo apt -download-only install  any-app
+
+# for ranger in .bashrc
+alias ranger='source ranger'
+
+
+cd ..
+cd etc
+cd skel
+cd apps

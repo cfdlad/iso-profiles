@@ -1,0 +1,25 @@
+##TO compare list of software in manjaro
+
+##generate list
+pacman -Q > x.txt
+
+##Compare 2 list in a folder without naming the list
+diff -y ./*
+
+##OR
+
+##Compare list with their names
+diff -y  x.txt y.txt
+
+
+
+######The Code########################################
+pacman -Q > x.txt
+diff -y ./*
+######################################################
+
+##NOTE:  -y is to place the list next to each other during comparison
+
+##Also, you can use
+pamac list > w.txt
+##But the format is different
