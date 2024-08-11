@@ -559,8 +559,8 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 
 ## Education
 >extra qalculate-gtk
->extra sagemath
->extra sagemath-doc
+#>extra sagemath
+#>extra sagemath-doc
 >extra jupyterlab
 >extra jupyterlab-widgets
 >extra jupyter-collaboration
@@ -568,7 +568,7 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 >extra jupyter-notebook
 >extra labplot
 #>extra freecad 												# (use ondsel (based on freecad 0.22) appimage, 0.21 is the version in repo)
->extra labplot
+#>extra labplot
 
 
 ## Cli Apps
