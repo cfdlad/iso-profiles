@@ -399,9 +399,9 @@ wps-office-mime                        						# (chaotic aur)
 ttf-wps-fonts                          						# (chaotic aur)
 
 ## libre office optionals
->extra libpapar
+>extra libpaper
 >extra libwpg
->extra unixobdc
+>extra unixodbc
 >extra coin-or-mp
 >extra libreoffice-extension-writer2latex
 >extra libreoffice-extension-texmaths
@@ -417,7 +417,7 @@ ttf-wps-fonts                          						# (chaotic aur)
 
 ## Fonts (everything needed by libreoffice, onlyoffice is here, starship)
 >extra font-manager
->extra ttf-nerd-font-symbols
+>extra ttf-nerd-fonts-symbols
 >extra ttf-firacode-nerd
 >extra ttf-cascadia-code-nerd
 >extra ttf-meslo-nerd
@@ -426,9 +426,9 @@ nerd-fonts-inter       										# not in repo (its in aur and chaotic)
 ttf-ms-fonts													# not in repo (its in aur and chaotic)
 >extra ttf-carlito 												# (for only office)
 ttf-caladea
-ttf-gentium-basic
+ttf-gentium-plus
 ttf-linux-libertine-g
-adobe-source-serif-font
+adobe-source-serif-fonts
 
 
 
@@ -445,7 +445,7 @@ adobe-source-serif-font
 >extra libxslt      											# for xml (recoll)
 >extra perl-image-exiftool  									# for exif data from images (recoll)
 >extra poppler         											# for pdf (recoll)
->extra pstotext         										# for ??
+#>extra pstotext         										# for ?? (Not in any repos)
 >extra python-lxml      										# indexing spread sheets (recoll)
 >extra python-mutagen       									# Audio meta data (recoll)
 >extra python-pychm   											# for chm filter (recoll)
@@ -459,11 +459,11 @@ cuneiform
 gocr
 ocrad
 gimagereader-gtk
-tesserac
+tesseract
 tesseract-data-eng
 tesseract-data-ara
-tesseract-data-chi-sim
-tesseract-data-chi-tra
+tesseract-data-chi_sim
+tesseract-data-chi_tra
 tesseract-data-fra
 tesseract-data-deu
 tesseract-data-jpn
@@ -485,8 +485,8 @@ tesseract-data-jpn
 ## Themes
 bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 themechanger-git												# theme changer by alex 11br (in my repo)
-zorin-icons														# (in my repo)
-zorin-themes													# (in my repo)
+zorin-icon-themes													# (in my repo)
+zorin-desktop-themes													# (in my repo)
 
 ## KDE Apps
 >extra kompare
