@@ -622,7 +622,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 >extra nmap														# Utility for network discovery and security auditing
 >extra gnu-netcat												# GNU version of netcat a network piping application
 >extra qjournalctl												# gui for journalctl
->extra languagetool												# open source language and grammer checker (libreoffice uses it)
+#>extra languagetool												# open source language and grammer checker (libreoffice uses it)
 >extra lsof														# list open files for running unix processes
 >extra e2fsprogs												# ext2/3/4 file system utilities
 
