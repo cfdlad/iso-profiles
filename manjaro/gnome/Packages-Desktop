@@ -724,7 +724,7 @@ lib32-glu
 
 ## Dependencies for undertale
 openssl-1.0													# not in repo, its in aur and chaotic
-lib32-openssl-1.0												# not in repo, its in aur and chaotic
+#lib32-openssl-1.0												# not in any repo
 
 
 ## Python My additions (for easy aur instal from terminal)
