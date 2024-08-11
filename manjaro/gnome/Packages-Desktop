@@ -585,7 +585,7 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 >extra eza              										# ls replacement (cli)
 >extra fd														# find alternative
 >extra mlocate													# alt locate
->extra ploccate													# alt locate compatible with mlocate data base
+>extra plocate													# alt locate compatible with mlocate data base
 >extra ripgrep													# alt grep (find words, files etc)
 >extra bat														# alt cat
 >extra bat-extras												# scripts to join bat with other aaps
