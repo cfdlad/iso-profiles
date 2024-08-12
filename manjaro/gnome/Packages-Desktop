@@ -395,7 +395,7 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 ## wps office
 #wps-office                             						# (chaotic aur)
 wps-office-all-dicts-win-languages     						# (chaotic aur)
-wps-office-fonts                       						# (chaotic aur)
+#wps-office-fonts                       						# (chaotic aur)
 wps-office-mime                        						# (chaotic aur)
 ttf-wps-fonts                          						# (chaotic aur)
 
@@ -505,7 +505,7 @@ themechanger-git												# theme changer by alex 11br (in my repo)
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
 >extra libappimage     											# Appimage thumbnails (part of kio-exrea optionals)
 >extra icoutils         										# Windows exe thumbnails (not sure)
->extra kimageformats   											# Additional image format thumbnails
+#>extra kimageformats   											# Additional image format thumbnails
 >extra openexr         											# EXR thumbnails
 >extra xapp-appimage-thumbnailer								# Appimage thumbnailer
 >extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
