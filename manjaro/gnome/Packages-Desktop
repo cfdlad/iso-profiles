@@ -142,7 +142,7 @@ yelp                              # required by gnome-user-docs
 #evolution                         # thunderbird included instead
 file-roller
 #>extra geary                      # thunderbird included instead
-#gedit                             # using gnome-text-editor for now
+gedit                             # using gnome-text-editor for now
 #ghex
 #gitg
 #glade
@@ -303,7 +303,7 @@ xorg-server                        # required by gdm
 
 >extra nautilus-admin
 extension-manager												# (chaotic aur) #for downloading new extensions without using firefox extension plugin
->extra gtk2														# just incase
+#>extra gtk2														# just incase
 zsh-autocomplete												# (in my repo)
 
 ## GNOME Shell Extensions (Add all to .local)
@@ -370,6 +370,7 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 ## Document Apps
 >extra libreoffice-fresh  										# Office software
 >extra okular
+>extra gedit-plugins
 >extra pdfarranger
 >extra pdfcrack
 >extra kate
@@ -408,7 +409,7 @@ ttf-wps-fonts                          						# (chaotic aur)
 #parlatype-libreoffice-extension 								# (chaotic aur) for parlatype audio transcription, it installs parlatype
 
 
->extra espeak-ng 												# optional for foliate and stardict
+#>extra espeak-ng 												# optional for foliate and stardict
 #>extra festival													# voice synthesizer like espeak
 #>extra festival-english
 #>extra festival-us
@@ -464,8 +465,8 @@ tesseract-data-eng
 tesseract-data-ara
 #tesseract-data-chi_sim
 #tesseract-data-chi_tra
-tesseract-data-fra
-tesseract-data-deu
+#tesseract-data-fra
+#tesseract-data-deu
 tesseract-data-jpn
 
 ## Dictionaries, Spellcheckers, Thesaurus (everything needed by libreoffice and other apps is here)
@@ -490,7 +491,7 @@ themechanger-git												# theme changer by alex 11br (in my repo)
 
 ## KDE Apps
 >extra kompare
->extra krename
+#>extra krename
 >extra kdiff3
 #>extra kio-extras
 #>extra konqueror
@@ -498,7 +499,7 @@ themechanger-git												# theme changer by alex 11br (in my repo)
 ## Gnome Apps
 #>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
 decoder 														# QR code checker  (chaotic)
-shortwave														# Internet radio (over 30,000 channels) (chaotic)
+#shortwave														# Internet radio (over 30,000 channels) (chaotic)
 
 ## Thumbnailers
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
