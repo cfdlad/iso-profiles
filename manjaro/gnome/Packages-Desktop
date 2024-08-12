@@ -19,7 +19,7 @@ usb_modeswitch                    # required by manjaro-modem; optional for mode
 
 btrfsmaintenance
 grub-btrfs
->extra timeshift-autosnap-manjaro
+#>extra timeshift-autosnap-manjaro
 
 
 ## Libraries for Sound/Audio/Video
@@ -45,7 +45,7 @@ noto-fonts                         # default font
 >extra noto-fonts-cjk              # Asian fonts, optional for noto-fonts
 >extra noto-fonts-emoji            # required by gnome-characters, optional for noto-fonts
 >extra noto-fonts-extra            # additional languages, optional for noto-fonts
-ttf-dejavu                        # required by firefox
+#ttf-dejavu                        # required by firefox
 #ttf-droid                         # required by firefox
 ttf-hack                           # default monspace font
 ttf-inconsolata
@@ -630,7 +630,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 
 ###Disk apps
 >extra testdisk             									# Disk repair and recovery (has photorec inside)
->extra ddrescue													# Disk repair
+#>extra ddrescue													# Disk repair
 #gddrescue														# Not in any repo (gui for ddrescue)
 #ddrescueview													# GUI for ddrescue (in aur, not in chaotic, not in chineses)
 
