@@ -245,7 +245,7 @@ htop
 ibus
 inxi
 #>extra libappindicator-gtk3       # required by gnome-shell-extension-appindicator
-lollypop
+#lollypop
 manjaro-application-utility        # optional for manjaro-hello, no need to be explicitly installed
 #manjaro-gnome-vanilla             # unmaintained, needs updating
 manjaro-hello
@@ -254,7 +254,7 @@ manjaro-settings-manager-notifier
 #mousetweaks
 >extra nautilus-admin
 nautilus-empty-file
->extra onlyoffice-desktopeditors  # office program is chosen during install
+#>extra onlyoffice-desktopeditors  # office program is chosen during install
 #polkit-gnome                      # deprecated
 >extra power-profiles-daemon       # optional for gnome-control-center
 >extra thunderbird
@@ -318,7 +318,7 @@ zsh-autocomplete												# (in my repo)
 
 ## Browsers
 #opera-beta														# (not available on any repo)
->extra vivaldi
+#>extra vivaldi
 
 
 ## Archive Tools
@@ -329,7 +329,7 @@ p7zip-gui														# GUI for p7zip (chaotic aur)
 >extra krita
 >extra drawing
 >extra inkscape
->extra blender
+#>extra blender
 >extra gcolor3               									# color picker
 #>extra darktable
 
@@ -374,7 +374,7 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 >extra pdfcrack
 >extra kate
 sublime-text-4													# (in aur chaotic)
->extra foliate													# gtk ebook reader
+#>extra foliate													# gtk ebook reader
 >extra neovim
 >extra code                  									# visual studio code
 >extra pandoc-cli
@@ -409,9 +409,9 @@ ttf-wps-fonts                          						# (chaotic aur)
 
 
 >extra espeak-ng 												# optional for foliate and stardict
->extra festival													# voice synthesizer like espeak
->extra festival-english
->extra festival-us
+#>extra festival													# voice synthesizer like espeak
+#>extra festival-english
+#>extra festival-us
 >extra enchant	 												# optional for stardict
 
 
@@ -462,8 +462,8 @@ gimagereader-gtk
 tesseract
 tesseract-data-eng
 tesseract-data-ara
-tesseract-data-chi_sim
-tesseract-data-chi_tra
+#tesseract-data-chi_sim
+#tesseract-data-chi_tra
 tesseract-data-fra
 tesseract-data-deu
 tesseract-data-jpn
@@ -496,7 +496,7 @@ themechanger-git												# theme changer by alex 11br (in my repo)
 #>extra konqueror
 
 ## Gnome Apps
->extra collision												# Checks hashes (manjaro repo)
+#>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
 decoder 														# QR code checker  (chaotic)
 shortwave														# Internet radio (over 30,000 channels) (chaotic)
 
