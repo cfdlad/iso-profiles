@@ -325,7 +325,7 @@ zsh-autocomplete												# (in my repo)
 p7zip-gui														# GUI for p7zip (chaotic aur)								
 
 ## Art and Graphics design
->extra gimp
+#>extra gimp
 >extra krita
 #>extra drawing
 #>extra inkscape
@@ -350,7 +350,7 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 >extra subtitleeditor
 
 ## Media Productivity
->extra audacity
+#>extra audacity
 >extra obs-studio
 >extra kdenlive
 >extra handbrake
