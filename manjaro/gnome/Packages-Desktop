@@ -394,10 +394,10 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 
 ## wps office
 #wps-office                             						# (chaotic aur)
-#wps-office-all-dicts-win-languages     						# (chaotic aur)
-#wps-office-fonts                       						# (chaotic aur)
-#wps-office-mime                        						# (chaotic aur)
-#ttf-wps-fonts                          						# (chaotic aur)
+wps-office-all-dicts-win-languages     						# (chaotic aur)
+wps-office-fonts                       						# (chaotic aur)
+wps-office-mime                        						# (chaotic aur)
+ttf-wps-fonts                          						# (chaotic aur)
 
 ## libre office optionals
 >extra libpaper
@@ -435,33 +435,33 @@ adobe-source-serif-fonts
 
 
 ## Recoll
->extra recoll    ## document search app
+#>extra recoll    ## document search app
 
 ## optional dependencies for Recoll
->extra antiword  												# for msword (recoll)
->extra catdoc       											# for excell and powerpoint (recoll)
->extra djvulibre        										# for djvu (recoll)
->extra kcoreaddons5      										# no need it will be added as a dependency of kde apps (konqueror)
->extra kio5              										# no need it will be added as a dependency of kde apps (konqueror)
->extra libxslt      											# for xml (recoll)
->extra perl-image-exiftool  									# for exif data from images (recoll)
->extra poppler         											# for pdf (recoll)
-#>extra pstotext         										# for ?? (Not in any repos)
->extra python-lxml      										# indexing spread sheets (recoll)
+#>extra antiword  												# for msword (recoll)
+#>extra catdoc       											# for excell and powerpoint (recoll)
+#>extra djvulibre        										# for djvu (recoll)
+#>extra kcoreaddons5      										# no need it will be added as a dependency of kde apps (konqueror)
+#>extra kio5              										# no need it will be added as a dependency of kde apps (konqueror)
+#>extra libxslt      											# for xml (recoll)
+#>extra perl-image-exiftool  									# for exif data from images (recoll)
+#>extra poppler         											# for pdf (recoll)
+##>extra pstotext         										# for ?? (Not in any repos)
+#>extra python-lxml      										# indexing spread sheets (recoll)
 >extra python-mutagen       									# Audio meta data (recoll)
 >extra python-pychm   											# for chm filter (recoll)
->extra unrtf     												# for RTF (recoll)
+#>extra unrtf     												# for RTF (recoll)
 
 
 ##OCR Tools
-ocrfeeder
-ocrmypdf ## not in repo (in aur chaotic)
-cuneiform
-gocr
-ocrad
-gimagereader-gtk
-tesseract
-tesseract-data-eng
+#ocrfeeder
+#ocrmypdf ## not in repo (in aur chaotic)
+#cuneiform
+#gocr
+#ocrad
+#gimagereader-gtk
+#tesseract
+#tesseract-data-eng
 #tesseract-data-ara
 #tesseract-data-chi_sim
 #tesseract-data-chi_tra
