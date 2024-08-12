@@ -33,23 +33,23 @@ grub-btrfs
 
 ## Fonts
 
-adobe-source-code-pro-fonts       # required by gsettings-desktop-schemas
-adobe-source-han-sans-cn-fonts
-adobe-source-han-sans-hk-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-otc-fonts
-adobe-source-han-sans-tw-fonts
+#adobe-source-code-pro-fonts       # required by gsettings-desktop-schemas
+#adobe-source-han-sans-cn-fonts
+#adobe-source-han-sans-hk-fonts
+#adobe-source-han-sans-jp-fonts
+#adobe-source-han-sans-kr-fonts
+#adobe-source-han-sans-otc-fonts
+#adobe-source-han-sans-tw-fonts
 adobe-source-sans-fonts
 noto-fonts                         # default font
 >extra noto-fonts-cjk              # Asian fonts, optional for noto-fonts
 >extra noto-fonts-emoji            # required by gnome-characters, optional for noto-fonts
 >extra noto-fonts-extra            # additional languages, optional for noto-fonts
 ttf-dejavu                        # required by firefox
-ttf-droid                         # required by firefox
+#ttf-droid                         # required by firefox
 ttf-hack                           # default monspace font
 ttf-inconsolata
->extra ttf-indic-otf               # India fonts
+#>extra ttf-indic-otf               # India fonts
 ttf-liberation                    # required by firefox
 
 
@@ -58,7 +58,7 @@ ttf-liberation                    # required by firefox
 pamac-gnome-integration
 >extra pamac-flatpak-plugin
 pamac-gtk
->extra pamac-snap-plugin
+#>extra pamac-snap-plugin
 
 
 ## Printing
@@ -81,14 +81,14 @@ gnome-clocks
 #gnome-color-manager               # required by gnome-control-center
 >extra gnome-connections
 #gnome-console                     # gnome-terminal included instead
->extra gnome-contacts
+#>extra gnome-contacts
 gnome-control-center
 gnome-disk-utility
->extra gnome-font-viewer
+#>extra gnome-font-viewer
 #gnome-keyring                     # required by xdg-desktop-portal-gnome
 gnome-logs
->extra gnome-maps
-gnome-menus                       # optional for gnome-shell-extension-arc-menu
+#>extra gnome-maps
+#gnome-menus                       # optional for gnome-shell-extension-arc-menu
 #gnome-music                       # lollypop included instead
 >extra gnome-remote-desktop        # optional for gnome-control-center
 #gnome-session                     # required by gdm & gnome-shell
@@ -97,8 +97,8 @@ gnome-shell
 gnome-shell-extensions
 #gnome-software                    # pamac-gtk used instead
 gnome-system-monitor
-gnome-text-editor
-gnome-tour
+#gnome-text-editor
+#gnome-tour
 gnome-user-docs
 >extra gnome-user-share            # optional for gnome-control-center
 gnome-weather
@@ -114,7 +114,7 @@ gvfs
 >extra gvfs-onedrive               # optional for gnome-online-accounts
 >extra gvfs-smb
 >extra gvfs-wsdd
->basic loupe                       # gthumb in full edition
+#>basic loupe                       # gthumb in full edition
 >extra malcontent                  # optional for gnome-control-center
 nautilus
 #orca
@@ -127,7 +127,7 @@ sushi
 tracker3-miners
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
-yelp                              # required by gnome-user-docs
+#yelp                              # required by gnome-user-docs
 
 
 ## GNOME Extra applications
@@ -142,26 +142,26 @@ yelp                              # required by gnome-user-docs
 #evolution                         # thunderbird included instead
 file-roller
 #>extra geary                      # thunderbird included instead
-#gedit                             # using gnome-text-editor for now
+gedit                             # using gnome-text-editor for now
 #ghex
 #gitg
 #glade
->extra gnome-boxes                 # developer tools
+#>extra gnome-boxes                 # developer tools
 #gnome-builder                     # developer tools
 #gnome-devel-docs
-gnome-dictionary
+#gnome-dictionary
 #gnome-games
 #gnome-multi-writer
 #gnome-nettool
 #gnome-notes
 #gnome-photos
 #gnome-recipes
-gnome-sound-recorder
+#gnome-sound-recorder
 gnome-terminal
 gnome-tweaks
 #gnome-usage
 #polari
->extra seahorse
+#>extra seahorse
 #sysprof                           # developer tools
 
 
@@ -170,7 +170,7 @@ gnome-tweaks
 #five-or-more
 #four-in-a-row
 gnome-2048
->extra gnome-chess
+#>extra gnome-chess
 #gnome-klotski
 gnome-mahjongg
 >extra gnome-mines
@@ -208,7 +208,7 @@ gnome-sudoku
 adw-gtk-theme
 bibata-cursor-theme
 gnome-themes-extra                 # optional for gtk2
-gnome-wallpapers
+#gnome-wallpapers
 grub-theme-manjaro
 kvantum-manjaro
 #>extra illyria-wallpaper
@@ -226,18 +226,18 @@ qt6ct
 ## Applications
 
 >extra apparmor
->extra collision
->extra deja-dup
+#>extra collision
+#>extra deja-dup
 >extra ffmpegthumbnailer
 >extra ffmpeg-audio-thumbnailer
 firefox
 fprintd                            # needed for fingerprint reader, optional for gdm
 #fwupd                             # required by gnome-firmware, optional for gnome-control-center
->extra fragments
+#>extra fragments
 gnome-browser-connector
 gnome-firmware
 >extra gnome-layout-switcher
->extra gnuchess                    # optional for gnome-chess to play against computer
+#>extra gnuchess                    # optional for gnome-chess to play against computer
 >extra gthumb                      # loupe in minimal edition
 >extra gtksourceview-pkgbuild      # syntax highlighting for PKGBUILDs
 >extra gufw
@@ -245,7 +245,7 @@ htop
 ibus
 inxi
 #>extra libappindicator-gtk3       # required by gnome-shell-extension-appindicator
-lollypop
+#lollypop
 manjaro-application-utility        # optional for manjaro-hello, no need to be explicitly installed
 #manjaro-gnome-vanilla             # unmaintained, needs updating
 manjaro-hello
@@ -254,14 +254,14 @@ manjaro-settings-manager-notifier
 #mousetweaks
 >extra nautilus-admin
 nautilus-empty-file
->extra onlyoffice-desktopeditors  # office program is chosen during install
+#>extra onlyoffice-desktopeditors  # office program is chosen during install
 #polkit-gnome                      # deprecated
 >extra power-profiles-daemon       # optional for gnome-control-center
->extra thunderbird
->extra timeshift
+#>extra thunderbird
+#>extra timeshift
 #tlp                               # conflicts with power-profiles-daemon
 >extra touche
->extra webapp-manager
+#>extra webapp-manager
 #xdg-utils                         # already a dependency of anything that requires it
 
 ## Optional dependencies for file-roller
@@ -300,469 +300,470 @@ xorg-server                        # required by gdm
 
 
 ################## My Additions ##################
-# 
-# >extra nautilus-admin
-# extension-manager												# (chaotic aur) #for downloading new extensions without using firefox extension plugin
-# >extra gtk2														# just incase
-# zsh-autocomplete												# (in my repo)
-# 
-# ## GNOME Shell Extensions (Add all to .local)
-# #gnome-shell-extension-vitals									# (manjaro repo)
-# #gnome-shell-extension-blur-my-shell  							# (chaotic)
-# #gnome-shell-extension-tiling-assistant-git 					# (chaotic)
-# #gnome-shell-extension-top-bar-organizer 						# (chaotic)
-# #gnome-shell-extension-net-speed-simplified						# (best, add to ~/local) (not in any repo)
-# #gnome-shell-extension-just-perfection-desktop 					# (add to ~/local) (in aur)
-# #gnome-shell-extension-custom-hot-corners-extended-git   		# (add to ~/local) (in aur)
-# #gnome-shell-extension-compiz-alike-magic-lamp-effect-git		# (add to ~/local) (in aur)
-# 
-# ## Browsers
-# #opera-beta														# (not available on any repo)
-# >extra vivaldi
-# 
-# 
-# ## Archive Tools
-# p7zip-gui														# GUI for p7zip (chaotic aur)								
-# 
-# ## Art and Graphics design
-# >extra gimp
-# >extra krita
-# >extra drawing
-# >extra inkscape
-# >extra blender
-# >extra gcolor3               									# color picker
-# >extra darktable
-# 
-# ## Video, Audio and Media-tools
-# >extra vlc
-# >extra haruna
-# >extra mpv
-# #>extra celluloid
-# clapper														# Not in the repo (in aur chaotic)
-# >extra strawberry
-# >extra blanket
-# cozy-audiobooks                								# cozy is not in the manjaro repo and arch repo (in aur chaotic)
-# >extra projectm
-# >extra projectm-pulseaudio
-# >extra projectm-sdl
-# >extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
-# >extra gnome-subtitles
-# >extra subtitleeditor
-# 
-# ## Media Productivity
-# >extra audacity
-# >extra obs-studio
-# >extra kdenlive
-# >extra handbrake
-# #>extra ciano               									# minimal video and audio converter
-# >extra kooha
-# 
-# webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
-# akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
-# libuvc															# (chaotic) camera capture for webcamoid
-# >extra polkit													# (arch) root privilages for virtual camera
-# #>extra v4l-utils												# Extra format support for webcams (part of wine)
-# >extra v4l2loopback-dkms										# Virtual camera support
-# 
-# #### Accesibility
-# >extra gnome-pie
-# 
-# ## Document Apps
-# >extra libreoffice-fresh  										# Office software
-# >extra okular
-# >extra pdfarranger
-# >extra pdfcrack
-# >extra kate
-# sublime-text-4													# (in aur chaotic)
-# >extra foliate													# gtk ebook reader
-# >extra neovim
-# >extra code                  									# visual studio code
-# >extra pandoc-cli
-# >extra pandoc-crossref
-# >extra pandoc-plot
-# >extra meld
-# #formiko														# not in repo (markdowm editor)
-# #apostrophe														# gtk based markdown editor (in aur chinese repo)
-# >extra marker													# gtk based markdown editor
-# >extra mathjax2													# alt backend for rendering formulas (optional for marker)
-# >extra colordiff												# give diff tool color
-# >extra imagemagick												# image manipulation program, has lots of optionals 
-# >extra renameutils												# programs to make renaming easy
-# >extra gprename													# bulk renaming gui program (gtk)
-# >extra stardict
-# 
-# ## wps office
-# wps-office                             						# (chaotic aur)
-# wps-office-all-dicts-win-languages     						# (chaotic aur)
-# wps-office-fonts                       						# (chaotic aur)
-# wps-office-mime                        						# (chaotic aur)
-# ttf-wps-fonts                          						# (chaotic aur)
-# 
-# ## libre office optionals
-# >extra libpaper
-# >extra libwpg
-# >extra unixodbc
-# >extra coin-or-mp
-# >extra libreoffice-extension-writer2latex
-# >extra libreoffice-extension-texmaths
-# #parlatype-libreoffice-extension 								# (chaotic aur) for parlatype audio transcription, it installs parlatype
-# 
-# 
-# >extra espeak-ng 												# optional for foliate and stardict
-# >extra festival													# voice synthesizer like espeak
-# >extra festival-english
-# >extra festival-us
-# >extra enchant	 												# optional for stardict
-# 
-# 
-# ## Fonts (everything needed by libreoffice, onlyoffice is here, starship)
-# >extra font-manager
-# >extra ttf-nerd-fonts-symbols
-# >extra ttf-firacode-nerd
-# >extra ttf-cascadia-code-nerd
-# >extra ttf-meslo-nerd
-# >extra otf-droid-nerd
-# nerd-fonts-inter       										# not in repo (its in aur and chaotic)
-# ttf-ms-fonts													# not in repo (its in aur and chaotic)
-# >extra ttf-carlito 												# (for only office)
-# ttf-caladea
-# ttf-gentium-plus
-# ttf-linux-libertine-g
-# adobe-source-serif-fonts
-# 
-# 
-# 
-# 
-# ## Recoll
-# >extra recoll    ## document search app
-# 
-# ## optional dependencies for Recoll
-# >extra antiword  												# for msword (recoll)
-# >extra catdoc       											# for excell and powerpoint (recoll)
-# >extra djvulibre        										# for djvu (recoll)
-# >extra kcoreaddons5      										# no need it will be added as a dependency of kde apps (konqueror)
-# >extra kio5              										# no need it will be added as a dependency of kde apps (konqueror)
-# >extra libxslt      											# for xml (recoll)
-# >extra perl-image-exiftool  									# for exif data from images (recoll)
-# >extra poppler         											# for pdf (recoll)
-# #>extra pstotext         										# for ?? (Not in any repos)
-# >extra python-lxml      										# indexing spread sheets (recoll)
-# >extra python-mutagen       									# Audio meta data (recoll)
-# >extra python-pychm   											# for chm filter (recoll)
-# >extra unrtf     												# for RTF (recoll)
-# 
-# 
-# ##OCR Tools
-# ocrfeeder
-# ocrmypdf ## not in repo (in aur chaotic)
-# cuneiform
-# gocr
-# ocrad
-# gimagereader-gtk
-# tesseract
-# tesseract-data-eng
-# tesseract-data-ara
-# tesseract-data-chi_sim
-# tesseract-data-chi_tra
-# tesseract-data-fra
-# tesseract-data-deu
-# tesseract-data-jpn
-# 
-# ## Dictionaries, Spellcheckers, Thesaurus (everything needed by libreoffice and other apps is here)
-# >extra aspell
-# >extra aspell-en
-# >extra hunspell
-# >extra hunspell-en_us
-# >extra hunspell-en_gb
-# >extra mythes-en												# thesaurus
-# >extra libmythes
-# >extra hyphen													# hypernator
-# >extra hyphen-en												# rules for eng hyphenation
-# >extra gspell													# spell checking for gtk apps
-# >extra nuspell													# fast C++ spell checking, enchant uses it
-# 
-# 
-# ## Themes
-# bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
-# themechanger-git												# theme changer by alex 11br (in my repo)
-# zorin-icon-themes													# (in my repo)
-# zorin-desktop-themes													# (in my repo)
-# 
-# ## KDE Apps
-# >extra kompare
-# >extra krename
-# >extra kdiff3
-# >extra kio-extras
-# #>extra konqueror
-# 
-# ## Gnome Apps
-# >extra collision												# Checks hashes (manjaro repo)
-# decoder 														# QR code checker  (chaotic)
-# shortwave														# Internet radio (over 30,000 channels) (chaotic)
-# 
-# ## Thumbnailers
-# >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
-# >extra libappimage     											# Appimage thumbnails (part of kio-exrea optionals)
-# >extra icoutils         										# Windows exe thumbnails (not sure)
-# >extra kimageformats   											# Additional image format thumbnails
-# >extra openexr         											# EXR thumbnails
-# >extra xapp-appimage-thumbnailer								# Appimage thumbnailer
-# >extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
-# >extra xapp-raw-thumbnailer										# Raw file thumbnailer
-# icoextract														# Icon extractor for .exe/.dll files with thumbnailer functionality # (chaotic)
-# 
-# 
-# ## Package managers
-# >extra git
-# yay															# (in aur and chaotic)
-# octopi															# (in aur and chaotic)
-# 
-# ## Keyboard Applications
-# >extra onboard
-# florence														# (in my repo)
-# 
-# ## Games (add nintendo snes, sega genesis)
-# >extra aisleriot
-# >extra snes9x-gtk
-# #add retroarch, xmb and some libretro cores. It is bookmarked
-# 
-# ## Emulators and gaming tools
-# >extra scanmem
-# >extra gameconqueror
-# xboxdrv															# (in aur and chaotic)
-# ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese aur)
-# 
-# ## Dowload tools
-# >extra yt-dlp              										# cli video downloader (cli)
-# #>extra youtube-dl          									# cli video downloader (cli) (not in repo)
-# >extra aria2               										# download manager (cli)
-# >extra axel                										# download accelerator (cli)
-# >extra qbittorrent
-# #>extra clipgrab            									# gui yt download
-# >extra persepolis          										# gui download manager for aria2
-# 
-# #### Firewall
-# >extra opensnitch
-# >extra logrotate     											# log file rotation for opensnitch
-# >extra python-pyasn												# show network name for opensnitch
-# >extra python-qt-material										# extra themes for opensnitch
-# 
-# 
-# 
-# ## Productivity
-# >extra obsidian
-# planify														# Not in the repo (in chaotic)
-# >extra gnome-break-timer
-# fsearch	           											# no fsearch in the manjaro repo (in aur and chaotic)
-# 
-# 
-# 
-# ## Education
-# >extra qalculate-gtk
-# #>extra sagemath
-# #>extra sagemath-doc
-# >extra jupyterlab
-# >extra jupyterlab-widgets
-# >extra jupyter-collaboration
-# >extra npm
-# >extra jupyter-notebook
-# >extra labplot
-# #>extra freecad 												# (use ondsel (based on freecad 0.22) appimage, 0.21 is the version in repo)
-# #>extra labplot
-# 
-# 
-# ## Cli Apps
-# >extra scrcpy  													# android screen mirror software (cli)
-# >extra fzf														# cli file manager 
-# >extra ranger            
-# >extra micro													# Tui based text editor, nano replacment
-# #>extra neofetch        										# system info checker (cli) (dead)
-# >extra fastfetch												# alternative to neofetch
-# >extra glib2													# fastfetch detect gsettins (check if manjaro already has them)
-# >extra hwdata													# fastfetch detect gpu
-# >extra libdrm													# fastfetch detect display	
-# >extra libnm													# fastfetch detect wifi 
-# >extra eza              										# ls replacement (cli)
-# >extra fd														# find alternative
-# >extra mlocate													# alt locate
-# >extra plocate													# alt locate compatible with mlocate data base
-# >extra ripgrep													# alt grep (find words, files etc)
-# >extra bat														# alt cat
-# >extra bat-extras												# scripts to join bat with other aaps
-# >extra zoxide													# better cd alternative
-# >extra nnn														# cli file manager
-# >extra procs													# ps alternative
-# >extra duf														# disk usage free utility
-# >extra lnav														# a tui tool for viewing and analysing log files
-# 
-# 
-# ##Cli Cheat tools
-# >extra navi														# when creating iso put cheat files in etc/skel/home.....
-# cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur)
-# #>extra tldr													# will not initialize except with internet	
-# 
-# ### Terminal
-# #>extra alacritty       										# Terminal emulator uses gpu, dont need it
-# >extra tilix
-# >extra tmux
-# >extra fish
-# >extra starship
-# 
-# 
-# #### Network Tools
-# #>extra htop													# System monitor (Already listed by manjaro above)
-# >extra iftop                 									# Network monitor (cli)
-# >extra nethogs          	 									# Network trafic monitor (cli)
-# >extra nload													# Network trafic monitor (cli)
-# >extra bandwhich												# Terminal bandwidth utilization
-# >extra bmon														# Portable bandwidth monitor and rate estimator
-# >extra tmon                  									# Temperature monitor
-# >extra btop														# System monitor
-# >extra net-tools												# configuration tools for linux networking
-# >extra nmap														# Utility for network discovery and security auditing
-# >extra gnu-netcat												# GNU version of netcat a network piping application
-# >extra qjournalctl												# gui for journalctl
-# #>extra languagetool												# open source language and grammer checker (libreoffice uses it)
-# >extra lsof														# list open files for running unix processes
-# >extra e2fsprogs												# ext2/3/4 file system utilities
-# 
-# 
-# ###Disk apps
-# >extra testdisk             									# Disk repair and recovery (has photorec inside)
-# >extra ddrescue													# Disk repair
-# #gddrescue														# Not in any repo (gui for ddrescue)
-# #ddrescueview													# GUI for ddrescue (in aur, not in chaotic, not in chineses)
-# 
-# 
-# ## System monitor tools
-# >extra deepin-system-monitor
-# system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
-# systemd-manager-git											# (chaotic) It has the gui for the journal massages
+
+>extra nautilus-admin
+extension-manager												# (chaotic aur) #for downloading new extensions without using firefox extension plugin
+#>extra gtk2														# just incase
+zsh-autocomplete												# (in my repo)
+
+## GNOME Shell Extensions (Add all to .local)
+#gnome-shell-extension-vitals									# (manjaro repo)
+#gnome-shell-extension-blur-my-shell  							# (chaotic)
+#gnome-shell-extension-tiling-assistant-git 					# (chaotic)
+#gnome-shell-extension-top-bar-organizer 						# (chaotic)
+#gnome-shell-extension-net-speed-simplified						# (best, add to ~/local) (not in any repo)
+#gnome-shell-extension-just-perfection-desktop 					# (add to ~/local) (in aur)
+#gnome-shell-extension-custom-hot-corners-extended-git   		# (add to ~/local) (in aur)
+#gnome-shell-extension-compiz-alike-magic-lamp-effect-git		# (add to ~/local) (in aur)
+
+## Browsers
+#opera-beta														# (not available on any repo)
+#>extra vivaldi
+
+
+## Archive Tools
+#p7zip-gui														# GUI for p7zip (chaotic aur)								
+
+## Art and Graphics design
+#>extra gimp
+>extra krita
+#>extra drawing
+#>extra inkscape
+#>extra blender
+>extra gcolor3               									# color picker
+#>extra darktable
+
+## Video, Audio and Media-tools
+>extra vlc
+>extra haruna
+>extra mpv
+#>extra celluloid
+#clapper														# Not in the repo (in aur chaotic)
+>extra strawberry
+>extra blanket
+#cozy-audiobooks                								# cozy is not in the manjaro repo and arch repo (in aur chaotic)
+>extra projectm
+>extra projectm-pulseaudio
+>extra projectm-sdl
+#>extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
+#>extra gnome-subtitles
+>extra subtitleeditor
+
+## Media Productivity
+#>extra audacity
+>extra obs-studio
+#>extra kdenlive
+>extra handbrake
+#>extra ciano               									# minimal video and audio converter
+#>extra kooha
+
+#webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
+#akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
+#libuvc															# (chaotic) camera capture for webcamoid
+#>extra polkit													# (arch) root privilages for virtual camera
+#>extra v4l-utils												# Extra format support for webcams (part of wine)
+#>extra v4l2loopback-dkms										# Virtual camera support
+
+#### Accesibility
+#>extra gnome-pie
+
+## Document Apps
+>extra libreoffice-fresh  										# Office software
+>extra okular
+>extra gedit-plugins
+>extra pdfarranger
+>extra pdfcrack
+>extra kate
+#sublime-text-4													# (in aur chaotic)
+#>extra foliate													# gtk ebook reader
+>extra neovim
+#>extra code                  									# visual studio code
+#>extra pandoc-cli
+#>extra pandoc-crossref
+#>extra pandoc-plot
+>extra meld
+#formiko														# not in repo (markdowm editor)
+#apostrophe														# gtk based markdown editor (in aur chinese repo)
+>extra marker													# gtk based markdown editor
+>extra mathjax2													# alt backend for rendering formulas (optional for marker)
+>extra colordiff												# give diff tool color
+>extra imagemagick												# image manipulation program, has lots of optionals 
+>extra renameutils												# programs to make renaming easy
+>extra gprename													# bulk renaming gui program (gtk)
+>extra stardict
+
+## wps office
+#wps-office                             						# (chaotic aur)
+#wps-office-all-dicts-win-languages     						# (chaotic aur)
+#wps-office-fonts                       						# (chaotic aur)
+wps-office-mime                        						# (chaotic aur)
+ttf-wps-fonts                          						# (chaotic aur)
+
+## libre office optionals
+>extra libpaper
+>extra libwpg
+>extra unixodbc
+>extra coin-or-mp
+>extra libreoffice-extension-writer2latex
+>extra libreoffice-extension-texmaths
+#parlatype-libreoffice-extension 								# (chaotic aur) for parlatype audio transcription, it installs parlatype
+
+
+#>extra espeak-ng 												# optional for foliate and stardict
+#>extra festival													# voice synthesizer like espeak
+#>extra festival-english
+#>extra festival-us
+>extra enchant	 												# optional for stardict
+
+
+## Fonts (everything needed by libreoffice, onlyoffice is here, starship)
+>extra font-manager
+>extra ttf-nerd-fonts-symbols
+>extra ttf-firacode-nerd
+#>extra ttf-cascadia-code-nerd
+>extra ttf-meslo-nerd
+>extra otf-droid-nerd
+nerd-fonts-inter       										# not in repo (its in aur and chaotic)
+ttf-ms-fonts													# not in repo (its in aur and chaotic)
+>extra ttf-carlito 												# (for only office)
+ttf-caladea
+ttf-gentium-plus
+ttf-linux-libertine-g
+adobe-source-serif-fonts
+
+
+
+
+## Recoll
+#>extra recoll    ## document search app
+
+## optional dependencies for Recoll
+#>extra antiword  												# for msword (recoll)
+#>extra catdoc       											# for excell and powerpoint (recoll)
+#>extra djvulibre        										# for djvu (recoll)
+#>extra kcoreaddons5      										# no need it will be added as a dependency of kde apps (konqueror)
+#>extra kio5              										# no need it will be added as a dependency of kde apps (konqueror)
+#>extra libxslt      											# for xml (recoll)
+#>extra perl-image-exiftool  									# for exif data from images (recoll)
+#>extra poppler         											# for pdf (recoll)
+##>extra pstotext         										# for ?? (Not in any repos)
+#>extra python-lxml      										# indexing spread sheets (recoll)
+>extra python-mutagen       									# Audio meta data (recoll)
+>extra python-pychm   											# for chm filter (recoll)
+#>extra unrtf     												# for RTF (recoll)
+
+
+##OCR Tools
+#ocrfeeder
+#ocrmypdf ## not in repo (in aur chaotic)
+#cuneiform
+#gocr
+#ocrad
+#gimagereader-gtk
+#tesseract
+#tesseract-data-eng
+#tesseract-data-ara
+#tesseract-data-chi_sim
+#tesseract-data-chi_tra
+#tesseract-data-fra
+#tesseract-data-deu
+#tesseract-data-jpn
+
+## Dictionaries, Spellcheckers, Thesaurus (everything needed by libreoffice and other apps is here)
+>extra aspell
+>extra aspell-en
+>extra hunspell
+>extra hunspell-en_us
+>extra hunspell-en_gb
+>extra mythes-en												# thesaurus
+>extra libmythes
+>extra hyphen													# hypernator
+>extra hyphen-en												# rules for eng hyphenation
+>extra gspell													# spell checking for gtk apps
+>extra nuspell													# fast C++ spell checking, enchant uses it
+
+
+## Themes
+bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
+#themechanger-git												# theme changer by alex 11br (in my repo)
+#zorin-icon-themes													# (in my repo)
+#zorin-desktop-themes													# (in my repo)
+
+## KDE Apps
+#>extra kompare
+#>extra krename
+#>extra kdiff3
+#>extra kio-extras
+#>extra konqueror
+
+## Gnome Apps
+#>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
+#decoder 														# QR code checker  (chaotic)
+#shortwave														# Internet radio (over 30,000 channels) (chaotic)
+
+## Thumbnailers
+>extra gnome-epub-thumbnailer									# Epub file format thumbnailer
+>extra libappimage     											# Appimage thumbnails (part of kio-exrea optionals)
+#>extra icoutils         										# Windows exe thumbnails (not sure)
+#>extra kimageformats   											# Additional image format thumbnails
+>extra openexr         											# EXR thumbnails
+>extra xapp-appimage-thumbnailer								# Appimage thumbnailer
+>extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
+>extra xapp-raw-thumbnailer										# Raw file thumbnailer
+icoextract														# Icon extractor for .exe/.dll files with thumbnailer functionality # (chaotic)
+
+
+## Package managers
+>extra git
+yay															# (in aur and chaotic)
+octopi															# (in aur and chaotic)
+
+## Keyboard Applications
+>extra onboard
+florence														# (in my repo)
+
+## Games (add nintendo snes, sega genesis)
+>extra aisleriot
+>extra snes9x-gtk
+#add retroarch, xmb and some libretro cores. It is bookmarked
+
+## Emulators and gaming tools
+#>extra scanmem
+#>extra gameconqueror
+xboxdrv															# (in aur and chaotic)
+ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese aur)
+
+## Dowload tools
+>extra yt-dlp              										# cli video downloader (cli)
+#>extra youtube-dl          									# cli video downloader (cli) (not in repo)
+>extra aria2               										# download manager (cli)
+>extra axel                										# download accelerator (cli)
+>extra qbittorrent
+#>extra clipgrab            									# gui yt download
+>extra persepolis          										# gui download manager for aria2
+
+#### Firewall
+>extra opensnitch
+>extra logrotate     											# log file rotation for opensnitch
+>extra python-pyasn												# show network name for opensnitch
+>extra python-qt-material										# extra themes for opensnitch
+
+
+
+## Productivity
+>extra obsidian
+#planify														# Not in the repo (in chaotic)
+#>extra gnome-break-timer
+fsearch	           											# no fsearch in the manjaro repo (in aur and chaotic)
+
+
+
+## Education
+#>extra qalculate-gtk
+#>extra sagemath
+#>extra sagemath-doc
+#>extra jupyterlab
+#>extra jupyterlab-widgets
+#>extra jupyter-collaboration
+#>extra npm
+#>extra jupyter-notebook
+#>extra labplot
+#>extra freecad 												# (use ondsel (based on freecad 0.22) appimage, 0.21 is the version in repo)
+#>extra labplot
+
+
+## Cli Apps
+>extra scrcpy  													# android screen mirror software (cli)
+>extra fzf														# cli file manager 
+>extra ranger            
+>extra micro													# Tui based text editor, nano replacment
+#>extra neofetch        										# system info checker (cli) (dead)
+>extra fastfetch												# alternative to neofetch
+>extra glib2													# fastfetch detect gsettins (check if manjaro already has them)
+>extra hwdata													# fastfetch detect gpu
+>extra libdrm													# fastfetch detect display	
+>extra libnm													# fastfetch detect wifi 
+>extra eza              										# ls replacement (cli)
+>extra fd														# find alternative
+>extra mlocate													# alt locate
+>extra plocate													# alt locate compatible with mlocate data base
+>extra ripgrep													# alt grep (find words, files etc)
+>extra bat														# alt cat
+>extra bat-extras												# scripts to join bat with other aaps
+>extra zoxide													# better cd alternative
+>extra nnn														# cli file manager
+>extra procs													# ps alternative
+>extra duf														# disk usage free utility
+>extra lnav														# a tui tool for viewing and analysing log files
+
+
+##Cli Cheat tools
+>extra navi														# when creating iso put cheat files in etc/skel/home.....
+cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur)
+#>extra tldr													# will not initialize except with internet	
+
+### Terminal
+#>extra alacritty       										# Terminal emulator uses gpu, dont need it
+>extra tilix
+>extra tmux
+>extra fish
+>extra starship
+
+
+#### Network Tools
+#>extra htop													# System monitor (Already listed by manjaro above)
+>extra iftop                 									# Network monitor (cli)
+>extra nethogs          	 									# Network trafic monitor (cli)
+>extra nload													# Network trafic monitor (cli)
+>extra bandwhich												# Terminal bandwidth utilization
+>extra bmon														# Portable bandwidth monitor and rate estimator
+>extra tmon                  									# Temperature monitor
+>extra btop														# System monitor
+>extra net-tools												# configuration tools for linux networking
+>extra nmap														# Utility for network discovery and security auditing
+>extra gnu-netcat												# GNU version of netcat a network piping application
+>extra qjournalctl												# gui for journalctl
+#>extra languagetool												# open source language and grammer checker (libreoffice uses it)
+>extra lsof														# list open files for running unix processes
+#>extra e2fsprogs												# ext2/3/4 file system utilities
+
+
+###Disk apps
+>extra testdisk             									# Disk repair and recovery (has photorec inside)
+>extra ddrescue													# Disk repair
+#gddrescue														# Not in any repo (gui for ddrescue)
+#ddrescueview													# GUI for ddrescue (in aur, not in chaotic, not in chineses)
+
+
+## System monitor tools
+#>extra deepin-system-monitor
+#system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
+systemd-manager-git											# (chaotic) It has the gui for the journal massages
 
 
 ## Wine Stuff
->extra lutris
->multilib wine
->extra wine-gecko
->extra wine-mono
-#>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
->multilib winetricks
+#>extra lutris
+#>multilib wine
+#>extra wine-gecko
+#>extra wine-mono
+##>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
+#>multilib winetricks
 
 ##Wine 9.8 optionals (combined lutris, eggroll, staging, dev)
-alsa-lib
-alsa-plugins
-cups
-dosbox
-ffmpeg
-giflib
-gnutls
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-base-libs
-gst-plugins-good
-gst-plugins-ugly
-gtk3
-lib32-alsa-lib
-lib32-alsa-plugins
-lib32-giflib
-lib32-gnutls
-lib32-gst-plugins-base
-lib32-gst-plugins-base-libs
-lib32-gst-plugins-good
-lib32-gtk3
-lib32-libcups
-lib32-libgcrypt
-lib32-libgpg-error
-lib32-libjpeg-turbo
-lib32-libldap
-lib32-libpng
-lib32-libpulse
-lib32-libva
-lib32-libxcomposite
-lib32-libxinerama
-lib32-libxslt
-lib32-mpg123
-lib32-ncurses
-lib32-openal
-lib32-sqlite
-lib32-ocl-icd
-lib32-pcsclite
-lib32-sdl2
-lib32-v4l-utils
-lib32-vulkan-icd-loader
-libgphoto2
-libgcrypt
-libgpg-error
-libjpeg-turbo
-libldap
-libpng
-libpulse
-libva
-libxcomposite
-libxinerama
-libxslt
-mpg123
-ncurses
-ocl-icd
-pcsclite
-openal
-samba
-sane
-sdl2
-unixodbc
-v4l-utils
-vulkan-icd-loader
+#alsa-lib
+#alsa-plugins
+#cups
+#dosbox
+#ffmpeg
+#giflib
+#gnutls
+#gst-plugins-bad
+#gst-plugins-base
+#gst-plugins-base-libs
+#gst-plugins-good
+#gst-plugins-ugly
+#gtk3
+#lib32-alsa-lib
+#lib32-alsa-plugins
+#lib32-giflib
+#lib32-gnutls
+#lib32-gst-plugins-base
+#lib32-gst-plugins-base-libs
+#lib32-gst-plugins-good
+#lib32-gtk3
+# lib32-libcups
+# lib32-libgcrypt
+# lib32-libgpg-error
+# lib32-libjpeg-turbo
+# lib32-libldap
+# lib32-libpng
+# lib32-libpulse
+# lib32-libva
+# lib32-libxcomposite
+# lib32-libxinerama
+# lib32-libxslt
+# lib32-mpg123
+# lib32-ncurses
+# lib32-openal
+# lib32-sqlite
+# lib32-ocl-icd
+# lib32-pcsclite
+# lib32-sdl2
+# lib32-v4l-utils
+# lib32-vulkan-icd-loader
+# libgphoto2
+# libgcrypt
+# libgpg-error
+# libjpeg-turbo
+# libldap
+# libpng
+# libpulse
+# libva
+# libxcomposite
+# libxinerama
+# libxslt
+# mpg123
+# ncurses
+# ocl-icd
+# pcsclite
+# openal
+# samba
+# sane
+# sdl2
+# unixodbc
+# v4l-utils
+# vulkan-icd-loader
 
 ## Dependencies for hyper ligth drifter
-lib32-glibc
-lib32-alsa-lib
-lib32-alsa-plugins
-lib32-curl
-lib32-gtk2
-lib32-openal
-lib32-glu
+#lib32-glibc
+#lib32-alsa-lib
+#lib32-alsa-plugins
+#lib32-curl
+#lib32-gtk2
+#lib32-openal
+#lib32-glu
 
 ## Dependencies for undertale
-openssl-1.0													# not in repo, its in aur and chaotic
-#lib32-openssl-1.0												# not in any repo
+#openssl-1.0													# not in repo, its in aur and chaotic
+##lib32-openssl-1.0												# not in any repo
 
 
-# ## Python My additions (for easy aur instal from terminal)
-# >extra python-pip            									# for pip3 installs
-# >extra python-wheel          									# for pip3 installs
-# python-setuptools    											# Already included in defualt install #for pip3 installs
-# >extra python-installer
-# >extra python-build
-# >extra python-pyudev  											# (for building ds4)
-# >extra python-evdev 											# (for building ds4)
-# 
-# 
-# ##Rust
-# >extra rustup                  									# for rust installs
-# #>electron30													# may conflict with electron28 (vscode)
-# 
-# ## hplip
-# >extra hplip              										# for hp printer, it needs hplip-plugin (AUR only) for scanner to work
-# hplip-plugin													# (in my repo) (only aur not chaotic)
-# 
-# ## Optional dependencies for hplip
-# >extra sane             										# for scanner support (it is part of wine)
-# >extra xsane            										# gui for sane (it provides gtk2)
-# >extra python-pillow
-# #>extra python-pip         										# already above
-# >extra python-pyqt5
-# >extra python-reportlab
-# 
-# ## Optional dependencies for okular
-# >extra poppler-data  											# encoding data to display PDF documents containing CJK characters
-# >extra ebook-tools   											# for mobi and epub suport (also for converting ebook formats)
-# 
-# ## Video Downloader dependencies
-# >extra python-brotli
-# >extra python-mutagen
-# >extra python-pycryptodomex
-# >extra python-pyxattr
-# >extra python-websockets
-# 
-# ## Dependencies for micro's plugins
-# >extra ctags
+## Python My additions (for easy aur instal from terminal)
+>extra python-pip            									# for pip3 installs
+>extra python-wheel          									# for pip3 installs
+python-setuptools    											# Already included in defualt install #for pip3 installs
+>extra python-installer
+>extra python-build
+>extra python-pyudev  											# (for building ds4)
+>extra python-evdev 											# (for building ds4)
+
+
+##Rust
+#>extra rustup                  									# for rust installs
+#>electron30													# may conflict with electron28 (vscode)
+
+## hplip
+>extra hplip              										# for hp printer, it needs hplip-plugin (AUR only) for scanner to work
+hplip-plugin													# (in my repo) (only aur not chaotic)
+
+## Optional dependencies for hplip
+#>extra sane             										# for scanner support (it is part of wine)
+#>extra xsane            										# gui for sane (it provides gtk2)
+>extra python-pillow
+#>extra python-pip         										# already above
+>extra python-pyqt5
+>extra python-reportlab
+
+## Optional dependencies for okular
+>extra poppler-data  											# encoding data to display PDF documents containing CJK characters
+>extra ebook-tools   											# for mobi and epub suport (also for converting ebook formats)
+
+## Video Downloader dependencies
+>extra python-brotli
+>extra python-mutagen
+>extra python-pycryptodomex
+>extra python-pyxattr
+>extra python-websockets
+
+## Dependencies for micro's plugins
+>extra ctags
