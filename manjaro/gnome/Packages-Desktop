@@ -358,11 +358,11 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 >extra kooha
 
 webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
-akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
-libuvc															# (chaotic) camera capture for webcamoid
->extra polkit													# (arch) root privilages for virtual camera
+#akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
+#libuvc															# (chaotic) camera capture for webcamoid
+#>extra polkit													# (arch) root privilages for virtual camera
 #>extra v4l-utils												# Extra format support for webcams (part of wine)
->extra v4l2loopback-dkms										# Virtual camera support
+#>extra v4l2loopback-dkms										# Virtual camera support
 
 #### Accesibility
 >extra gnome-pie
