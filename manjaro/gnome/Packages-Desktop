@@ -331,7 +331,7 @@ p7zip-gui														# GUI for p7zip (chaotic aur)
 >extra inkscape
 >extra blender
 >extra gcolor3               									# color picker
->extra darktable
+#>extra darktable
 
 ## Video, Audio and Media-tools
 >extra vlc
@@ -346,7 +346,7 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 >extra projectm-pulseaudio
 >extra projectm-sdl
 >extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
->extra gnome-subtitles
+#>extra gnome-subtitles
 >extra subtitleeditor
 
 ## Media Productivity
@@ -355,9 +355,9 @@ cozy-audiobooks                								# cozy is not in the manjaro repo and arc
 >extra kdenlive
 >extra handbrake
 #>extra ciano               									# minimal video and audio converter
->extra kooha
+#>extra kooha
 
-webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
+#webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
 #akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
 #libuvc															# (chaotic) camera capture for webcamoid
 #>extra polkit													# (arch) root privilages for virtual camera
@@ -365,7 +365,7 @@ webcamoid														# (chaotic) Full featured webcam app, seems beter than ch
 #>extra v4l2loopback-dkms										# Virtual camera support
 
 #### Accesibility
->extra gnome-pie
+#>extra gnome-pie
 
 ## Document Apps
 >extra libreoffice-fresh  										# Office software
@@ -485,14 +485,14 @@ tesseract-data-jpn
 ## Themes
 bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 themechanger-git												# theme changer by alex 11br (in my repo)
-zorin-icon-themes													# (in my repo)
-zorin-desktop-themes													# (in my repo)
+#zorin-icon-themes													# (in my repo)
+#zorin-desktop-themes													# (in my repo)
 
 ## KDE Apps
 >extra kompare
 >extra krename
 >extra kdiff3
->extra kio-extras
+#>extra kio-extras
 #>extra konqueror
 
 ## Gnome Apps
@@ -558,15 +558,15 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 
 
 ## Education
->extra qalculate-gtk
+#>extra qalculate-gtk
 #>extra sagemath
 #>extra sagemath-doc
->extra jupyterlab
->extra jupyterlab-widgets
->extra jupyter-collaboration
->extra npm
->extra jupyter-notebook
->extra labplot
+#>extra jupyterlab
+#>extra jupyterlab-widgets
+#>extra jupyter-collaboration
+#>extra npm
+#>extra jupyter-notebook
+#>extra labplot
 #>extra freecad 												# (use ondsel (based on freecad 0.22) appimage, 0.21 is the version in repo)
 #>extra labplot
 
@@ -714,17 +714,17 @@ systemd-manager-git											# (chaotic) It has the gui for the journal massage
 # vulkan-icd-loader
 
 ## Dependencies for hyper ligth drifter
-lib32-glibc
-lib32-alsa-lib
-lib32-alsa-plugins
-lib32-curl
-lib32-gtk2
-lib32-openal
-lib32-glu
+#lib32-glibc
+#lib32-alsa-lib
+#lib32-alsa-plugins
+#lib32-curl
+#lib32-gtk2
+#lib32-openal
+#lib32-glu
 
 ## Dependencies for undertale
-openssl-1.0													# not in repo, its in aur and chaotic
-#lib32-openssl-1.0												# not in any repo
+#openssl-1.0													# not in repo, its in aur and chaotic
+##lib32-openssl-1.0												# not in any repo
 
 
 ## Python My additions (for easy aur instal from terminal)
