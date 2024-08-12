@@ -327,8 +327,8 @@ p7zip-gui														# GUI for p7zip (chaotic aur)
 ## Art and Graphics design
 >extra gimp
 >extra krita
->extra drawing
->extra inkscape
+#>extra drawing
+#>extra inkscape
 #>extra blender
 >extra gcolor3               									# color picker
 #>extra darktable
@@ -393,11 +393,11 @@ sublime-text-4													# (in aur chaotic)
 >extra stardict
 
 ## wps office
-wps-office                             						# (chaotic aur)
-wps-office-all-dicts-win-languages     						# (chaotic aur)
-wps-office-fonts                       						# (chaotic aur)
-wps-office-mime                        						# (chaotic aur)
-ttf-wps-fonts                          						# (chaotic aur)
+#wps-office                             						# (chaotic aur)
+#wps-office-all-dicts-win-languages     						# (chaotic aur)
+#wps-office-fonts                       						# (chaotic aur)
+#wps-office-mime                        						# (chaotic aur)
+#ttf-wps-fonts                          						# (chaotic aur)
 
 ## libre office optionals
 >extra libpaper
@@ -462,12 +462,12 @@ ocrad
 gimagereader-gtk
 tesseract
 tesseract-data-eng
-tesseract-data-ara
+#tesseract-data-ara
 #tesseract-data-chi_sim
 #tesseract-data-chi_tra
 #tesseract-data-fra
 #tesseract-data-deu
-tesseract-data-jpn
+#tesseract-data-jpn
 
 ## Dictionaries, Spellcheckers, Thesaurus (everything needed by libreoffice and other apps is here)
 >extra aspell
@@ -498,7 +498,7 @@ themechanger-git												# theme changer by alex 11br (in my repo)
 
 ## Gnome Apps
 #>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
-decoder 														# QR code checker  (chaotic)
+#decoder 														# QR code checker  (chaotic)
 #shortwave														# Internet radio (over 30,000 channels) (chaotic)
 
 ## Thumbnailers
@@ -625,7 +625,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 >extra qjournalctl												# gui for journalctl
 #>extra languagetool												# open source language and grammer checker (libreoffice uses it)
 >extra lsof														# list open files for running unix processes
->extra e2fsprogs												# ext2/3/4 file system utilities
+#>extra e2fsprogs												# ext2/3/4 file system utilities
 
 
 ###Disk apps
@@ -636,7 +636,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 
 
 ## System monitor tools
->extra deepin-system-monitor
+#>extra deepin-system-monitor
 system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
 systemd-manager-git											# (chaotic) It has the gui for the journal massages
 
@@ -739,7 +739,7 @@ python-setuptools    											# Already included in defualt install #for pip3 
 
 
 ##Rust
->extra rustup                  									# for rust installs
+#>extra rustup                  									# for rust installs
 #>electron30													# may conflict with electron28 (vscode)
 
 ## hplip
