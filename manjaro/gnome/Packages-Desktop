@@ -161,7 +161,7 @@ gnome-terminal
 gnome-tweaks
 #gnome-usage
 #polari
->extra seahorse
+#>extra seahorse
 #sysprof                           # developer tools
 
 
@@ -226,14 +226,14 @@ qt6ct
 ## Applications
 
 >extra apparmor
->extra collision
+#>extra collision
 #>extra deja-dup
 >extra ffmpegthumbnailer
 >extra ffmpeg-audio-thumbnailer
 firefox
 fprintd                            # needed for fingerprint reader, optional for gdm
 #fwupd                             # required by gnome-firmware, optional for gnome-control-center
->extra fragments
+#>extra fragments
 gnome-browser-connector
 gnome-firmware
 >extra gnome-layout-switcher
@@ -261,7 +261,7 @@ nautilus-empty-file
 #>extra timeshift
 #tlp                               # conflicts with power-profiles-daemon
 >extra touche
->extra webapp-manager
+#>extra webapp-manager
 #xdg-utils                         # already a dependency of anything that requires it
 
 ## Optional dependencies for file-roller
@@ -553,7 +553,7 @@ ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese a
 ## Productivity
 >extra obsidian
 planify														# Not in the repo (in chaotic)
->extra gnome-break-timer
+#>extra gnome-break-timer
 fsearch	           											# no fsearch in the manjaro repo (in aur and chaotic)
 
 
@@ -637,7 +637,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 
 ## System monitor tools
 #>extra deepin-system-monitor
-system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
+#system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
 systemd-manager-git											# (chaotic) It has the gui for the journal massages
 
 
@@ -748,7 +748,7 @@ hplip-plugin													# (in my repo) (only aur not chaotic)
 
 ## Optional dependencies for hplip
 >extra sane             										# for scanner support (it is part of wine)
->extra xsane            										# gui for sane (it provides gtk2)
+#>extra xsane            										# gui for sane (it provides gtk2)
 >extra python-pillow
 #>extra python-pip         										# already above
 >extra python-pyqt5
