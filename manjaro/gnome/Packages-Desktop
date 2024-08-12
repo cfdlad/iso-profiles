@@ -33,13 +33,13 @@ grub-btrfs
 
 ## Fonts
 
-adobe-source-code-pro-fonts       # required by gsettings-desktop-schemas
-adobe-source-han-sans-cn-fonts
-adobe-source-han-sans-hk-fonts
-adobe-source-han-sans-jp-fonts
-adobe-source-han-sans-kr-fonts
-adobe-source-han-sans-otc-fonts
-adobe-source-han-sans-tw-fonts
+#adobe-source-code-pro-fonts       # required by gsettings-desktop-schemas
+#adobe-source-han-sans-cn-fonts
+#adobe-source-han-sans-hk-fonts
+#adobe-source-han-sans-jp-fonts
+#adobe-source-han-sans-kr-fonts
+#adobe-source-han-sans-otc-fonts
+#adobe-source-han-sans-tw-fonts
 adobe-source-sans-fonts
 noto-fonts                         # default font
 >extra noto-fonts-cjk              # Asian fonts, optional for noto-fonts
@@ -58,7 +58,7 @@ ttf-liberation                    # required by firefox
 pamac-gnome-integration
 >extra pamac-flatpak-plugin
 pamac-gtk
->extra pamac-snap-plugin
+#>extra pamac-snap-plugin
 
 
 ## Printing
@@ -88,7 +88,7 @@ gnome-disk-utility
 #gnome-keyring                     # required by xdg-desktop-portal-gnome
 gnome-logs
 >extra gnome-maps
-gnome-menus                       # optional for gnome-shell-extension-arc-menu
+#gnome-menus                       # optional for gnome-shell-extension-arc-menu
 #gnome-music                       # lollypop included instead
 >extra gnome-remote-desktop        # optional for gnome-control-center
 #gnome-session                     # required by gdm & gnome-shell
@@ -127,7 +127,7 @@ sushi
 tracker3-miners
 xdg-desktop-portal-gnome
 xdg-user-dirs-gtk
-yelp                              # required by gnome-user-docs
+#yelp                              # required by gnome-user-docs
 
 
 ## GNOME Extra applications
@@ -149,14 +149,14 @@ gedit                             # using gnome-text-editor for now
 >extra gnome-boxes                 # developer tools
 #gnome-builder                     # developer tools
 #gnome-devel-docs
-gnome-dictionary
+#gnome-dictionary
 #gnome-games
 #gnome-multi-writer
 #gnome-nettool
 #gnome-notes
 #gnome-photos
 #gnome-recipes
-gnome-sound-recorder
+#gnome-sound-recorder
 gnome-terminal
 gnome-tweaks
 #gnome-usage
@@ -208,7 +208,7 @@ gnome-sudoku
 adw-gtk-theme
 bibata-cursor-theme
 gnome-themes-extra                 # optional for gtk2
-gnome-wallpapers
+#gnome-wallpapers
 grub-theme-manjaro
 kvantum-manjaro
 #>extra illyria-wallpaper
