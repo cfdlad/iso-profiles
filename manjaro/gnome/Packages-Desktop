@@ -378,9 +378,9 @@ p7zip-gui														# GUI for p7zip (chaotic aur)
 #>extra foliate													# gtk ebook reader
 >extra neovim
 #>extra code                  									# visual studio code
->extra pandoc-cli
->extra pandoc-crossref
->extra pandoc-plot
+#>extra pandoc-cli
+#>extra pandoc-crossref
+#>extra pandoc-plot
 >extra meld
 #formiko														# not in repo (markdowm editor)
 #apostrophe														# gtk based markdown editor (in aur chinese repo)
@@ -448,8 +448,8 @@ adobe-source-serif-fonts
 #>extra poppler         											# for pdf (recoll)
 ##>extra pstotext         										# for ?? (Not in any repos)
 #>extra python-lxml      										# indexing spread sheets (recoll)
->extra python-mutagen       									# Audio meta data (recoll)
->extra python-pychm   											# for chm filter (recoll)
+#>extra python-mutagen       									# Audio meta data (recoll)
+#>extra python-pychm   											# for chm filter (recoll)
 #>extra unrtf     												# for RTF (recoll)
 
 
@@ -551,7 +551,7 @@ ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese a
 
 
 ## Productivity
->extra obsidian
+#>extra obsidian
 #planify														# Not in the repo (in chaotic)
 #>extra gnome-break-timer
 fsearch	           											# no fsearch in the manjaro repo (in aur and chaotic)
