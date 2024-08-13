@@ -45,7 +45,7 @@ noto-fonts                         # default font
 >extra noto-fonts-cjk              # Asian fonts, optional for noto-fonts
 >extra noto-fonts-emoji            # required by gnome-characters, optional for noto-fonts
 >extra noto-fonts-extra            # additional languages, optional for noto-fonts
-#ttf-dejavu                        # required by firefox
+ttf-875222                        # required by firefox
 #ttf-droid                         # required by firefox
 ttf-hack                           # default monspace font
 ttf-inconsolata
@@ -301,7 +301,7 @@ xorg-server                        # required by gdm
 
 ################## My Additions ##################
 
->extra nautilus-admin
+#>extra nautilus-admin                  # already included above by manjaro
 extension-manager												# (chaotic aur) #for downloading new extensions without using firefox extension plugin
 #>extra gtk2														# just incase
 zsh-autocomplete												# (in my repo)
@@ -322,7 +322,7 @@ zsh-autocomplete												# (in my repo)
 
 
 ## Archive Tools
-#p7zip-gui														# GUI for p7zip (chaotic aur)								
+p7zip-gui														# GUI for p7zip (chaotic aur)								
 
 ## Art and Graphics design
 #>extra gimp
@@ -378,9 +378,9 @@ zsh-autocomplete												# (in my repo)
 #>extra foliate													# gtk ebook reader
 >extra neovim
 #>extra code                  									# visual studio code
-#>extra pandoc-cli
-#>extra pandoc-crossref
-#>extra pandoc-plot
+>extra pandoc-cli
+>extra pandoc-crossref
+>extra pandoc-plot
 >extra meld
 #formiko														# not in repo (markdowm editor)
 #apostrophe														# gtk based markdown editor (in aur chinese repo)
