@@ -371,8 +371,8 @@ p7zip-gui														# GUI for p7zip (chaotic aur)
 >extra libreoffice-fresh  										# Office software
 >extra okular
 >extra gedit-plugins
-#metagedit-git                            # (in my repo)
-#python-iso639                            # (in my repo)
+metagedit-git                            # (in my repo)
+python-iso639                            # (in my repo)
 >extra pdfarranger
 >extra pdfcrack
 >extra kate
@@ -543,7 +543,7 @@ ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese a
 >extra qbittorrent
 #>extra clipgrab            									# gui yt download
 >extra persepolis          										# gui download manager for aria2
-#xdman                                         # downloader manager (in my repo)
+xdman                                         # downloader manager (in my repo)
 
 #### Firewall
 >extra opensnitch
