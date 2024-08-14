@@ -542,7 +542,7 @@ ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese a
 >extra axel                										# download accelerator (cli)
 >extra qbittorrent
 #>extra clipgrab            									# gui yt download
->extra persepolis          										# gui download manager for aria2
+#>extra persepolis          										# gui download manager for aria2
 xdman                                         # downloader manager (in my repo)
 
 #### Firewall
