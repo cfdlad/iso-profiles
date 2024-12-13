@@ -1,0 +1,17 @@
+## To extract appimage
+./gedit-x86_64.AppImage --appimage-extract
+
+
+## To repackage
+./appimagetool -n 'path to extracted appimage folder'
+
+## Eg
+
+## Note the extracted folder can be named any thing eg "squashfs-root"
+./appimagetool -n '/home/manjaro/Downloads/arch2appimage/out/squashfs-root'
+
+## OR
+
+
+## Note: Where gedit.AppDir is the name of the extracted folder
+./appimagetool -n '/home/manjaro/Downloads/arch2appimage/out/gedit.AppDir'

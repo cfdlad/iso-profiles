@@ -1,0 +1,8 @@
+{
+    "filemanager2.nerdfonts": true,
+    "filemanager2.openonstart": true,
+    "fzfarg": "--height 100% --preview 'bat -f --line-range :5000 {}'",
+    "fzfcmd": "/usr/bin/fzf",
+    "fzfopen": "newtab",
+    "fzfpath": "relative"
+}

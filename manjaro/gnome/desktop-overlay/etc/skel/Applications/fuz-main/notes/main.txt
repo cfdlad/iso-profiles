@@ -1,0 +1,32 @@
+## main.txt ##
+
+__your notes here__
+
+
+__less hotkeys__
+u   # Move up (half-page)
+d   # Move down (half-page)
+G   # Go to end
+g   # Go to start
+/   # Search within file
+q   # Quit
+
+
+__Vim hotkeys and commands__
+<Escape>  # Exit insert mode
+i         # Insert mode, can enter text
+:q!       # Quit forcibly
+:wq       # Write and quit
+Ctrl + r  # Select text
+Ctrl + d  # Down
+Ctrl + u  # Up
+G         # Go to end
+g         # Go to start
+/         # Search within file
+
+
+__terminal select and copy text__
+Select and copy text: Ctrl + r
+Use again to return to normal terminal interaction
+# Alternative
+Select text -> middle mouse button to paste (mouse wheel click)

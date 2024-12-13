@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=0.8.7
+Name=Nethogs
+GenericName=Network Trafic Monitor
+Comment=Shows Network Trafic Per Application
+Icon=utilities-terminal
+Exec=pkexec nethogs
+Terminal=true
+Categories=System;Monitor;ConsoleOnly;
+Keywords=network;trafic;monitor;system;process;task

@@ -1,0 +1,16 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=/run/media/manjaro/usb16/Documents/Aisha Dada Final Project.pdf
+Name1[$e]=Aisha Dada Final Project.pdf
+
+[UiSettings]
+ColorScheme=Kvantum

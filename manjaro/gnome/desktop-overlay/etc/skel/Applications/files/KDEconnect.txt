@@ -1,0 +1,8 @@
+Host 192.168.*.*
+	HostKeyAlgorithms +ssh-rsa
+	
+	
+Add above to
+/etc/ssh/ssh_config
+for ability to mount the phone file system and make it appear in nuatilus  
+

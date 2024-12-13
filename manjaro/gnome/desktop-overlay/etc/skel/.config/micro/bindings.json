@@ -1,0 +1,17 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "Alt-h": "command:hsplit",
+    "Alt-j": "lua:joinLines.joinLines",
+    "Alt-t": "command:tree",
+    "Alt-v": "command:vsplit",
+    "Alt-z": "command:fzfinder",
+    "CtrlP": "command:palettero",
+    "CtrlSpace": "command:palettero",
+    "CtrlUnderscore": "lua:comment.comment",
+    "F1": "command:cheat",
+    "F12": "command:makeup",
+    "F4": "command:jumptag",
+    "F5": "command:runit",
+    "F6": "lua:wc.wordCount",
+    "F9": "command:makeupbg"
+}

@@ -1,0 +1,70 @@
+Extract micro.zip in ~/.config
+
+micro-fzf: is now working (2021 archived forked ver.)
+I changed the name to fzf in the 'repo.json' file and removed that comma ',' hanging on line 14 or is it 15 of the 'repo.json' file
+NOTE: Its zip file is == micro-fzf.zip
+
+micro-fzf-plugin: not working (it is the original 2019 archived ver.)
+NOTE: Its zip file is == micro-fzf-plugin---the_other_version_(not_working).zip
+
+
+## Keybindings (main)
+Press 'Crtl+e' to get to the micro terminal
+Press Crtl+q to close extra windows and to quit
+Press Alt+g for the other keybindings
+
+
+## Micro-fzf (ordinary fzf)
+Press 'Crtl+e' to get to the micro terminal
+Use 'f' in the terminal to call fzf
+Use 'fv' in the terminal to run fzf and then open the selected file in a vertical split in the current tab
+Use 'fh' in the terminal to run fzf and then open the selected file in a horizontal split in the current tab
+Use 'ff' in the terminal to run 'grep --line-buffered -rnwi {pattern} * | fzf' (pattern not working)
+Press 'esc' to exit fzf
+Use 'help fzf' in the terminal to bring up fzf help in micro's terminal
+Press Crtl+Q to close extra windows
+
+
+## Micro-fzfinder-0.2.0 (like fuz)
+Press 'Alt+z' to call fzf with preview window just like fuz
+Press 'esc' to exit fzf
+Press Crtl+Q to close extra windows
+
+
+
+## Filemanager2
+Press 'Crtl+e' to get to the micro terminal
+Use 'tree' to bring up the tree view panel
+Press 'Tab' to open a file, or go into the directory. (Goes back a dir if on)
+Press 'MouseLeft' to select a file, then 'Tab' to enter
+Press 'Arrow forward' to expand dir listing
+Press 'Arrow backward' to collapse dir listing
+Press 'Shift up' to go to the target’s parent directory
+Use 'rm' to prompt to delete the target file/directory your cursor is on
+USe 'rename' to rename the file/directory your cursor is on, using the passed name
+Use 'touch' to make a new file under/into the file/directory your cursor is on, using the passed name
+USe 'mkdir' to make a new directory under/into the file/directory your cursor is on, using the passed name
+Press Crtl+Q to close extra windows
+
+
+## Some usefull keybindings (like the cheat pluging and joinlines)
+Press "Alt-z": "command:fzfinder",
+Press "Alt-/": "lua:comment.comment",
+Press "Alt-j": "lua:joinLines.joinLines",
+Press "CtrlUnderscore": "lua:comment.comment",
+Press "F1": "command:cheat"
+
+
+## Micro Help
+Press 'Crtl+e' to get to the micro terminal
+Use 'help' for the main help page  in micro's terminal
+Use 'help plugins' for the plugins help page  in micro's terminal
+Use 'help options' for the options help page  in micro's terminal
+Use 'help keybindings' for the keybindings help page  in micro's terminal
+Press Crtl+Q to close extra windows
+
+
+## Tillix or Gnome terminal commands (Dont use inside micro)
+Use 'micro -plugin list' in gnome's terminal or tillix to get a list of plugins installed
+Use 'micro -help' in gnome's terminal or tillix to get help
+Use 'micro -plugin available' to list available plugins for download from the main repo on github

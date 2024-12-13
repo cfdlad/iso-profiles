@@ -1,0 +1,523 @@
+# mpv keybindings
+#
+# Location of user-defined bindings: ~/.config/mpv/input.conf
+#
+# Lines starting with # are comments. Use SHARP to assign the # key.
+# Copy this file and uncomment and edit the bindings you want to change.
+#
+# List of commands and further details: DOCS/man/input.rst
+# List of special keys: --input-keylist
+# Keybindings testing mode: mpv --input-test --force-window --idle
+#
+# Use 'ignore' to unbind a key fully (e.g. 'ctrl+a ignore').
+#
+# Strings need to be quoted and escaped:
+#   KEY show-text "This is a single backslash: \\ and a quote: \" !"
+#
+# You can use modifier-key combinations like Shift+Left or Ctrl+Alt+x with
+# the modifiers Shift, Ctrl, Alt and Meta (may not work on the terminal).
+#
+# The default keybindings are hardcoded into the mpv binary.
+# You can disable them completely with: --no-input-default-bindings
+
+# Developer note:
+# On compilation, this file is baked into the mpv binary, and all lines are
+# uncommented (unless '#' is followed by a space) - thus this file defines the
+# default key bindings.
+
+# If this is enabled, treat all the following bindings as default.
+#default-bindings start
+
+#MBTN_LEFT     ignore              # don't do anything
+#MBTN_LEFT_DBL cycle fullscreen    # toggle fullscreen
+#MBTN_RIGHT    cycle pause         # toggle pause/playback mode
+#MBTN_BACK     playlist-prev       # skip to the previous file
+#MBTN_FORWARD  playlist-next       # skip to the next file
+
+# Mouse wheels, touchpad or other input devices that have axes
+# if the input devices supports precise scrolling it will also scale the
+# numeric value accordingly
+#WHEEL_UP      seek 5          # seek 10 seconds forward
+#WHEEL_DOWN    seek -5         # seek 10 seconds backward
+#WHEEL_LEFT    add volume -2
+#WHEEL_RIGHT   add volume 2
+
+## Seek units are in seconds, but note that these are limited by keyframes
+#RIGHT seek  5                          # seek 5 seconds forward
+#LEFT  seek -5                          # seek 5 seconds backward
+#UP    seek  60                         # seek 1 minute forward
+#DOWN  seek -60                         # seek 1 minute backward
+# Do smaller, always exact (non-keyframe-limited), seeks with shift.
+# Don't show them on the OSD (no-osd).
+#Shift+RIGHT no-osd seek  1 exact       # seek exactly 1 second forward
+#Shift+LEFT  no-osd seek -1 exact       # seek exactly 1 second backward
+#Shift+UP    no-osd seek  5 exact       # seek exactly 5 seconds forward
+#Shift+DOWN  no-osd seek -5 exact       # seek exactly 5 seconds backward
+#Ctrl+LEFT   no-osd sub-seek -1         # seek to the previous subtitle
+#Ctrl+RIGHT  no-osd sub-seek  1         # seek to the next subtitle
+#Ctrl+Shift+LEFT sub-step -1            # change subtitle timing such that the previous subtitle is displayed
+#Ctrl+Shift+RIGHT sub-step 1            # change subtitle timing such that the next subtitle is displayed
+#Alt+left  add video-pan-x  0.1         # move the video right
+#Alt+right add video-pan-x -0.1         # move the video left
+#Alt+up    add video-pan-y  0.1         # move the video down
+#Alt+down  add video-pan-y -0.1         # move the video up
+#Alt++     add video-zoom   0.1         # zoom in
+#Alt+-     add video-zoom  -0.1         # zoom out
+#Alt+BS set video-zoom 0 ; set video-pan-x 0 ; set video-pan-y 0 # reset zoom and pan settings
+#PGUP add chapter 1                     # seek to the next chapter
+#PGDWN add chapter -1                   # seek to the previous chapter
+#Shift+PGUP seek 600                    # seek 10 minutes forward
+#Shift+PGDWN seek -600                  # seek 10 minutes backward
+#[ multiply speed 1/1.1                 # decrease the playback speed
+#] multiply speed 1.1                   # increase the playback speed
+#{ multiply speed 0.5                   # halve the playback speed
+#} multiply speed 2.0                   # double the playback speed
+#BS set speed 1.0                       # reset the speed to normal
+#Shift+BS revert-seek                   # undo the previous (or marked) seek
+#Shift+Ctrl+BS revert-seek mark         # mark the position for revert-seek
+#q quit
+Q quit-watch-later                     # exit and remember the playback position
+#q {encode} quit 4
+#ESC set fullscreen no                  # leave fullscreen
+#ESC {encode} quit 4
+#p cycle pause                          # toggle pause/playback mode
+#. frame-step                           # advance one frame and pause
+#, frame-back-step                      # go back by one frame and pause
+#SPACE cycle pause                      # toggle pause/playback mode
+#> playlist-next                        # skip to the next file
+#ENTER playlist-next                    # skip to the next file
+#< playlist-prev                        # skip to the previous file
+#O no-osd cycle-values osd-level 3 1    # toggle displaying the OSD on user interaction or always
+#o show-progress                        # show playback progress
+#P show-progress                        # show playback progress
+#i script-binding stats/display-stats   # display information and statistics
+#I script-binding stats/display-stats-toggle # toggle displaying information and statistics
+#` script-binding console/enable        # open the console
+#z add sub-delay -0.1                   # shift subtitles 100 ms earlier
+#Z add sub-delay +0.1                   # delay subtitles by 100 ms
+#x add sub-delay +0.1                   # delay subtitles by 100 ms
+#ctrl++ add audio-delay 0.100           # change audio/video sync by delaying the audio
+#ctrl+- add audio-delay -0.100          # change audio/video sync by shifting the audio earlier
+#Shift+g add sub-scale +0.1             # increase the subtitle font size
+#Shift+f add sub-scale -0.1             # decrease the subtitle font size
+#9 add volume -2
+#/ add volume -2
+#0 add volume 2
+#* add volume 2
+#m cycle mute                           # toggle mute
+#1 add contrast -1
+#2 add contrast 1
+#3 add brightness -1
+#4 add brightness 1
+#5 add gamma -1
+#6 add gamma 1
+#7 add saturation -1
+#8 add saturation 1
+#Alt+0 set current-window-scale 0.5     # halve the window size
+#Alt+1 set current-window-scale 1.0     # reset the window size
+#Alt+2 set current-window-scale 2.0     # double the window size
+#d cycle deinterlace                    # toggle the deinterlacing filter
+#r add sub-pos -1                       # move subtitles up
+#R add sub-pos +1                       # move subtitles down
+#t add sub-pos +1                       # move subtitles down
+#v cycle sub-visibility                 # hide or show the subtitles
+#Alt+v cycle secondary-sub-visibility   # hide or show the secondary subtitles
+#V cycle sub-ass-vsfilter-aspect-compat # toggle stretching SSA/ASS subtitles with anamorphic videos to match the historical renderer
+#u cycle-values sub-ass-override "force" "no" # toggle overriding SSA/ASS subtitle styles with the normal styles
+#j cycle sub                            # switch subtitle track
+#J cycle sub down                       # switch subtitle track backwards
+#SHARP cycle audio                      # switch audio track
+#_ cycle video                          # switch video track
+#T cycle ontop                          # toggle placing the video on top of other windows
+#f cycle fullscreen                     # toggle fullscreen
+#s screenshot                           # take a screenshot of the video in its original resolution with subtitles
+#S screenshot video                     # take a screenshot of the video in its original resolution without subtitles
+#Ctrl+s screenshot window               # take a screenshot of the window with OSD and subtitles
+#Alt+s screenshot each-frame            # automatically screenshot every frame; issue this command again to stop taking screenshots
+#w add panscan -0.1                     # decrease panscan
+#W add panscan +0.1                     # shrink black bars by cropping the video
+#e add panscan +0.1                     # shrink black bars by cropping the video
+#A cycle-values video-aspect-override "16:9" "4:3" "2.35:1" "-1" # cycle the video aspect ratio ("-1" is the container aspect)
+#POWER quit
+#PLAY cycle pause                       # toggle pause/playback mode
+#PAUSE cycle pause                      # toggle pause/playback mode
+#PLAYPAUSE cycle pause                  # toggle pause/playback mode
+#PLAYONLY set pause no                  # unpause
+#PAUSEONLY set pause yes                # pause
+#STOP quit
+#FORWARD seek 60                        # seek 1 minute forward
+#REWIND seek -60                        # seek 1 minute backward
+#NEXT playlist-next                     # skip to the next file
+#PREV playlist-prev                     # skip to the previous file
+#VOLUME_UP add volume 2
+#VOLUME_DOWN add volume -2
+#MUTE cycle mute                        # toggle mute
+#CLOSE_WIN quit
+#CLOSE_WIN {encode} quit 4
+#ctrl+w quit
+#E cycle edition                        # switch edition
+#l ab-loop                              # set/clear A-B loop points
+#L cycle-values loop-file "inf" "no"    # toggle infinite looping
+#ctrl+c quit 4
+#DEL script-binding osc/visibility      # cycle OSC visibility between never, auto (mouse-move) and always
+#ctrl+h cycle-values hwdec "auto-safe" "no"  # toggle hardware decoding
+#F8 show-text ${playlist}               # show the playlist
+#F9 show-text ${track-list}             # show the list of video, audio and sub tracks
+
+#
+# Legacy bindings (may or may not be removed in the future)
+#
+#! add chapter -1                       # seek to the previous chapter
+#@ add chapter 1                        # seek to the next chapter
+
+#
+# Not assigned by default
+# (not an exhaustive list of unbound commands)
+#
+
+# ? cycle sub-forced-only               # toggle DVD forced subs
+# ? stop                                # stop playback (quit or enter idle mode)
+
+
+
+
+#######################################################################
+# My Stuff | Everything below is added code | Uncomment what you need #
+#######################################################################
+
+# Used to toggle the window border on or off
+b cycle_values border no yes
+
+# Right mouse button to bring up uosc menu
+MBTN_RIGHT    script-binding uosc/menu         # toggle pause/playback mode
+
+# Middle mouse button to pause
+MBTN_MID      cycle pause         # toggle pause/playback mode
+
+# Seek by exactly 5s instead of relative+keyframes 10s
+RIGHT seek  5 exact            	# forward
+LEFT  seek -5 exact            	# backward
+WHEEL_UP      seek  5 exact    	# forward
+WHEEL_DOWN    seek -5 exact    	# backward
+
+# Seek by exactly 30s instead of relative+keyframes 60s
+UP    seek  30 exact           	# forward
+DOWN  seek -30 exact           	# backward
+
+# For memo-history
+#! History			# to enable the memo history button to appear
+h script-binding memo-history	# keybinding to bring up the history
+H script-binding memo-log	# keybinding to manually log the history
+Alt+h script-message memo-dirs  # Keybinding to show dirs where the files recorded in history are kept
+
+# For metadata osd
+F1 script-binding metadata_osd/toggleenable
+F5 script-binding metadata_osd/toggleautohide
+#<unassigned> script-binding metadata_osd/toggleosd_1
+#<unassigned> script-binding metadata_osd/toggleosd_2
+F6 script-binding metadata_osd/reset_usertoggled
+#<unassigned> script-binding metadata_osd/showstatusosd
+
+# For uosc
+tab script-message-to uosc toggle-elements timeline,top_bar,controls
+
+#-- Top Boys menu --------------------------------------------------------------------------------------------------------------------------#
+#       ignore
+
+#-- File menu --------------------------------------------------------------------------------------------------------------------------#
+
+#       script-message-to uosc open-file                                                                                                    #menu: File > Open File
+#       script-message-to uosc video                                                                                                        #menu: File > Open Video File
+#       script-message-to uosc audio                                                                                                        #menu: File > Open Audio File
+#       script-message-to uosc playlist                                                                                                     #menu: File > Playlist Menu
+h       script-binding memo-history                                                                                                         #menu: File > History Menu
+Alt+h   script-message memo-dirs                                                                                                            #menu: File > History Directory List
+#       script-message-to uosc show-in-directory                                                                                            #menu: File > Open Current Directory
+#       script-message-to uosc open-config-directory                                                                                        #menu: File > Open Configuration Directory
+q       quit					                                                                                                            #menu: File > Quit
+
+
+#-- Playback menu --------------------------------------------------------------------------------------------------------------------------#
+
+# cycle pause                                                                                                                               #menu: Playback > Play/Pause
+# script-message-to uosc next                                                                                                               #menu: Playback > Next
+# script-message-to uosc prev                                                                                                               #menu: Playback > Previous
+# stop                                                                                                                                      #menu: Playback > Stop
+
+# script-message-to uosc playlist                                                                                                           #menu: Playback > Loop & Shuffle > View Playlist
+# cycle-values loop-playlist "inf" "no"; script-message-to uosc flash-elements controls,top_bar                                             #menu: Playback > Loop & Shuffle > Loop Playlist
+# script-message-to uosc shuffle; script-message-to uosc flash-elements controls,top_bar                                                    #menu: Playback > Loop & Shuffle > Suhffle Playlist
+# cycle-values loop-file "inf" "no"; script-message-to uosc flash-elements controls,top_bar                                                 #menu: Playback > Loop & Shuffle > Loop Current File
+# ab_loop                                                                                                                                   #menu: Playback > Loop & Shuffle > A-B Loop Current File
+
+# script-message-to uosc chapters                                                                                                           #menu: Playback > Chapters & Editions > Chapters
+# no-osd add chapter -1; script-binding uosc/flash-timeline                                                                                 #menu: Playback > Chapters & Editions > Previous Chapter
+# no-osd add chapter +1; script-binding uosc/flash-timeline                                                                                 #menu: Playback > Chapters & Editions > Next Chapter
+# script-message-to uosc editions                                                                                                           #menu: Playback > Chapters & Editions > Editions
+
+
+# no-osd add      speed -0.1; script-message-to uosc flash-speed                                                                            #menu: Playback > Plaback Speed > Slow Down (10%)
+# no-osd add      speed  0.1; script-message-to uosc flash-speed                                                                            #menu: Playback > Plaback Speed > Speed Up (10%)
+# no-osd multiply speed  0.5; script-message-to uosc flash-speed                                                                            #menu: Playback > Plaback Speed > Half Speed
+# no-osd multiply speed  2.0; script-message-to uosc flash-speed                                                                            #menu: Playback > Plaback Speed > Double Speed
+# no-osd set speed +1;   script-binding uosc/flash-speed                                                                                    #menu: Playback > Plaback Speed > Reset Speed
+
+# no-osd seek +1 exact; script-binding uosc/flash-timeline                                                                                  #menu: Playback > Seek (Time based) > +1s  (Forward)
+# no-osd seek -1 exact; script-binding uosc/flash-timeline                                                                                  #menu: Playback > Seek (Time based) > -1s  (Backward)
+# no-osd seek +5; script-binding uosc/flash-timeline                                                                                        #menu: Playback > Seek (Time based) > +5s  (Forward)
+# no-osd seek -5; script-binding uosc/flash-timeline                                                                                        #menu: Playback > Seek (Time based) > -5s  (Backward)
+# no-osd seek +60; script-binding uosc/flash-timeline                                                                                       #menu: Playback > Seek (Time based) > +60s (Forward)
+# no-osd seek -60; script-binding uosc/flash-timeline                                                                                       #menu: Playback > Seek (Time based) > -60s (Backward)
+
+# frame-back-step                                                                                                                           #menu: Playback > Seek (Frame & Subtitle) > Previous Frame
+# frame-step                                                                                                                                #menu: Playback > Seek (Frame & Subtitle) > Next Frame
+# no-osd sub-seek -1; script-binding uosc/flash-timeline                                                                                    #menu: Playback > Seek (Frame & Subtitle) > Previous Subtitle
+# no-osd sub-seek +1; script-binding uosc/flash-timeline                                                                                    #menu: Playback > Seek (Frame & Subtitle) > Next Subtitle
+# no-osd revert-seek mark; show-text "Seek position marked"; script-binding uosc/flash-timeline                                             #menu: Playback > Seek (Frame & Subtitle) > Set Seek Mark
+# no-osd revert-seek; script-binding uosc/flash-timeline                                                                                    #menu: Playback > Seek (Frame & Subtitle) > Revert Seek Mark
+
+
+
+
+
+#-- Video menu --------------------------------------------------------------------------------------------------------------------------#
+
+# set video-aspect-override "-1";show-text "Aspect ratio:${video-aspect-override}"                                                          #menu: Video > Aspect Ratio > Default
+# set video-aspect-override "16:9";show-text "Aspect ratio:${video-aspect-override}"                                                        #menu: Video > Aspect Ratio > 16:9
+# set video-aspect-override "4:3";show-text "Aspect ratio:${video-aspect-override}"                                                         #menu: Video > Aspect Ratio > 4:3
+# set video-aspect-override "2.35:1";show-text "Aspect ratio:${video-aspect-override}"                                                      #menu: Video > Aspect Ratio > 2.35:1
+# cycle-values video-aspect-override 16:9 4:3 2.35:1 -1;show-text "Aspect ratio:${video-aspect-override}"                                   #menu: Video > Aspect Ratio > Cycle
+
+# cycle-values video-rotate 0 270 180 90;show-text "Video rotation:${video-rotate}"                                                         #menu: Video > Rotate > Rotate Anti-Clockwise
+# cycle-values video-rotate 0 90 180 270;show-text "Video rotation:${video-rotate}"                                                         #menu: Video > Rotate > Rotate Clockwise
+# vf toggle vflip                                                                                                                           #menu: Video > Rotate > Flip Vertical
+# vf toggle hflip                                                                                                                           #menu: Video > Rotate > Flip Horizontal
+# set video-rotate 0                                                                                                                        #menu: Video > Rotate > Reset Rotate
+
+# add window-scale  0.1;show-text "Window scale up:${window-scale}"                                                                         #menu: Video > Scale (Window) > Up (+10%)
+# add window-scale -0.1;show-text "Window scale down:${window-scale}"                                                                       #menu: Video > Scale (Window) > Down (-10%)
+# set window-scale 0.25                                                                                                                     #menu: Video > Scale (Window) > 25%
+# set window-scale 0.50                                                                                                                     #menu: Video > Scale (Window) > 50%
+# set window-scale 0.80                                                                                                                     #menu: Video > Scale (Window) > 80%
+# set window-scale 1.00                                                                                                                     #menu: Video > Scale (Window) > 100%
+# set window-scale 1.25                                                                                                                     #menu: Video > Scale (Window) > 125%
+# set window-scale 1.50                                                                                                                     #menu: Video > Scale (Window) > 150%
+# set window-scale 2.00Scale > 200%
+# add video-zoom   -0.1;show-text "Video zoom out:${video-zoom}"                                                                            #menu: Video > Pan > Zoom Out
+# add video-zoom    0.1;show-text "Video zoom in:${video-zoom}"                                                                             #menu: Video > Pan > Zoom In
+# add video-pan-x  -0.1;show-text "Pan left:${video-pan-x}"                                                                                 #menu: Video > Pan > Pan Left
+# add video-pan-x   0.1;show-text "Pan right:${video-pan-x}"                                                                                #menu: Video > Pan > Pan Right
+# add video-pan-y  -0.1;show-text "Pan up:${video-pan-y}"                                                                                   #menu: Video > Pan > Pan Up
+# add video-pan-y   0.1;show-text "Pan down:${video-pan-y}"                                                                                 #menu: Video > Pan > Pan Down
+# cycle-values panscan 0.0 1.0;show-text "Pan and scan:${panscan}"                                                                          #menu: Video > Pan > Toggle Pan and Scan        #@state=(panscan and 'checked')
+
+# add contrast -1;show-text "Contrast:${contrast}"                                                                                          #menu: Video > Adjust > Contrast -1
+# add contrast  1;show-text "Contrast:${contrast}"                                                                                          #menu: Video > Adjust > Contrast +1
+# add brightness -1;show-text "Brightness:${brightness}"                                                                                    #menu: Video > Adjust > Brightness -1
+# add brightness  1;show-text "Brightness:${brightness}"                                                                                    #menu: Video > Adjust > Brightness +1
+# add gamma -1;show-text "Gamma:${gamma}"                                                                                                   #menu: Video > Adjust > Gamma -1
+# add gamma  1;show-text "Gamma:${gamma}"                                                                                                   #menu: Video > Adjust > Gamma +1
+# add saturation -1;show-text "Saturation:${saturation}"                                                                                    #menu: Video > Adjust > Saturation -1
+# add saturation  1;show-text "Saturation:${saturation}"                                                                                    #menu: Video > Adjust > Saturation +1
+# add hue -1;show-text "Hue:${hue}"                                                                                                         #menu: Video > Adjust > Hue -1
+# add hue  1;show-text "Hue:${hue}"                                                                                                         #menu: Video > Adjust > Hue +1
+# set contrast 0;set brightness 0;set gamma 0;set saturation 0;set hue 0;show-text "Reset adjustments"                                      #menu: Video > Adjust > Reset
+
+# cycle deband;show-text "Debanding:${deband}"                                                                                              #menu: Video > Deband > Toggle Deband    #@state=(deband and 'checked')
+# add   deband-iterations +1;show-text "Increase deband intensity:${deband-iterations}"                                                     #menu: Video > Deband > Increase Deband Intensity
+# add   deband-iterations -1;show-text "Decrease deband intensity:${deband-iterations}"                                                     #menu: Video > Deband > Decrease Deband Intensity
+
+# cycle interpolation;show-text "Interpolation: ${interpolation}"                                                                           #menu: Video > Toggle Interpolation              #@state=(interpolation and 'checked')
+# cycle deinterlace;show-text "Deinterlace: ${deinterlace}"                                                                                 #menu: Video > Toggle Deinterlace                #@state=(deinterlace and 'checked')
+# set video-zoom 0;set panscan 0;set video-rotate 0;set video-pan-x 0;set video-pan-y 0;set video-aspect-override -1;show-text "Reset video operations"     #menu: Video > Reset Video Operations
+
+
+
+
+
+
+
+#-- Audio menu --------------------------------------------------------------------------------------------------------------------------#
+
+#  script-message-to uosc audio-device                                                                                                      #menu: Audio > Audio Device List                #@audio-devices
+#  ignore                                                                                                                                   #menu: Audio > ---
+#  cycle audio;show-text "Audio Track: ${audio}"                                                                                            #menu: Audio > Switch Audio Track
+#  cycle mute;show-text "Mute: ${mute}"                                                                                                     #menu: Audio > Toggle Mute                      #@state=(mute and 'checked')
+#  ignore                                                                                                                                   #menu: Audio > ---
+#  no-osd add volume -5; script-binding uosc/flash-volume                                                                                   #menu: Audio > Volume > Decrease (-5)
+#  no-osd add volume +5; script-binding uosc/flash-volume                                                                                   #menu: Audio > Volume > Increase (+5)
+#  no-osd add volume -20; script-binding uosc/flash-volume                                                                                  #menu: Audio > Volume > Decrease (-20)
+#  no-osd add volume +20; script-binding uosc/flash-volume                                                                                  #menu: Audio > Volume > Increase (+20)
+#  no-osd add volume -50; script-binding uosc/flash-volume                                                                                  #menu: Audio > Volume > Decrease (-50)
+#  no-osd add volume +50; script-binding uosc/flash-volume                                                                                  #menu: Audio > Volume > Increase (+50)
+
+#  add audio-delay -0.1;show-text "Audio Delay: ${audio-delay}"                                                                             #menu: Audio > Delay > Delay -0.1s  (100ms)
+#  add audio-delay 0.1;show-text "Audio Delay: ${audio-delay}"                                                                              #menu: Audio > Delay > Delay +0.1s  (100ms)
+#  add audio-delay -0.5;show-text "Audio Delay: ${audio-delay}"                                                                             #menu: Audio > Delay > Delay -0.5s  (500ms)
+#  add audio-delay 0.5;show-text "Audio Delay: ${audio-delay}"                                                                              #menu: Audio > Delay > Delay +0.5s  (500ms)
+#  add audio-delay -1.0;show-text "Audio Delay: ${audio-delay}"                                                                             #menu: Audio > Delay > Delay -1s    (1000ms)
+#  add audio-delay 1.0;show-text "Audio Delay: ${audio-delay}"                                                                              #menu: Audio > Delay > Delay +1s    (1000ms)
+#  set audio-delay 0;show-text "Reset Audio Delay: ${audio-delay}"                                                                          #menu: Audio > Delay > Reset Delay
+#  ignore                                                                                                                                   #menu: Audio > ---
+#  cycle audio-normalize-downmix;show-text "Audio Normalize: ${audio-normalize-downmix}"                                                    #menu: Audio > Modes > Toggle Normalize Audio           #@state=(audio_normalize_downmix and 'checked')
+#  cycle audio-exclusive;show-text "Exclusive Mode: ${audio-exclusive}"                                                                     #menu: Audio > Modes > Toggle Exclusive Mode            #@state=(audio_exclusive and 'checked')
+#  cycle hr-seek-framedrop;show-text "Sync Mode: ${hr-seek-framedrop}"                                                                      #menu: Audio > Modes > Toggle Sync Mode                 #@state=(hr_seek_framedrop and 'checked')
+#  cycle audio-pitch-correction                                                                                                             #menu: Audio > Modes > Toggle Pitch Correction
+
+#  set audio-channels "7.1";show-text "Audio Channels: ${audio-channels}"                                                                   #menu: Audio > Audio Channels > 7.1
+#  set audio-channels "5.1";show-text "Audio Channels: ${audio-channels}"                                                                   #menu: Audio > Audio Channels > 5.1
+#  set audio-channels "stereo";show-text "Audio Channels: ${audio-channels}"                                                                #menu: Audio > Audio Channels > Stereo
+#  set audio-channels "7.1,5.1,stereo";show-text "Audio Channels: ${audio-channels}"                                                        #menu: Audio > Audio Channels > Auto Select
+#  cycle-values audio-channels "7.1,5.1,stereo" "7.1" "5.1" "stereo" "auto-safe" "auto";show-text "Audio Channels: ${audio-channels}"       #menu: Audio > Audio Channels > Cycle
+
+#  cycle-values af "@dynaudnorm:lavfi=[dynaudnorm=g=5:f=250:r=0.9:p=0.5]" "@loudnorm:lavfi=[loudnorm=I=-16:TP=-3:LRA=4]" ""                 #menu: Audio > Toggle Downmix Filter
+#  af clr ""                                                                                                                                #menu: Audio > Clear af Filters
+
+
+
+
+#-- Subtitles menu --------------------------------------------------------------------------------------------------------------------------#
+
+# script-message-to uosc subtitles                                                                                                          #menu: Subtitles > Select
+# cycle sub;show-text "Subtitle Track: ${sub}"                                                                                              #@menu: Subtitles > Switch Subtitle
+# cycle sub-visibility;show-text "Subtitle Visibility: ${sub-visibility}"                                                                   #menu: Subtitles > Visibility  #@state=(sub_visibility and 'checked')
+
+# add sub-pos -1;show-text "Move Subtitles Up:${sub-pos}"                                                                                   #menu: Subtitles > Size & Position > Move Subtitle Up
+# add sub-pos +1;show-text "Move Subtitles Down:${sub-pos}"                                                                                 #menu: Subtitles > Size & Position > Move Subtitle Down
+# add sub-scale -0.1;show-text "Shrink Subtitles:${sub-scale}"                                                                              #menu: Subtitles > Size & Position > Font Size -0.1
+# add sub-scale  0.1;show-text "Enlarge Subtitles:${sub-scale}"                                                                             #menu: Subtitles > Size & Position > Font Size +0.1
+# apply-profile sub-smalla                                                                                                                      #@! Subtitles > Size & Position > 36 pt
+# apply-profile sub-smallb                                                                                                                      #@! Subtitles > Size & Position > 40 pt
+# apply-profile sub-mediuma                                                                                                                     #! Subtitles > Size & Position > 44 pt
+# apply-profile sub-mediumb                                                                                                                     #! Subtitles > Size & Position > 48 pt
+# apply-profile sub-mediumc                                                                                                                     #! Subtitles > Size & Position > 52 pt
+# apply-profile sub-largea                                                                                                                      #! Subtitles > Size & Position > 56 pt
+# apply-profile sub-largeb                                                                                                                      #! Subtitles > Size & Position > 60 pt
+
+# add sub-delay -0.1;show-text "Subtitle Delay: ${sub-delay}"                                                                                #menu: Subtitles > Delay > Delay -0.1s
+# add sub-delay  0.1;show-text "Subtitle Preload: ${sub-delay}"                                                                              #menu: Subtitles > Delay > Delay +0.1s
+# add sub-delay -0.5;show-text "Subtitle Delay: ${sub-delay}"                                                                                #menu: Subtitles > Delay > Delay -0.5s
+# add sub-delay  0.5;show-text "Subtitle Preload: ${sub-delay}"                                                                              #menu: Subtitles > Delay > Delay +0.5s
+# add sub-delay -1;show-text "Subtitle Delay: ${sub-delay}"                                                                                  #menu: Subtitles > Delay > Delay -1s
+# add sub-delay  1;show-text "Subtitle Preload: ${sub-delay}"                                                                                #menu: Subtitles > Delay > Delay +1s
+# add sub-delay -2;show-text "Subtitle Delay: ${sub-delay}"                                                                                  #@menu: Subtitles > Delay > Delay -2s
+# add sub-delay  2;show-text "Subtitle Preload: ${sub-delay}"                                                                                #@menu: Subtitles > Delay > Delay +2s
+# set sub-delay  0;show-text "Subtitle Delay Reset: ${sub-delay}"                                                                            #menu: Subtitles > Delay > Reset Delay
+
+# apply-profile sub-default                                                                                                                     #! Subtitles > Preset > Default
+# apply-profile sub-modern                                                                                                                      #! Subtitles > Preset > Modern
+# apply-profile sub-sherif                                                                                                                      #! Subtitles > Preset > Serif
+# apply-profile sub-web                                                                                                                         #! Subtitles > Preset > Web
+# apply-profile sub-smooth                                                                                                                      #! Subtitles > Preset > Smooth
+# apply-profile sub-cloud                                                                                                                       #! Subtitles > Preset > Cloud
+# apply-profile sub-bocchi                                                                                                                      #! Subtitles > Preset > Bocchi
+
+# apply-profile sub-oneplus                                                                                                                     #! Subtitles > Font Type > OnePlus Sans
+# apply-profile sub-sofia                                                                                                                       #! Subtitles > Font Type > Sofia Pro
+# apply-profile sub-neuton                                                                                                                      #! Subtitles > Font Type > Neuton
+# apply-profile sub-archivo                                                                                                                     #! Subtitles > Font Type > Archivo
+# apply-profile sub-roland                                                                                                                      #! Subtitles > Font Type > Roland Becker
+# apply-profile sub-dynapuff                                                                                                                    #! Subtitles > Font Type > DynaPuff
+# apply-profile sub-sweet                                                                                                                       #! Subtitles > Font Type > Squidgy Sweets
+
+# apply-profile sub-black                                                                                                                       #! Subtitles > Color > Black
+# apply-profile sub-clear                                                                                                                       #! Subtitles > Color > Clear
+# apply-profile sub-amber                                                                                                                       #! Subtitles > Color > Amber
+# apply-profile sub-box                                                                                                                         #! Subtitles > Color > Box
+# apply-profile sub-purple                                                                                                                      #! Subtitles > Color > Purple
+# apply-profile sub-skyblue                                                                                                                     #! Subtitles > Color > Blue
+# apply-profile sub-pastel                                                                                                                      #! Subtitles > Color > Pastel
+
+# cycle secondary-sid;show-text "Secondary Subtitle: ${secondary-sid}"                                                                      #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Switch Subtitle (Secondary)
+# cycle secondary-sub-visibility;show-text "Secondary Subtitle Visibility: ${secondary-sub-visibility}"                                     #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Visibility (Secondary) #@state=(secondary_sub_visibility and 'checked')
+# add secondary-sub-pos -1;show-text "Move Secondary Subtitles Up:${secondary-sub-pos}"                                                     #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Move Subtitle Up (Secondary)
+# add secondary-sub-pos +1;show-text "Move Secondary Subtitles Down:${secondary-sub-pos}"                                                   #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Move Subtitle Down (Secondary)
+# add secondary-sub-delay -0.1;show-text "Secondary Subtitle Delay:${secondary-sub-delay}"                                                  #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Delay -0.1s (Secondary)
+# add secondary-sub-delay  0.1;show-text "Secondary Subtitle Preload:${secondary-sub-delay}"                                                #menu: Subtitles > Other Actions > Secondary Subtitle Actions > Delay +0.1s (Secondary)
+# cycle secondary-sub-ass-override;show-text "Secondary Subtitle Style Override:${secondary-sub-ass-override}"                              #menu: Subtitles > Other Actions > Secondary Subtitle Style Override      #@state=(secondary_sub_ass_override and 'checked')
+# ignore                                                                                                                                           Subtitles > ---
+u cycle-values sub-ass-override force no                                                                                                        #! Subtitles > Other Actions > Override ASS Style
+# cycle sub-ass-override;show-text "Subtitle Style: ${sub-ass-override}"                                                                    #menu: Subtitles > Other Actions > Subtitle Style Toggle
+# sub-reload;show-text "Reload Subtitle"                                                                                                    #menu: Subtitles > Other Actions > Reload Current Subtitle
+# ignore                                                                                                                                           Subtitles > ---
+# cycle-values blend-subtitles yes no;show-text "Blend Subtitles with Video Frames:${blend-subtitles}"                                      #menu: Subtitles > Other Actions > Compatibility 1 > Blend Subtitles with Video Frames      #@state=(blend_subtitles and 'checked')
+# cycle sub-fix-timing                 ;show-text "Subtitle Timing Fix:${sub-fix-timing}"                                                   #menu: Subtitles > Other Actions > Compatibility 1 > Subtitle Timing Fix        #@state=(sub_fix_timing and 'checked')
+# cycle sub-ass-vsfilter-color-compat  ;show-text "Subtitle Color Conversion Method:${sub-ass-vsfilter-color-compat}"                       #menu: Subtitles > Other Actions > Compatibility 1 > Subtitle Color Conversion Method
+# cycle sub-ass-vsfilter-blur-compat   ;show-text "Blur Tag Scaling Compatibility:${sub-ass-vsfilter-blur-compat}"                          #menu: Subtitles > Other Actions > Compatibility 1 > Blur Tag Scaling Compatibility #@state=(sub_ass_vsfilter_blur_compat and 'checked')
+# cycle sub-vsfilter-bidi-compat       ;show-text "Bidi Bidirectional Detection Compatibility:${sub-vsfilter-bidi-compat}"                  #menu: Subtitles > Other Actions > Compatibility 1 > Bidi Bidirectional Detection Compatibility #@state=(sub_vsfilter_bidi_compat and 'checked')
+# cycle sub-ass-vsfilter-aspect-compat ;show-text "VSFilter Compatibility:${sub-ass-vsfilter-aspect-compat}"                                #menu: Subtitles > Other Actions > Compatibility 1 > VSFilter Compatibility   #@state=(sub_ass_vsfilter_aspect_compat and 'checked')
+
+# cycle-values sub-ass-style-overrides "ScaledBorderAndShadow=no" "ScaledBorderAndShadow=yes";show-text "Force Replace ASS Style:${sub-ass-style-overrides}"    #menu: Subtitles > Other Actions > Compatibility 2 > ASS Subtitle Shadow Border Scaling
+# cycle sub-ass-force-margins          ;show-text "ASS Subtitle Output Black Border:${sub-ass-force-margins}"                               #menu: Subtitles > Other Actions > Compatibility 2 > ASS Subtitle Output to Black Border  #@state=(sub_ass_force_margins and 'checked')
+# cycle sub-use-margins                ;show-text "SRT Subtitle Output Black Border:${sub-use-margins}"                                     #menu: Subtitles > Other Actions > Compatibility 2 > SRT Subtitle Output to Black Border  #@state=(sub_use_margins and 'checked')
+# cycle stretch-image-subs-to-screen   ;show-text "PGS Subtitle Output Black Border:${stretch-image-subs-to-screen}"                        #menu: Subtitles > Other Actions > Compatibility 2 > PGS Subtitle Output to Black Border  #@state=(stretch_image_subs_to_screen and 'checked')
+# cycle sub-gray;show-text "PGS Subtitle Grayscale Conversion:${sub-gray}"                                                                  #menu: Subtitles > Other Actions > Compatibility 2 > PGS Subtitle Grayscale Conversion    #@state=(sub_gray and 'checked')
+
+# set sub-ass-override force;set sub-pos 100;set sub-scale 1.0;set sub-delay 0; set sub-font-size 55;set sub-border-size 3;set sub-margin-y 22;set sub-blur 0;set sub-font sans-serif;set sub-color "#DDFFFFFF";set sub-border-color "#FF000000";set sub-shadow-color "#1B28282B";set sub-back-color "#00000000";set sub-shadow-offset 0;show-text "Reset Subtitle State"                             #menu: Subtitles > Reset All
+
+
+
+
+#-- View menu --------------------------------------------------------------------------------------------------------------------------#
+
+# cycle fullscreen                                                                                                                          #menu: View > Fullscreen        #@state=(fullscreen and 'checked')
+# cycle border;show-text "Border Mode: ${border}"                                                                                           #menu: View > Border Mode (Yes/No)       #@state=(border and 'checked')
+
+# script-binding time_left_cgpt_2/display-time-left                                                                                         #menu: View > On Screen Information > Time Left
+# script-binding time_left_cgpt_2/toggle-time-left                                                                                          #menu: View > On Screen Information > Time Left (Persistent)
+# script-binding metadata_osd/toggleenable                                                                                                  #menu: View > On Screen Information > Metadata (On/Off)
+# script-binding metadata_osd/toggleautohide                                                                                                #menu: View > On Screen Information > Metadata Auto-Hide (Yes/No)
+# script-binding metadata_osd/reset_usertoggled                                                                                             #menu: View > On Screen Information > Reset Metadata User Toggled State
+
+# cycle window-maximized                                                                                                                    #menu: View > Other Toggles > Maximize      #@state=(window_maximized and 'checked')
+# cycle title-bar;show-text "Title Bar: ${title-bar}"                                                                                       #menu: View > Other Toggles > Title Bar     #@state=(title_bar and 'checked')
+# cycle-values itle ${media-title} ${filename}                                                                                              #menu: View > Other Toggles > Media Title
+# cycle ontop;show-text "On Top:${ontop}"                                                                                                   #menu: View > Other Toggles > On Top        #@state=(ontop and 'checked')
+
+# script-binding stats/display-page-1                                                                                                       #@menu: View > Stats (Page Key: 1, 2, 3, 4)
+# script-binding stats/display-stats-toggle                                                                                                 #menu: View > Stats  (Change Page ⌨     󰌌  󰥻  󰌓  : 1, 2, 3, 4)              #@ you can use (   : 1, 2, 3, 4) or  ( ⌨  : 1, 2, 3, 4)
+# script-binding stats/display-page-4                                                                                                       #menu: View > Keybindings  (Scoll ⌨  :  󰌌  󰥻  󰌓  Arrow       󰁝 &      󰁅 )     #@ you can use (Scroll Key: Arrow Up & Down) or ( ⌨  : Arrow Up & Down)
+# script-binding console/enable                                                                                                             #menu: View > Console  (Exit ⌨  :  󰌌  󰥻  󰌓  Esc  󱊷 )
+# cycle-values   reset-on-next-file "all" "no" "vf,af,loop-file,deinterlace,border,contrast,brightness,gamma,saturation,hue,video-zoom,video-rotate,video-pan-x,video-pan-y,panscan,speed,audio,sub,audio-delay,sub-pos,sub-scale,sub-delay,sub-speed,sub-visibility";show-text "Reset the Following Options on Next Playback: ${reset-on-next-file}"  #menu: View > Reset Playback Changes On Next File
+
+
+
+
+
+#-- Tools menu --------------------------------------------------------------------------------------------------------------------------#
+
+# screenshot subtitles                                                                                                                      #menu: Tools > Screenshot > Source Size - With Subtitles - No OSD - Single Frame
+# screenshot video                                                                                                                          #menu: Tools > Screenshot > Source Size - No Subtitles - No OSD - Single Frame
+# show-text "Screenshot" 400;script-message delay-command 0.5 screenshot window                                                             #menu: Tools > Screenshot > Actual Size - With Subtitles - With OSD - Single Frame
+# screenshot subtitles+each-frame                                                                                                           #menu: Tools > Screenshot > Source Size - With Subtitles - No OSD - Each Frame
+# screenshot video+each-frame                                                                                                               #menu: Tools > Screenshot > Source Size - No Subtitles - No OSD - Each Frame
+# show-text "Screenshot Each Frame" 400;script-message delay-command 0.5 screenshot window+each-frame                                       #menu: Tools > Screenshot > Actual Size - With Subtitles - With OSD - Each Frame
+
+# script-message-to chapter_make_read load_chapter                                                                                          #@menu: Tools > Chapter Creation > Load Chapter
+# script-message-to chapter_make_read create_chapter                                                                                        #menu: Tools > Chapter Creation > Mark Chapter Time
+# script-message-to chapter_make_read edit_chapter                                                                                          #menu: Tools > Chapter Creation > Edit Chapter Title
+# script-message-to chapter_make_read remove_chapter                                                                                        #menu: Tools > Chapter Creation > Delete Current Chapter
+# script-message-to chapter_make_read write_chapter chp                                                                                     #menu: Tools > Chapter Creation > Create chp Chapter File
+# script-message-to chapter_make_read write_chapter ogm                                                                                     #menu: Tools > Chapter Creation > Create ogm Chapter File
+
+
+`                script-message-to SimpleHistory open-list;show-text ''                                                 #menu: Open > History > Open History Menu
+ALT+l            script-message-to SimpleHistory history-incognito-mode                                                 #menu: Open > History > Toggle Incognito History
+CTRL+L           script-message-to SimpleHistory history-load-last                                                      #menu: Open > History > Load Last Played File
+CTRL+l           script-message-to SimpleHistory history-resume                                                         #menu: Open > History > Load Last Played File and Progress
+N                script-message-to SimpleBookmark open-list;show-text ''                                                #menu: Open > Bookmarks > Open Bookmarks Menu
+CTRL+n           script-message-to SimpleBookmark bookmark-save                                                         #menu: Open > Bookmarks > Add Progress Bookmark
+CTRL+N           script-message-to SimpleBookmark bookmark-fileonly                                                     #menu: Open > Bookmarks > Add File Bookmark
+
+
+# script_message bookmarker-menu                                                                                       #menu: Open > BB > Menu
+# script_message bookmarker-quick-save                                                                                 #menu: Open > BB > quick-save
+# script_message bookmarker-quick-load                                                                                 #menu: Open > BB > quick-load
+
+#-- UOSC Last Boy menu --------------------------------------------------------------------------------------------------------------BB-----#
+# script-message-to uosc keybinds                       #!       Keybinding Search          #@you can use:   Keybindings
+SHIFT+q    quit-watch-later                             #! 󰆓    Save & Quit                #@you can use:   Save & Quit
+
+
+
+#-- End of Configuration -----------------------------------------------------------------------------------------------------------------------#

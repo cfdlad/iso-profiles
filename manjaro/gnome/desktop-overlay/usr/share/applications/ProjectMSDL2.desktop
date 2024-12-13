@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ProjectM-SDL2
+GenericName=Music Visualizer
+Comment=Music visualizer which uses 3D accelerated iterative image based rendering
+Icon=net.sourceforge.projectM.svg
+Exec=projectMSDL
+Terminal=false
+Categories=Visualizer;AudioVideo;Audio;Video;Player;TV;
+Keywords=visualizer;music;media;player;video;audio;tv;

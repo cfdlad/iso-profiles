@@ -1,0 +1,39 @@
+To install use gnome-extensions
+
+Eg
+
+gnome-extensions install flypieschneegans.github.com.v22.shell-extension.zip
+gnome-extensions install flypieschneegans.github.com.v22.shell-extension.zip
+gnome-extensions blur-my-shellaunetx.v22.shell-extension.zip
+
+For help
+
+gnome-extensions -h
+
+Usage:
+  gnome-extensions COMMAND [ARGS…]
+
+Commands:
+  help      Print help
+  version   Print version
+  enable    Enable extension
+  disable   Disable extension
+  reset     Reset extension
+  uninstall Uninstall extension
+  list      List extensions
+  info      Show extension info
+  show      Show extension info
+  prefs     Open extension preferences
+  create    Create extension
+  pack      Package extension
+  install   Install extension bundle
+
+
+
+After install enable the extension and use pref to start it
+get the new name by listing all extensions installed
+or check out the metadata.json file uuid value
+
+gnome-extensions list
+gnome-extensions enable flypie@schneegans.github.com
+gnome-extensions prefs flypie@schneegans.github.com
