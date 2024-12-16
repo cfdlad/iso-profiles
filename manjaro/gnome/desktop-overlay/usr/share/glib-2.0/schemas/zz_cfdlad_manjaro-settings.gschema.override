@@ -43,6 +43,11 @@ window-height=uint32 689
 window-position=(0, 0)
 window-width=uint32 1366
 
+[com/github/unrud/VideoDownloader]
+mode='video'
+prefer-mpeg=true
+resolution=uint32 360
+
 [com/mattjakeman/ExtensionManager]
 height=600
 last-used-version='0.5.1'
@@ -74,6 +79,10 @@ target-currency=''
 target-units='radian'
 window-position=(503, 161)
 word-size=64
+
+[org/gnome/control-center]
+last-panel='system'
+window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
 backend='google'
@@ -173,6 +182,9 @@ apps=['wps-office-prometheus.desktop', 'wps-office-wps.desktop', 'wps-office-et.
 name='WPS Office'
 translate=true
 
+[org/gnome/desktop/datetime]
+automatic-timezone=false
+
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'us')]
 xkb-options=['terminate:ctrl_alt_bksp']
@@ -194,7 +206,10 @@ monospace-font-name='FiraCode Nerd Font weight=450 12'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-gedit', 'org-gnome-nautilus', 'hplip', 'gnome-power-panel']
+application-children=['org-gnome-gedit', 'org-gnome-nautilus', 'hplip', 'gnome-power-panel', 'org-gnome-shell-portalhelper', 'com-github-unrud-videodownloader']
+
+[org/gnome/desktop/notifications/application/com-github-unrud-videodownloader]
+application-id='com.github.unrud.VideoDownloader.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -207,6 +222,9 @@ application-id='org.gnome.gedit.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
+application-id='org.gnome.Shell.PortalHelper.desktop'
 
 [org/gnome/desktop/screensaver]
 lock-enabled=false
@@ -359,7 +377,7 @@ maximized=false
 magnifier=['<Super>z']
 
 [org/gnome/shell]
-app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'org.gnome.Calculator.desktop': <{'position': <9>}>, 'org.kde.kate.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'obsidian.desktop': <{'position': <12>}>, 'xdman.desktop': <{'position': <13>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'onboard.desktop': <{'position': <18>}>, 'org.gnome.Terminal.desktop': <{'position': <19>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'gnome-apps': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'hplip.desktop': <{'position': <11>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <12>}>, 'org.gnome.Meld.desktop': <{'position': <13>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.kde.krita.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'org.gnome.gThumb.desktop': <{'position': <19>}>, 'com.obsproject.Studio.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>, 'subtitleeditor.desktop': <{'position': <22>}>, 'projectM-pulseaudio.desktop': <{'position': <23>}>}, {'system-toolss': <{'position': <0>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <1>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <2>}>, 'org.gnome.Characters.desktop': <{'position': <3>}>, 'org.kde.kwrite.desktop': <{'position': <4>}>, 'qjournalctl.desktop': <{'position': <5>}>, 'gufw.desktop': <{'position': <6>}>, 'jconsole-java-openjdk.desktop': <{'position': <7>}>, 'manjaro-tools': <{'position': <8>}>, 'electron30.desktop': <{'position': <9>}>, 'jshell-java-openjdk.desktop': <{'position': <10>}>, 'manjaro-rescue.desktop': <{'position': <11>}>, 'org.kde.kuserfeedback-console.desktop': <{'position': <12>}>, 'xdvi.desktop': <{'position': <13>}>}]
+app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'org.gnome.Calculator.desktop': <{'position': <9>}>, 'org.kde.kate.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'obsidian.desktop': <{'position': <12>}>, 'xdman.desktop': <{'position': <13>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'onboard.desktop': <{'position': <18>}>, 'org.gnome.Terminal.desktop': <{'position': <19>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'gnome-apps': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'hplip.desktop': <{'position': <11>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <12>}>, 'org.gnome.Meld.desktop': <{'position': <13>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.kde.krita.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'org.gnome.gThumb.desktop': <{'position': <19>}>, 'com.obsproject.Studio.desktop': <{'position': <20>}>, 'fr.handbrake.ghb.desktop': <{'position': <21>}>, 'subtitleedit.desktop': <{'position': <22>}>, 'projectM-pulseaudio.desktop': <{'position': <23>}>}, {'system-toolss': <{'position': <0>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <1>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <2>}>, 'org.gnome.Characters.desktop': <{'position': <3>}>, 'org.kde.kwrite.desktop': <{'position': <4>}>, 'qjournalctl.desktop': <{'position': <5>}>, 'gufw.desktop': <{'position': <6>}>, 'jconsole-java-openjdk.desktop': <{'position': <7>}>, 'manjaro-tools': <{'position': <8>}>, 'electron30.desktop': <{'position': <9>}>, 'jshell-java-openjdk.desktop': <{'position': <10>}>, 'manjaro-rescue.desktop': <{'position': <11>}>, 'org.kde.kuserfeedback-console.desktop': <{'position': <12>}>, 'xdvi.desktop': <{'position': <13>}>, 'stardict.desktop': <{'position': <14>}>}]
 command-history=['r']
 disable-user-extensions=false
 disabled-extensions=['gsconnect@andyholmes.github.io', 'top-bar-organizer@julian.gse.jsts.xyz', 'just-perfection-desktop@just-perfection']
@@ -556,7 +574,7 @@ show-type-column=true
 sidebar-width=171
 sort-column='name'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(35, 32)
 window-size=(933, 477)
