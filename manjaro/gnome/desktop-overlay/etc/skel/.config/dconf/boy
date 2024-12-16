@@ -371,7 +371,7 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 initial-size=(890, 550)
-maximized=true
+maximized=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
 magnifier=['<Super>z']
