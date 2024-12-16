@@ -349,7 +349,7 @@ deadbeef														# chaotic ?
 >extra projectm-sdl
 #>extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
 #>extra gnome-subtitles
->subtitleedit                           # chaotic aur
+subtitleedit                          # chaotic aur
 
 ## Media Productivity
 #>extra audacity
