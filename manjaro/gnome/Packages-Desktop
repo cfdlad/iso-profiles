@@ -652,7 +652,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 ## System monitor tools
 #>extra deepin-system-monitor
 #system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
-systemd-manager-git											# (chaotic) It has the gui for the journal massages
+#systemd-manager-git										# (chaotic) It has the gui for the journal massages
 
 
 ## Wine Stuff
