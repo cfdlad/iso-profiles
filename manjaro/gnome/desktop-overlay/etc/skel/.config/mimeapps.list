@@ -179,6 +179,7 @@ application/vnd.efi.iso=org.gnome.FileRoller.desktop;peazip.desktop;
 application/x-lrzip=org.gnome.FileRoller.desktop;peazip.desktop;
 application/zip=org.gnome.FileRoller.desktop;peazip.desktop;
 text/x-python3=org.gnome.gedit.desktop;
+inode/directory=org.gnome.Nautilus.desktop:
 
 [Default Applications]
 audio/3gpp=mpv.desktop;
