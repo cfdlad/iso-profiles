@@ -305,6 +305,7 @@ extension-manager												# (chaotic aur) #for downloading new extensions wit
 zsh-autocomplete												# (in my repo)
 
 
+
 ## GNOME Shell Extensions (Add all to .local)
 #gnome-shell-extension-vitals									# (manjaro repo)
 #gnome-shell-extension-blur-my-shell  							# (chaotic)
@@ -333,7 +334,8 @@ peazip-additional-formats-plugin-zpaq
 ## Art and Graphics design
 #>extra gimp
 >extra krita
-#>extra drawing
+#>extra drawing													# use pinta
+#>extra pinta													# a paint.net clone (gtk3 based)
 #>extra inkscape
 #>extra blender
 >extra gcolor3               									# color picker
@@ -357,7 +359,7 @@ deadbeef														# chaotic ?
 >extra projectm-sdl
 #>extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
 #>extra gnome-subtitles
-subtitleedit                          # chaotic aur
+subtitleedit                          							# The best (chaotic aur)
 
 ## Media Productivity
 #>extra audacity
@@ -402,7 +404,7 @@ python-iso639                            # (in my repo)
 >extra imagemagick												# image manipulation program, has lots of optionals 
 >extra renameutils												# programs to make renaming easy
 >extra gprename													# bulk renaming gui program (gtk)
->extra stardict
+#>extra stardict
 
 ## wps office
 #wps-office                             						# (chaotic aur)
@@ -536,7 +538,7 @@ yay															# (in aur and chaotic)
 
 ## Keyboard Applications
 >extra onboard
-florence														# (in my repo)
+#florence														# (in my repo)
 
 ## Games (add nintendo snes, sega genesis)
 >extra aisleriot
@@ -556,8 +558,8 @@ ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese a
 >extra axel                										# download accelerator (cli)
 >extra qbittorrent
 #>extra clipgrab            									# gui yt download
-#>extra persepolis          										# gui download manager for aria2
-xdman                                         # downloader manager (in my repo)
+#>extra persepolis          									# gui download manager for aria2
+xdman                                         					# downloader manager (in my repo)
 
 #### Firewall
 >extra opensnitch
@@ -617,22 +619,28 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 >extra procs													# ps alternative
 >extra duf														# disk usage free utility
 >extra lnav														# a tui tool for viewing and analysing log files
+>extra sdcv														# stardict dictionary console version
+>extra difftastic												# cli diff tool
+sysz															# cli systemd manager (my repo)
 
 
-##Cli Cheat tools
+## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
 cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur)
-#>extra tldr													# will not initialize except with internet	
+#>extra tldr													# will not initialize except with internet
+>extra tealdeer													# rust based 'tldr' alternative cli version (cheat sheet)	
 
-### Terminal
+## Terminal
 #>extra alacritty       										# Terminal emulator uses gpu, dont need it
 >extra tilix
 >extra tmux
 >extra fish
 >extra starship
+ptyxis															# chaotic
+nautilus-open-in-ptyxis											# my repo
 
 
-#### Network Tools
+## Network Tools
 #>extra htop													# System monitor (Already listed by manjaro above)
 >extra iftop                 									# Network monitor (cli)
 >extra nethogs          	 									# Network trafic monitor (cli)
@@ -650,101 +658,103 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 #>extra e2fsprogs												# ext2/3/4 file system utilities
 
 
-###Disk apps
+## Disk apps
 >extra testdisk             									# Disk repair and recovery (has photorec inside)
-#>extra ddrescue													# Disk repair
+#>extra ddrescue												# Disk repair
 #gddrescue														# Not in any repo (gui for ddrescue)
 #ddrescueview													# GUI for ddrescue (in aur, not in chaotic, not in chineses)
 
 
 ## System monitor tools
+>extra resources												# Well designed gtk4, libadwaita symtem monitor
+systemd-pilot-bin												# (my repo) systemd gtk4, libadwaita manager
 #>extra deepin-system-monitor
 #system-monitoring-center										# (chaotic) Fantastic monitor has all what I need, the repo is archived
-#systemd-manager-git										# (chaotic) It has the gui for the journal massages
+systemd-manager-git												# (my repo) It has the gui for the journal massages
 
 
 ## Wine Stuff
-#>extra lutris
-#>multilib wine
-#>extra wine-gecko
-#>extra wine-mono
-##>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
-#>multilib winetricks
-#winegui														#chaotic ?, maybe upload to my repo
+>extra lutris
+>multilib wine-staging
+>extra wine-gecko
+>extra wine-mono
+#>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
+#>multilib winetricks											# use winetricks that come's with winegui
+winegui															# (my repo)
 
-##Wine 9.8 optionals (combined lutris, eggroll, staging, dev)
-#alsa-lib
-#alsa-plugins
-#cups
-#dosbox
-#ffmpeg
-#giflib
-#gnutls
-#gst-plugins-bad
-#gst-plugins-base
-#gst-plugins-base-libs
-#gst-plugins-good
-#gst-plugins-ugly
-#gtk3
-#lib32-alsa-lib
-#lib32-alsa-plugins
-#lib32-giflib
-#lib32-gnutls
-#lib32-gst-plugins-base
-#lib32-gst-plugins-base-libs
-#lib32-gst-plugins-good
-#lib32-gtk3
-# lib32-libcups
-# lib32-libgcrypt
-# lib32-libgpg-error
-# lib32-libjpeg-turbo
-# lib32-libldap
-# lib32-libpng
-# lib32-libpulse
-# lib32-libva
-# lib32-libxcomposite
-# lib32-libxinerama
-# lib32-libxslt
-# lib32-mpg123
-# lib32-ncurses
-# lib32-openal
-# lib32-sqlite
-# lib32-ocl-icd
-# lib32-pcsclite
-# lib32-sdl2
-# lib32-v4l-utils
-# lib32-vulkan-icd-loader
-# libgphoto2
-# libgcrypt
-# libgpg-error
-# libjpeg-turbo
-# libldap
-# libpng
-# libpulse
-# libva
-# libxcomposite
-# libxinerama
-# libxslt
-# mpg123
-# ncurses
-# ocl-icd
-# pcsclite
-# openal
-# samba
-# sane
-# sdl2
-# unixodbc
-# v4l-utils
-# vulkan-icd-loader
+## Wine 9.8 optionals (combined lutris, eggroll, staging, dev)
+alsa-lib
+alsa-plugins
+cups
+dosbox
+ffmpeg
+giflib
+gnutls
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-base-libs
+gst-plugins-good
+gst-plugins-ugly
+gtk3
+lib32-alsa-lib
+lib32-alsa-plugins
+lib32-giflib
+lib32-gnutls
+lib32-gst-plugins-base
+lib32-gst-plugins-base-libs
+lib32-gst-plugins-good
+lib32-gtk3
+lib32-libcups
+lib32-libgcrypt
+lib32-libgpg-error
+lib32-libjpeg-turbo
+lib32-libldap
+lib32-libpng
+lib32-libpulse
+lib32-libva
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-mpg123
+lib32-ncurses
+lib32-openal
+lib32-sqlite
+lib32-ocl-icd
+lib32-pcsclite
+lib32-sdl2
+lib32-v4l-utils
+lib32-vulkan-icd-loader
+libgphoto2
+libgcrypt
+libgpg-error
+libjpeg-turbo
+libldap
+libpng
+libpulse
+libva
+libxcomposite
+libxinerama
+libxslt
+mpg123
+ncurses
+ocl-icd
+pcsclite
+openal
+samba
+sane
+sdl2
+unixodbc
+v4l-utils
+vulkan-icd-loader
 
 ## Dependencies for hyper ligth drifter
-#lib32-glibc
-#lib32-alsa-lib
-#lib32-alsa-plugins
-#lib32-curl
-#lib32-gtk2
-#lib32-openal
-#lib32-glu
+lib32-glibc
+lib32-alsa-lib
+lib32-alsa-plugins
+lib32-curl
+lib32-gtk2
+lib32-openal
+lib32-glu
 
 ## Dependencies for undertale
 #openssl-1.0													# not in repo, its in aur and chaotic
@@ -757,13 +767,13 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 python-setuptools    											# Already included in defualt install #for pip3 installs
 >extra python-installer
 >extra python-build
-#>extra python-pyudev  											# (for building ds4)
-#>extra python-evdev 											# (for building ds4)
+>extra python-pyudev  											# (for building ds4)
+>extra python-evdev 											# (for building ds4)
 
 
-##Rust
-#>extra rustup                  									# for rust installs
-#>electron30													# may conflict with electron28 (vscode)
+## Rust
+>extra rust                  									# for rust installs
+>extra electron														# may conflict with electron28 (vscode)
 
 ## hplip
 >extra hplip              										# for hp printer, it needs hplip-plugin (AUR only) for scanner to work
@@ -782,11 +792,26 @@ hplip-plugin													# (in my repo) (only aur not chaotic)
 >extra ebook-tools   											# for mobi and epub suport (also for converting ebook formats)
 
 ## Video Downloader dependencies
-#>extra python-brotli
-#>extra python-mutagen
-#>extra python-pycryptodomex
-#>extra python-pyxattr
-#>extra python-websockets
+>extra python-brotli
+>extra python-mutagen
+>extra python-pycryptodomex
+>extra python-pyxattr
+>extra python-websockets
 
 ## Dependencies for micro's plugins
 >extra ctags
+
+## Optional dependencies for file-roller
+>extra arj														# arj support
+>extra binutils													# ar support
+>extra bzip3													# bzip3 compression support
+>extra cdrtools													# iso image support
+>extra cpio														# cpio support
+>extra dpkg														# deb support
+>extra lhasa													# LHA/LZA support
+>extra rpmextract												# rpm archive support
+
+## Extra stuff
+>extra pkgfile
+>extra patch
+>extra fakeroot
