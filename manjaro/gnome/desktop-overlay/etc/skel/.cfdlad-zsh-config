@@ -90,12 +90,12 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # cheat and fzf
-alias ch="cheat -l | awk '{print \$1}' | fzf --preview='cheat {}' --preview-window=right,65% --height 70% | xargs -I{} cheat {}"	# Preview and paste code
+alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,65% --height 70% | xargs cheat {}"	# Preview and paste code
 alias chp="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"		# No preview, only path and paste code
 alias chh='cheat -l | fzf --preview="cheat {1}"'		# Preview only
 
 # tldr
-alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
+alias tldrf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
 
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
