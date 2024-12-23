@@ -90,15 +90,23 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # cheat and fzf
-alias ch="cheat -l | awk '{print \$1}' | fzf --preview='cheat {}'| xargs -I{} cheat {}"	# Preview and paste code
+alias ch="cheat -l | awk '{print \$1}' | fzf --preview='cheat {}' --preview-window=right,65% --height 70% | xargs -I{} cheat {}"	# Preview and paste code
 alias chp="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"		# No preview, only path and paste code
 alias chh='cheat -l | fzf --preview="cheat {1}"'		# Preview only
 
 # tldr
-alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,60% | xargs tldr'
+alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
 
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
+
+# stardict dictionary (sdcv)
+alias sd-wordnet='sdcv -c -u "WordNet® 3.0 (En-En)"'
+alias sd-colls-thesaurus='sdcv -c -u "Collins Thesaurus (En-En)"'
+alias sd-oxford-adv='sdcv -c -u "Oxford Advanced Learner'\''s Dictionary 8th Ed."'
+alias sd-oxford-coll='sdcv -c -u "Oxford Collocations Dictionary 2nd Ed. (En-En)"'
+alias sd-longman='sdcv -c -u "Longman Dictionary of Common Errors (En-En)"'
+alias sd-factbook='sdcv -c -u "The World Factbook 2014"'
 
 # ps
 alias psa="ps auxf"
