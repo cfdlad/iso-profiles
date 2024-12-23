@@ -178,6 +178,7 @@ application/x-xz-compressed-tar=org.gnome.FileRoller.desktop;peazip.desktop;
 application/vnd.efi.iso=org.gnome.FileRoller.desktop;peazip.desktop;
 application/x-lrzip=org.gnome.FileRoller.desktop;peazip.desktop;
 application/zip=org.gnome.FileRoller.desktop;peazip.desktop;
+text/x-python3=org.gnome.gedit.desktop;
 
 [Default Applications]
 audio/3gpp=mpv.desktop;
@@ -450,3 +451,4 @@ application/x-xz-compressed-tar=org.gnome.FileRoller.desktop
 application/vnd.efi.iso=org.gnome.FileRoller.desktop
 application/x-lrzip=org.gnome.FileRoller.desktop
 application/zip=org.gnome.FileRoller.desktop
+text/x-python3=org.gnome.gedit.desktop
