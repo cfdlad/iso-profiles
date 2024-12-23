@@ -23,6 +23,8 @@ window-state=87168
 
 [com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
 custom-command='zsh'
+default-size-columns=105
+default-size-rows=25
 login-shell=true
 scrollback-unlimited=true
 use-custom-command=true
@@ -53,17 +55,35 @@ height=600
 last-used-version='0.5.1'
 width=800
 
+[io/bassi/Amberol]
+window-height=665
+window-width=600
+
 [io/github/alainm23/planify]
 dark-mode=true
 local-inbox-project-id='215fc0c1-6af6-4e39-b757-a2266eca1475'
 show-support-banner=true
 window-maximized=false
 
+[net/nokyan/Resources]
+graph-data-points=uint32 60
+is-maximized=false
+last-viewed-page='applications'
+show-graph-grids=true
+show-logical-cpus=true
+sidebar-description=true
+sidebar-details=true
+sidebar-meter-type='ProgressBar'
+window-height=582
+window-width=998
+
 [org/gnome/Connections]
 first-run=false
 
 [org/gnome/Extensions]
-window-maximized=true
+window-height=579
+window-maximized=false
+window-width=1046
 
 [org/gnome/calculator]
 accuracy=9
@@ -206,7 +226,7 @@ monospace-font-name='FiraCode Nerd Font weight=450 12'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-gedit', 'org-gnome-nautilus', 'hplip', 'gnome-power-panel', 'org-gnome-shell-portalhelper', 'com-github-unrud-videodownloader']
+application-children=['org-gnome-gedit', 'org-gnome-nautilus', 'hplip', 'gnome-power-panel', 'org-gnome-shell-portalhelper', 'com-github-unrud-videodownloader', 'org-kde-kate', 'org-gnome-extensions']
 
 [org/gnome/desktop/notifications/application/com-github-unrud-videodownloader]
 application-id='com.github.unrud.VideoDownloader.desktop'
@@ -217,6 +237,9 @@ application-id='gnome-power-panel.desktop'
 [org/gnome/desktop/notifications/application/hplip]
 application-id='hplip.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-gedit]
 application-id='org.gnome.gedit.desktop'
 
@@ -225,6 +248,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
 application-id='org.gnome.Shell.PortalHelper.desktop'
+
+[org/gnome/desktop/notifications/application/org-kde-kate]
+application-id='org.kde.kate.desktop'
 
 [org/gnome/desktop/screensaver]
 lock-enabled=false
@@ -302,16 +328,26 @@ bottom-panel-active-page='GeditExternalToolsShellOutput'
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1051, 598)
+size=(1044, 534)
 state=87168
 
+[org/gnome/gnome-subtitles]
+view-window-height=699
+view-window-width=1366
+
 [org/gnome/gnome-system-monitor]
-current-tab='resources'
+current-tab='processes'
 maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
+window-height=589
 window-state=(914, 566, 234, 106)
+window-width=818
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
 
 [org/gnome/gthumb/browser]
 browser-sidebar-width=365
@@ -364,13 +400,17 @@ edge-tiling=false
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small-plus'
 
+[org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'date_created']
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(1045, 578)
 maximized=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
@@ -557,6 +597,8 @@ show-voltage=false
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 cursor-shape='ibeam'
+default-size-columns=105
+default-size-rows=25
 scrollback-unlimited=true
 use-system-font=true
 
