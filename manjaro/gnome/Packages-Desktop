@@ -304,6 +304,7 @@ extension-manager												# (chaotic aur) #for downloading new extensions wit
 >extra gtk2														# just incase
 zsh-autocomplete												# (in my repo)
 
+
 ## GNOME Shell Extensions (Add all to .local)
 #gnome-shell-extension-vitals									# (manjaro repo)
 #gnome-shell-extension-blur-my-shell  							# (chaotic)
@@ -320,7 +321,14 @@ zsh-autocomplete												# (in my repo)
 
 
 ## Archive Tools
-p7zip-gui														# GUI for p7zip (chaotic aur)								
+p7zip-gui														# GUI for p7zip (chaotic aur)
+peazip-gtk2-bin
+peazip-additional-formats-plugin-arc
+peazip-additional-formats-plugin-lpaq
+peazip-additional-formats-plugin-paq
+peazip-additional-formats-plugin-quad
+peazip-additional-formats-plugin-upx
+peazip-additional-formats-plugin-zpaq
 
 ## Art and Graphics design
 #>extra gimp
