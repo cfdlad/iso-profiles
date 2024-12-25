@@ -336,7 +336,7 @@ peazip-additional-formats-plugin-zpaq
 >extra krita
 #>extra drawing													# use pinta
 #>extra pinta													# a paint.net clone (gtk3 based)
-#>extra inkscape
+>extra inkscape
 #>extra blender
 >extra gcolor3               									# color picker
 #>extra darktable
@@ -362,9 +362,9 @@ deadbeef														# chaotic ?
 subtitleedit                          							# The best (chaotic aur)
 
 ## Media Productivity
-#>extra audacity
+>extra audacity
 >extra obs-studio
-#>extra kdenlive
+>extra kdenlive
 >extra handbrake
 #>extra ciano               									# minimal video and audio converter
 #>extra kooha
@@ -407,11 +407,11 @@ python-iso639                            # (in my repo)
 #>extra stardict
 
 ## wps office
-#wps-office                             						# (chaotic aur)
-#wps-office-all-dicts-win-languages     						# (chaotic aur)
-#wps-office-fonts                       						# (chaotic aur)
-wps-office-mime                        							# (chaotic aur)
-ttf-wps-fonts                          							# (chaotic aur)
+wps-office                             						# (chaotic aur)
+wps-office-all-dicts-win-languages     						# (chaotic aur)
+#wps-office-fonts                       						# (chaotic aur) chinese fonts
+wps-office-mime                        						# (chaotic aur)
+ttf-wps-fonts                          						# (chaotic aur)
 
 ## libre office optionals
 >extra libpaper
@@ -523,18 +523,18 @@ bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
 >extra libappimage     											# Appimage thumbnails (part of kio-exrea optionals)
 #>extra icoutils         										# Windows exe thumbnails (not sure)
-#>extra kimageformats   											# Additional image format thumbnails
+#>extra kimageformats   										# Additional image format thumbnails
 >extra openexr         											# EXR thumbnails
 >extra xapp-appimage-thumbnailer								# Appimage thumbnailer
-#>extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
-#>extra xapp-raw-thumbnailer										# Raw file thumbnailer
+>extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
+>extra xapp-raw-thumbnailer									# Raw file thumbnailer
 icoextract														# Icon extractor for .exe/.dll files with thumbnailer functionality # (chaotic)
 
 
 ## Package managers
 >extra git
-yay															# (in aur and chaotic)
-#octopi															# (in aur and chaotic)
+yay																# (in aur and chaotic)
+octopi															# (in aur and chaotic)
 
 ## Keyboard Applications
 >extra onboard
@@ -676,85 +676,85 @@ systemd-manager-git												# (my repo) It has the gui for the journal massag
 ## Wine Stuff
 #>extra lutris
 >multilib wine-staging
-#>extra wine-gecko
-#>extra wine-mono
+>extra wine-gecko
+>extra wine-mono
 ##>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
 ##>multilib winetricks											# use winetricks that come's with winegui
 winegui															# (my repo)
 
 ## Wine 9.8 optionals (combined lutris, eggroll, staging, dev)
-#alsa-lib
-#alsa-plugins
-#cups
-#dosbox
+alsa-lib
+alsa-plugins
+cups
+dosbox
 #ffmpeg
-#giflib
-#gnutls
+giflib
+gnutls
 #gst-plugins-bad
 #gst-plugins-base
-#gst-plugins-base-libs
+gst-plugins-base-libs
 #gst-plugins-good
 #gst-plugins-ugly
 #gtk3
-#lib32-alsa-lib
-#lib32-alsa-plugins
-#lib32-giflib
-#lib32-gnutls
-#lib32-gst-plugins-base
-#lib32-gst-plugins-base-libs
-#lib32-gst-plugins-good
+lib32-alsa-lib
+lib32-alsa-plugins
+lib32-giflib
+lib32-gnutls
+lib32-gst-plugins-base
+lib32-gst-plugins-base-libs
+lib32-gst-plugins-good
 #lib32-gtk3
-#lib32-libcups
+lib32-libcups
 #lib32-libgcrypt
 #lib32-libgpg-error
-#lib32-libjpeg-turbo
+lib32-libjpeg-turbo
 #lib32-libldap
-#lib32-libpng
-#lib32-libpulse
-#lib32-libva
-#lib32-libxcomposite
-#lib32-libxinerama
-#lib32-libxslt
-#lib32-mpg123
+lib32-libpng
+lib32-libpulse
+lib32-libva
+lib32-libxcomposite
+lib32-libxinerama
+lib32-libxslt
+lib32-mpg123
 #lib32-ncurses
-#lib32-openal
-#lib32-sqlite
-#lib32-ocl-icd
-#lib32-pcsclite
-#lib32-sdl2
-#lib32-v4l-utils
-#lib32-vulkan-icd-loader
-#libgphoto2
-#libgcrypt
-#libgpg-error
-#libjpeg-turbo
+lib32-openal
+lib32-sqlite
+lib32-ocl-icd
+lib32-pcsclite
+lib32-sdl2
+lib32-v4l-utils
+lib32-vulkan-icd-loader
+libgphoto2
+libgcrypt
+libgpg-error
+libjpeg-turbo
 #libldap
 #libpng
-#libpulse
-#libva
-#libxcomposite
-#libxinerama
+libpulse
+libva
+libxcomposite
+libxinerama
 #libxslt
 #mpg123
 #ncurses
-#ocl-icd
+ocl-icd
 #pcsclite
 #openal
-#samba
-#sane
-#sdl2
+samba
+sane
+sdl2
 #unixodbc
-#v4l-utils
-#vulkan-icd-loader
+v4l-utils
+vulkan-icd-loader
 
 ## Dependencies for hyper ligth drifter
-#lib32-glibc
-#lib32-alsa-lib
-#lib32-alsa-plugins
-#lib32-curl
-#lib32-gtk2
-#lib32-openal
-#lib32-glu
+lib32-glibc
+lib32-alsa-lib
+lib32-alsa-plugins
+lib32-curl
+lib32-gtk2
+lib32-openal
+lib32-glu
 
 ## Dependencies for undertale
 #openssl-1.0													# not in repo, its in aur and chaotic
@@ -772,8 +772,8 @@ python-setuptools    											# Already included in defualt install #for pip3 
 
 
 ## Rust
-#>extra rust                  									# for rust installs
-#>extra electron														# may conflict with electron28 (vscode)
+>extra rust                  									# for rust installs
+>extra electron												# may conflict with electron28 (vscode)
 
 ## hplip
 >extra hplip              										# for hp printer, it needs hplip-plugin (AUR only) for scanner to work
@@ -815,4 +815,3 @@ hplip-plugin													# (in my repo) (only aur not chaotic)
 >extra pkgfile
 >extra patch
 >extra fakeroot
-
