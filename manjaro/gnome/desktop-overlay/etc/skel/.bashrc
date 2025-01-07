@@ -1,6 +1,17 @@
+# for ble.sh (this addition from line 6 to 8 is my stuff)
+# Add this lines at the top of .bashrc:
+[[ $- == *i* ]] && source ~/Applications/ble/ble.sh --noattach
+
+
+
+#####################################################################################################################################################
+## Manjaro Stuff Below
+#####################################################################################################################################################
+
 #
 # ~/.bashrc
 #
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -113,8 +124,9 @@ shopt -s expand_aliases
 shopt -s histappend
 
 
+
 #####################################################################################################################################################
-## My Stuff (All below)
+## My Stuff (All below), also the addition (ble.sh) at the top from line 1 to 3 is my stuff
 #####################################################################################################################################################
 
 ### SHOPT
@@ -128,7 +140,7 @@ shopt -s expand_aliases # expand aliases
 ### EXPORT
 export TERM="xterm-256color"                      # getting proper colors
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
-#export EDITOR=/usr/bin/micro
+export EDITOR=/usr/bin/micro
 export VISUAL=/usr/bin/micro
 
 ### PATH
@@ -166,32 +178,32 @@ export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS='--height 60% --layout=reverse --border'
 
+### Functions 
+source ~/.bash_functions
+
 ### Aliases
 
 # vim
 alias vim="nvim"
 
 # pacman
-alias pacu='sudo pacman -U ./*zst'
-alias pacud='sudo pacman -U -d ./*zst'
-alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
-alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)l'
+alias pac-zst='sudo pacman -U ./*zst'			 		# offline pkgs install
+alias pac-zstd='sudo pacman -U -d ./*zst'		 		# offline forced pkgs install
+alias unlock='sudo rm /var/lib/pacman/db.lck'    		# remove pacman lock
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' 		# remove orphaned packages (DANGEROUS!)l'
+
 
 # Changing "ls" to "eza" (see if eza can be installed in ubuntu 22.04, brew, pacstall, binary etc)
 alias ll='eza -al --icons --color=always --group-directories-first' # column (all files and dirs)
 alias ls='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
 alias la='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
-alias l.='eza -a | egrep "^\."'
+alias l.='eza -a | grep -E "^\."'
 
 # cheat and fzf
-alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,65% --height 70% | xargs -I{}	# Preview and paste code
-alias chp="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"		# No preview, only path and paste code
-alias chh='cheat -l | fzf --preview="cheat {1}"'		# Preview only
+alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,75% --height 70% | xargs -I{} cheat {}"	# Preview and paste code
+alias ch-path="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"				# No preview, only path and paste code
+alias ch-preview='cheat -l | fzf --preview="cheat -c {1}" --preview-window=right,80% --height 70%'		# Preview only and paste cheat file path
 
 # tldr
 alias tldrf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
@@ -199,13 +211,17 @@ alias tldrf='tldr --list | fzf --preview "tldr --color always {1}" --preview-win
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
 
-# stardict dictionary (sdcv)
-alias sd-wordnet='sdcv -c -u "WordNet® 3.0 (En-En)"'
-alias sd-colls-thesaurus='sdcv -c -u "Collins Thesaurus (En-En)"'
-alias sd-oxford-adv='sdcv -c -u "Oxford Advanced Learner'\''s Dictionary 8th Ed."'
-alias sd-oxford-coll='sdcv -c -u "Oxford Collocations Dictionary 2nd Ed. (En-En)"'
-alias sd-longman='sdcv -c -u "Longman Dictionary of Common Errors (En-En)"'
-alias sd-factbook='sdcv -c -u "The World Factbook 2014"'
+# fuz (fzf and ripgrep search script)
+export FUZ_EDITOR=nvim
+alias fuz='~/Applications/fuz-main/fuz --path "/home"'	# Searches text in all files in home '~/'
+alias fuzp='fuz --path ./'				        		# Searches text in all files for the current directory (fuzp: p= path)
+alias fuz-sort-time='fuz --sorttime'					# Searches text in all files in home '~/' modified by date
+alias fuz-file-home='fuz --edit'						# Searches file names only in '/home' (Open file with vim)
+alias fuz-file-path='fuz --names --path ./'				# Searches file names only in the current directory  './'
+alias fuz-file-root='fuz --names --path /'				# Searches file names only in root '/'
+alias fuz-file-usb='fuz -n -p /run/media/manjaro/'		# Searches file names only within any usb drive
+alias fuz-text-path='fuz --path ./'				        # Searches text in all files for the current directory (same as fuzp)
+alias fuz-text-usb='fuz --path /run/media/manjaro/'		# Searches text in all files within any usb drive
 
 # ps
 alias psa="ps auxf"
@@ -241,14 +257,6 @@ alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
 alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
-# fuz (fzf and ripgrep search script)
-export FUZ_EDITOR=nvim
-alias fuz='~/Applications/fuz-main/fuz --path "/home"'	#Searches text in all files in /home
-alias fuzs='fuz --sorttime'					#Same as above but also sort files by date modified (fuzt: s is for sort time)
-alias fuze='fuz --edit'						#Searches file name only (fsearch) in '/home' (Open file with vim) (fuze: e is for edit with vim)
-alias fuzr='fuz --names --path /'			#Searches file name only (fsearch) in '/' (Root folder)  (fuzr: r is for root)
-alias fuzp='fuz --path ./'				        #Searches text in all files for the current directory   (fuzp: p is for path)
-
 # vte fix for tillix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
@@ -257,31 +265,6 @@ fi
 # for initiating Starship
 eval "$(starship init bash)"
 
-
-### ARCHIVE EXTRACTION
-# # ex - archive extractor
-# # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
+# for ble.sh
+# Add this line at the end of .bashrc:
+[[ ! ${BLE_VERSION-} ]] || ble-attach

@@ -9,8 +9,12 @@
 ### EXPORT
 export TERM="xterm-256color"                   	# getting proper colors
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-#export EDITOR=/usr/bin/micro
+export EDITOR=/usr/bin/micro
 export VISUAL=/usr/bin/micro
+export PAGER=moar
+export MOAR='--colors=16M --terminal-fg --reformat --style=gruvbox'
+export MANROFFOPT='-c'							# to force manpage colors
+export COLORTERM=truecolor
 
 ### Use zsh_autocomplete (mine)
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
@@ -28,6 +32,9 @@ source /usr/share/fzf/completion.zsh
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS='--height 60% --layout=reverse --border'
+
+### Functions 
+source ~/.zfunctions
 
 ### PATH
 # Not needed by me for now
@@ -60,29 +67,18 @@ fi
 # vim
 alias vim="nvim"
 
-# "apt", "apt-get" and "dpkg"
-#alias sau='sudo apt update'                 	# apt, update pkgs
-#alias said='sudo apt install ./*deb'           	# apt, install all debs in current folder
-#alias sagid='sudo apt-get install ./*deb'      	# apt-get, install all debs in current folder
-#alias sado='sudo apt --download-only install'        	# apt, download the debs only (no install)
-#alias dpkgid='dpkg -i ./*deb'                	# dpkg, install all debs in current folder
-
 # pacman
-alias pacu='sudo pacman -U ./*zst'
-alias pacud='sudo pacman -U -d ./*zst'
-alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
-alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages (DANGEROUS!)l'
+alias pac-zst='sudo pacman -U ./*zst'			 			# offline pkgs install
+alias pac-zstd='sudo pacman -U -d ./*zst'		 			# offline forced pkgs install
+alias unlock='sudo rm /var/lib/pacman/db.lck'    			# remove pacman lock
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' 			# remove orphaned packages (DANGEROUS!)l'
 
 # Changing "ls" to "eza" (see if exa can be installed in ubuntu 22.04, brew, pacstall, binary etc)
 alias ll='eza -al --icons --color=always --group-directories-first' # column (all files and dirs)
 alias ls='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
 alias la='eza -a --icons --color=always --group-directories-first'  # row (all files and dirs)
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
-alias l.='eza -a | egrep "^\."'
+alias l.='eza -a | grep -E "^\."'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -90,23 +86,27 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 # cheat and fzf
-alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,65% --height 70% | xargs cheat {}"	# Preview and paste code
-alias chp="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"		# No preview, only path and paste code
-alias chh='cheat -l | fzf --preview="cheat {1}"'		# Preview only
+alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,75% --height 70% | xargs -I{} cheat {}"	# Preview and paste code
+alias ch-path="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"				# No preview, only path and paste code
+alias ch-preview='cheat -l | fzf --preview="cheat -c {1}" --preview-window=right,80% --height 70%'		# Preview only and paste cheat file path
 
 # tldr
-alias tldrf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
+alias tldr-fzf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
 
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
 
-# stardict dictionary (sdcv)
-alias sd-wordnet='sdcv -c -u "WordNet® 3.0 (En-En)"'
-alias sd-colls-thesaurus='sdcv -c -u "Collins Thesaurus (En-En)"'
-alias sd-oxford-adv='sdcv -c -u "Oxford Advanced Learner'\''s Dictionary 8th Ed."'
-alias sd-oxford-coll='sdcv -c -u "Oxford Collocations Dictionary 2nd Ed. (En-En)"'
-alias sd-longman='sdcv -c -u "Longman Dictionary of Common Errors (En-En)"'
-alias sd-factbook='sdcv -c -u "The World Factbook 2014"'
+# fuz (fzf and ripgrep search script)
+export FUZ_EDITOR=nvim
+alias fuz='~/Applications/fuz-main/fuz --path "/home"'	# Searches text in all files in home '~/'
+alias fuzp='fuz --path ./'				        		# Searches text in all files for the current directory (fuzp: p= path)
+alias fuz-sort-time='fuz --sorttime'					# Searches text in all files in home '~/' modified by date
+alias fuz-file-home='fuz --edit'						# Searches file names only in '/home' (Open file with vim)
+alias fuz-file-path='fuz --names --path ./'				# Searches file names only in the current directory  './'
+alias fuz-file-root='fuz --names --path /'				# Searches file names only in root '/'
+alias fuz-file-usb='fuz -n -p /run/media/manjaro/'		# Searches file names only within any usb drive
+alias fuz-text-path='fuz --path ./'				        # Searches text in all files for the current directory (same as fuzp)
+alias fuz-text-usb='fuz --path /run/media/manjaro/'		# Searches text in all files within any usb drive
 
 # ps
 alias psa="ps auxf"
@@ -150,55 +150,3 @@ fi
 ### Setting the starship prompt ###
 # It is set in .zshrc file
 #eval "$(starship init zsh)"
-
-# fuz (fzf and ripgrep search script)
-export FUZ_EDITOR=nvim
-alias fuz='~/Applications/fuz-main/fuz --path "/home"'	#Searches text in all files in /home
-alias fuzs='fuz --sorttime'					#Same as above but also sort files by date modified (fuzt: s is for sort time)
-alias fuze='fuz --edit'						#Searches file name only (fsearch) in '/home' (Open file with vim) (fuze: e is for edit with vim)
-alias fuzr='fuz --names --path /'			#Searches file name only (fsearch) in '/' (Root folder)  (fuzr: r is for root)
-alias fuzp='fuz --path ./'				        #Searches text in all files for the current directory   (fuzp: p is for path)
-
-### EXTRACT ###
-# Function 'extract' for common file formats
-SAVEIFS=$IFS
-IFS=$(echo -en "\n\b")
-
-function extract {
- if [ -z "$1" ]; then
-    # display usage if no parameters given
-    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
-    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
- else
-    for n in "$@"
-    do
-      if [ -f "$n" ] ; then
-          case "${n%,}" in
-            *.cbt|*.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
-                         tar xvf "$n"       ;;
-            *.lzma)      unlzma ./"$n"      ;;
-            *.bz2)       bunzip2 ./"$n"     ;;
-            *.cbr|*.rar)       unrar x -ad ./"$n" ;;
-            *.gz)        gunzip ./"$n"      ;;
-            *.cbz|*.epub|*.zip)       unzip ./"$n"       ;;
-            *.z)         uncompress ./"$n"  ;;
-            *.7z|*.arj|*.cab|*.cb7|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.pkg|*.rpm|*.udf|*.wim|*.xar)
-                         7z x ./"$n"        ;;
-            *.xz)        unxz ./"$n"        ;;
-            *.exe)       cabextract ./"$n"  ;;
-            *.cpio)      cpio -id < ./"$n"  ;;
-            *.cba|*.ace)      unace x ./"$n"      ;;
-            *)
-                         echo "extract: '$n' - unknown archive method"
-                         return 1
-                         ;;
-          esac
-      else
-          echo "'$n' - file does not exist"
-          return 1
-      fi
-    done
-fi
-}
-
-IFS=$SAVEIFS

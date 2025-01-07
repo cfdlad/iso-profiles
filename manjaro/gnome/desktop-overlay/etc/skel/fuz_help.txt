@@ -1,11 +1,15 @@
 EXAMPLES:
 
-- The Alias (fuzn and fuzd are mine)
-    fuz             #Search text in all files from default path (which is /home)
-    fuzs            #Same as above but also sort files by date modified
-    fuze            #Searches file name only (fsearch) in '/home' (Opens file with vim)
-    fuzr            #Searches file name only (fsearch) in '/' (Root folder)
-    fuzp		    #Searches text in all files for the current path
+- The Alias
+	fuz					# Searches text in all files in home '~/'
+ 	fuzp				# Searches text in all files for the current directory (fuzp: p= path)
+ 	fuz-sort-time		# Searches text in all files in home '~/' modified by date
+ 	fuz-file-home		# Searches file names only in '/home' (Open file with vim)
+ 	fuz-file-path		# Searches file names only in the current directory  './'
+ 	fuz-file-root		# Searches file names only in root '/'
+ 	fuz-file-usb		# Searches file names only within any usb drive
+ 	fuz-text-path		# Searches text in all files for the current directory (same as fuzp)
+ 	fuz-text-usb		# Searches text in all files within any usb drive
 
     
 - Search for files names only from default path (which is /home)
@@ -29,8 +33,11 @@ EXAMPLES:
 KEY BINDINGS:
   CTRL+O             Open in vim
   CTRL+L             View with less
+  CTRL+F             Toggle btw directory navigation interface and document manager interface
+  CTRL+E             Edit
   CTRL+J             MOVE down
   CTRL+K             MOVE up
+
 
 ALTERNATIVE TERMINAL EDITOR:
 # add to .bashrc/.zshrc (currently supports neovim, macvim or vim):
