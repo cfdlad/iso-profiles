@@ -317,7 +317,7 @@ zsh-autocomplete												# (in my repo)
 #gnome-shell-extension-compiz-alike-magic-lamp-effect-git		# (add to ~/local) (in aur)
 
 ## Browsers
-#opera-beta														# (not available on any repo)
+opera														# (andionet)
 #>extra vivaldi
 
 
@@ -335,7 +335,7 @@ peazip-additional-formats-plugin-zpaq
 #>extra gimp
 >extra krita
 #>extra drawing													# use pinta
-#>extra pinta													# a paint.net clone (gtk3 based)
+>extra pinta													# a paint.net clone (gtk3 based)
 >extra inkscape
 #>extra blender
 >extra gcolor3               									# color picker
@@ -407,11 +407,13 @@ python-iso639                            # (in my repo)
 #>extra stardict
 
 ## wps office
-wps-office                             						# (chaotic aur)
-wps-office-all-dicts-win-languages     						# (chaotic aur)
+wps-office-cn                           						# (chaotic aur)
+wps-office-bwrap
+freetype2-wps
+wps-office-all-dicts-win-languages     							# (chaotic aur)
 #wps-office-fonts                       						# (chaotic aur) chinese fonts
-wps-office-mime                        						# (chaotic aur)
-ttf-wps-fonts                          						# (chaotic aur)
+wps-office-mime                        							# (chaotic aur)
+ttf-wps-fonts                          							# (chaotic aur)
 
 ## libre office optionals
 >extra libpaper
@@ -515,9 +517,9 @@ bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 #>extra konqueror
 
 ## Gnome Apps
-#>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
-#decoder 														# QR code checker  (chaotic)
-#shortwave														# Internet radio (over 30,000 channels) (chaotic)
+>extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
+decoder 														# QR code checker  (chaotic)
+shortwave														# Internet radio (over 30,000 channels) (chaotic)
 
 ## Thumbnailers
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
@@ -527,7 +529,7 @@ bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 >extra openexr         											# EXR thumbnails
 >extra xapp-appimage-thumbnailer								# Appimage thumbnailer
 >extra xapp-vorbiscomment-thumbnailer							# Vorbis comment thumbnailer
->extra xapp-raw-thumbnailer									# Raw file thumbnailer
+>extra xapp-raw-thumbnailer										# Raw file thumbnailer
 icoextract														# Icon extractor for .exe/.dll files with thumbnailer functionality # (chaotic)
 
 
@@ -542,7 +544,7 @@ octopi															# (in aur and chaotic)
 
 ## Games (add nintendo snes, sega genesis)
 >extra aisleriot
-#>extra snes9x-gtk
+>extra snes9x-gtk
 #add retroarch, xmb and some libretro cores. It is bookmarked
 
 ## Emulators and gaming tools
@@ -627,7 +629,7 @@ sysz															# cli systemd manager (my repo)
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
 cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur)
-#>extra tldr													# will not initialize except with internet
+#>extra tldr													# will not initialize except with internet, use tealdeer
 >extra tealdeer													# rust based 'tldr' alternative cli version (cheat sheet)	
 
 ## Terminal
@@ -636,8 +638,12 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 >extra tmux
 >extra fish
 >extra starship
-ptyxis															# chaotic
-nautilus-open-in-ptyxis											# my repo
+>extra ghostty
+>extra ghostty-shell-integration
+>extra ghostty-terminfo
+nautilus-open-any-terminal										# my repo
+#ptyxis															# chaotic
+#nautilus-open-in-ptyxis											# my repo
 
 
 ## Network Tools
