@@ -624,6 +624,7 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 >extra sdcv														# stardict dictionary console version
 >extra difftastic												# cli diff tool
 sysz															# cli systemd manager (my repo)
+moar															# pager, alternative to less
 
 
 ## Cli Cheat tools
