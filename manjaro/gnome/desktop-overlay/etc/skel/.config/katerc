@@ -18,8 +18,8 @@ Text Font=FiraCode Nerd Font Ret,11,-1,5,450,0,0,0,0,0,0,0,0,0,0,1,Regular
 Word Wrap Marker=false
 
 [MainWindow]
-1366x768 screen: Height=520
-1366x768 screen: Width=908
+1366x768 screen: Height=544
+1366x768 screen: Width=1046
 ToolBarsMovable=Disabled
 
 [UiSettings]
