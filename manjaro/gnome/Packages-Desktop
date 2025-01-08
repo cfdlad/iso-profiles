@@ -323,13 +323,13 @@ opera														# (andionet)
 
 ## Archive Tools
 p7zip-gui														# GUI for p7zip (chaotic aur)
-peazip-gtk2-bin
-peazip-additional-formats-plugin-arc
-peazip-additional-formats-plugin-lpaq
-peazip-additional-formats-plugin-paq
-peazip-additional-formats-plugin-quad
-peazip-additional-formats-plugin-upx
-peazip-additional-formats-plugin-zpaq
+peazip-gtk2-bin													# my repo
+peazip-additional-formats-plugin-arc							# my repo
+peazip-additional-formats-plugin-lpaq							# my repo
+peazip-additional-formats-plugin-paq							# my repo
+peazip-additional-formats-plugin-quad							# my repo
+peazip-additional-formats-plugin-upx							# my repo
+peazip-additional-formats-plugin-zpaq							# my repo
 
 ## Art and Graphics design
 #>extra gimp
@@ -364,10 +364,18 @@ subtitleedit                          							# The best (chaotic aur)
 ## Media Productivity
 >extra audacity
 >extra obs-studio
->extra kdenlive
 >extra handbrake
+>extra kdenlive
+>extra kimageformats											# optional kdenlive (support dds, xcf, exr etc)
+>extra mediainfo												# optional kdenlive (media info)
+>extra noise-suppression-for-voice								# optional kdenlive (noise suppression)
+>extra qt6-imageformats											# optional kdenlive (support tiff, webp etc)
+>extra recordmydesktop											# optional kdenlive (screen capture)
+>extra opencv													# optional kdenlive (motion tracking)
+>extra python-openai-whisper									# optional kdenlive (text to speech)
+>extra python-srt_equalizer										# optional kdenlive (text to speech)
 #>extra ciano               									# minimal video and audio converter
-#>extra kooha
+#>extra kooha													# screen capture
 
 #webcamoid														# (chaotic) Full featured webcam app, seems beter than cheese and snapshot
 #akvcam-dkms													# (chaotic) virtual camera recomended optional for webcamoid
@@ -383,8 +391,8 @@ subtitleedit                          							# The best (chaotic aur)
 >extra libreoffice-fresh  										# Office software
 >extra okular
 >extra gedit-plugins
-metagedit-git                            # (in my repo)
-python-iso639                            # (in my repo)
+metagedit-git                            						# (in my repo)
+python-iso639                           					 	# (in my repo)
 >extra pdfarranger
 >extra pdfcrack
 >extra kate
@@ -430,7 +438,7 @@ ttf-wps-fonts                          							# (chaotic aur)
 
 
 #>extra espeak-ng 												# optional for foliate and stardict
-#>extra festival													# voice synthesizer like espeak
+#>extra festival												# voice synthesizer like espeak
 #>extra festival-english
 #>extra festival-us
 >extra enchant	 												# optional for stardict
@@ -474,12 +482,12 @@ adobe-source-serif-fonts
 
 
 ##OCR Tools
-#ocrfeeder
-#ocrmypdf ## not in repo (in aur chaotic)
+>extra ocrfeeder												# Gui for tesseract (good)
+ocrmypdf 														# cli for tesseract (chaotic)
 #cuneiform
 #gocr
 #ocrad
-#gimagereader-gtk
+#>extra gimagereader-gtk										# Gui for tesseract
 #tesseract
 #tesseract-data-eng
 #tesseract-data-ara
@@ -518,8 +526,9 @@ bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 
 ## Gnome Apps
 >extra collision												# Already listed by manjaro Checks hashes (manjaro repo)
-decoder 														# QR code checker  (chaotic)
-shortwave														# Internet radio (over 30,000 channels) (chaotic)
+>extra decoder 													# QR code checker  (chaotic)
+>extra shortwave												# Internet radio (over 30,000 channels) (chaotic)
+>extra eyedropper												# color picker and palet generator
 
 ## Thumbnailers
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
@@ -574,8 +583,8 @@ xdman                                         					# downloader manager (in my r
 ## Productivity
 >extra obsidian
 #planify														# Not in the repo (in chaotic)
-#>extra gnome-break-timer
-fsearch	           											# no fsearch in the manjaro repo (in aur and chaotic)
+>extra gnome-break-timer
+fsearch	           												# no fsearch in the manjaro repo (in aur and chaotic)
 
 
 
@@ -624,8 +633,10 @@ fsearch	           											# no fsearch in the manjaro repo (in aur and chaot
 >extra sdcv														# stardict dictionary console version
 >extra difftastic												# cli diff tool
 sysz															# cli systemd manager (my repo)
-moar															# pager, alternative to less
-
+moar															# pager, alternative to less (ivasilev repo)
+>extra chafa													# terminal image viewer, for yt-x
+>extra gum														# A tool for glamarous shell scripts, for yt-x
+>extra jq														# cli json processor (formater)
 
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
@@ -644,7 +655,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 >extra ghostty-terminfo
 nautilus-open-any-terminal										# my repo
 #ptyxis															# chaotic
-#nautilus-open-in-ptyxis											# my repo
+#nautilus-open-in-ptyxis										# my repo
 
 
 ## Network Tools
@@ -660,7 +671,7 @@ nautilus-open-any-terminal										# my repo
 >extra nmap														# Utility for network discovery and security auditing
 >extra gnu-netcat												# GNU version of netcat a network piping application
 >extra qjournalctl												# gui for journalctl
-#>extra languagetool												# open source language and grammer checker (libreoffice uses it)
+#>extra languagetool											# open source language and grammer checker (libreoffice uses it)
 >extra lsof														# list open files for running unix processes
 #>extra e2fsprogs												# ext2/3/4 file system utilities
 
@@ -688,6 +699,7 @@ systemd-manager-git												# (my repo) It has the gui for the journal massag
 ##>multilib wine-nine             								# For older intel and amd gpu 2006-2014, hd2000-50000
 ##>multilib winetricks											# use winetricks that come's with winegui
 winegui															# (my repo)
+>extra ccache													# optional for winegui (speeds up rebuilds)
 
 ## Wine 9.8 optionals (combined lutris, eggroll, staging, dev)
 alsa-lib
@@ -780,7 +792,7 @@ python-setuptools    											# Already included in defualt install #for pip3 
 
 ## Rust
 >extra rust                  									# for rust installs
->extra electron												# may conflict with electron28 (vscode)
+>extra electron													# may conflict with electron28 (vscode)
 
 ## hplip
 >extra hplip              										# for hp printer, it needs hplip-plugin (AUR only) for scanner to work
