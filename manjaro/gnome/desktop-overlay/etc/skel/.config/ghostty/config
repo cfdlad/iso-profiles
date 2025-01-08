@@ -1,0 +1,80 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /home/manjaro/.config/ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# font-family = Iosevka
+# window-padding-x = 2
+#
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms
+
+
+# # theme
+  # theme = AdventureTime
+  # theme = light:theme-name,dark:theme-name
+  # theme = light:Adwaita,dark:Andromeda
+
+# # window-themes
+  # auto - Determine the theme based on the configured terminal background color.
+  # system - Use the system theme.
+  # light - Use the light theme regardless of system theme.
+  # dark - Use the dark theme regardless of system theme.
+  # ghostty - Use the background and foreground colors specified in the Ghostty configuration.
+
+
+# # adw-toolbar-style
+  # flat - Top and bottom bars are flat with the terminal window.
+  # raised - Top and bottom bars cast a shadow on the terminal area.
+  # raised-border - Similar to raised but the shadow is replaced with a more subtle border.
+
+
+theme = light:AtomOneLight,dark:Andromeda
+window-theme = ghostty
+window-decoration = true
+window-padding-x = 10
+window-padding-y = 2
+
+mouse-scroll-multiplier = 0.5
+
+gtk-titlebar = true
+gtk-tabs-location = top
+adw-toolbar-style = flat
+gtk-wide-tabs = true
+gtk-adwaita = true
+
+window-height = 26
+window-width = 103
