@@ -1,0 +1,11 @@
+mkdir cv
+cd cv
+python -m venv ./                       #setup venv
+source ./bin/activate                   #activate venv
+ls                                      #just checking content of venv
+#copy renderCV-deps to cv directory
+cd renderCV-python_deps                 #goto the folder where render the rendercv deps are
+pip install ./*whl                      #do a pip install to install all the deps
+rendercv new "Full Name"                #initialize rendercv  (rendercv folders will be installed in the current folder "renderCV-python_deps")
+#edit the created yaml file (its in renderCV-python_deps foldder)
+rendercv render Full_Name_CV.yaml       #to produce the CV (pdf, tex, png eyc)

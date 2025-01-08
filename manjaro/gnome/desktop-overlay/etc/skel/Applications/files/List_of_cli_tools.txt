@@ -1,0 +1,67 @@
+## Cli Apps
+scrcpy  					# android screen mirror software (cli)
+fzf							# cli file manager
+ranger            
+micro						# Tui based text editor, nano replacment
+fastfetch					# alternative to neofetch
+glib2						# fastfetch detect gsettins (check if manjaro already has them)
+hwdata						# fastfetch detect gpu
+libdrm						# fastfetch detect display
+libnm						# fastfetch detect wifi
+eza              			# ls replacement (cli)
+fd							# find alternative
+mlocate						# alt locate
+plocate						# alt locate compatible with mlocate data base
+ripgrep						# alt grep (find words, files etc)
+ripgrep-all					# improved ripgrep with more capabilities
+tesseract					# dep for ripgrep-all
+tesseract-data-eng			# dep for tesseract
+tesseract-data-osd			# dep for tesseract
+leptonica					# dep for tesseract
+bat							# alt cat
+bat-extras					# scripts to join bat with other aaps
+zoxide						# better cd alternative
+nnn							# cli file manager
+procs						# ps alternative
+duf							# disk usage free utility
+lnav						# a tui tool for viewing and analysing log files
+sdcv						# stardict dictionary console version
+difftastic					# cli diff tool
+sysz						# cli systemd manager (my repo)
+moar						# pager, alternative to less (ivasilev repo)
+chafa						# terminal image viewer, for yt-x
+gum							# A tool for glamarous shell scripts, for yt-x
+jq							# cli json processor (formater)
+pastel						# cli color analyzer, picker
+
+## Cli Cheat tools
+navi						# when creating iso put cheat files in etc/skel/home.....
+cheat						# (in my repo) (in aur)  (not in chaotic, not in chinese aur)
+tealdeer					# rust based 'tldr' alternative cli version (cheat sheet)
+
+## Terminal
+tilix
+tmux
+fish
+starship
+ghostty
+nautilus-open-any-terminal	# my repo
+#ptyxis						# chaotic
+#nautilus-open-in-ptyxis	# my repo
+
+
+## Network Tools
+htop						# System monitor (Already listed by manjaro above)
+iftop                 		# Network monitor (cli)
+nethogs          	 		# Network trafic monitor (cli)
+nload						# Network trafic monitor (cli)
+bandwhich					# Terminal bandwidth utilization
+bmon						# Portable bandwidth monitor and rate estimator
+tmon                  		# Temperature monitor
+btop						# System monitor
+net-tools					# configuration tools for linux networking
+nmap						# Utility for network discovery and security auditing
+gnu-netcat					# GNU version of netcat a network piping application
+qjournalctl					# gui for journalctl
+#languagetool				# open source language and grammer checker (libreoffice uses it)
+lsof						# list open files for running unix processes
