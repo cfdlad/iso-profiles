@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organizer ver="1.0.3">
+   <rbtabwidget>
+      <top>
+         <item id="KRbTabFileButton"/>
+         <item id="KRbQuickAccessContainer"/>
+         <item id="spacerItem"/>
+         <item id="KRbSubTabBar"/>
+         <item id="SearchQuickToolbar"/>
+         <item id="spacerItem"/>
+         <item id="KRbQuickToolbar"/>
+      </top>
+      <center>
+         <item id="KRbCategoryContainer"/>
+      </center>
+      <bottom/>
+      <float/>
+   </rbtabwidget>
+</organizer>
