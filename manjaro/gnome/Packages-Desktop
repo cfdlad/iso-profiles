@@ -637,6 +637,7 @@ moar															# pager, alternative to less (ivasilev repo)
 >extra chafa													# terminal image viewer, for yt-x
 >extra gum														# A tool for glamarous shell scripts, for yt-x
 >extra jq														# cli json processor (formater)
+>extra pastel													# cli color analyzer, picker
 
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
