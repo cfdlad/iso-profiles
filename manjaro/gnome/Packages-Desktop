@@ -322,7 +322,7 @@ opera														# (andionet)
 
 
 ## Archive Tools
-p7zip-gui														# GUI for p7zip (chaotic aur)
+#p7zip-gui														# GUI for p7zip (chaotic aur)
 peazip-gtk2-bin													# my repo
 peazip-additional-formats-plugin-arc							# my repo
 peazip-additional-formats-plugin-lpaq							# my repo
