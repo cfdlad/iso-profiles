@@ -89,7 +89,6 @@ networkmanager
 network-manager-applet
 networkmanager-openconnect
 networkmanager-openvpn
-networkmanager-pptp
 networkmanager-vpnc
 noto-fonts-cjk
 nss-mdns
@@ -152,5 +151,4 @@ xorg-xprop
 xterm
 xdg-user-dirs
 xorg-server
->extra yay
 zensu

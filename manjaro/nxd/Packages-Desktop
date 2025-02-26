@@ -3,7 +3,6 @@ avahi
 networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
-networkmanager-pptp
 networkmanager-vpnc
 nss-mdns # NSS support for mDNS (optdepend for avahi)
 ntp
@@ -84,7 +83,6 @@ terminus-font
 ## Games
 
 ## Package management
-#appimagelauncher
 pamac-gtk
 pamac-tray-appindicator
 pamac-cli
@@ -94,11 +92,6 @@ pamac-cli
 >extra pamac-snap-plugin
 >extra flatpak
 >extra fwupd
-#octopi
-#octopi-cachecleaner
-#octopi-repoeditor
-#octopi-notifier-frameworks
-#pamac-qt
 manjaro-application-utility
 
 ## Printing

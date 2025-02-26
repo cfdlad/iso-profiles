@@ -3,7 +3,6 @@ avahi
 networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
-networkmanager-pptp
 networkmanager-vpnc
 nss-mdns # NSS support for mDNS (optdepend for avahi)
 ntp
@@ -86,10 +85,6 @@ terminus-font
 ## Package managemen
 flatpak
 #fwupd
-octopi
-octopi-cachecleaner
-octopi-repoeditor
-octopi-notifier-frameworks
 #pamac
 #pamac-tray-appindicator
 
@@ -232,7 +227,6 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 >extra python-pysmbc          # SMB browser support
 
 ## Applications
-appimagelauncher
 #>extra cantata
 dmidecode # for inxi -m output
 htop
