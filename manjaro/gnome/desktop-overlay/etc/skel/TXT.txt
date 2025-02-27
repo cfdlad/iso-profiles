@@ -1,0 +1,25 @@
+function cd() {
+	export EZA_ICON_SPACING=2
+    if [[ "$#" != 0 ]]; then
+        builtin cd "$@";
+        return
+    fi
+    while true; do
+        local lsd=$(eza -1 -aa --only-dirs --show-symlinks --no-quotes --ignore-glob .)
+        local dir="$(printf '%s\n' "${lsd[@]}" |
+            fzf --reverse \
+            	--height 75% \
+				--header-first \
+				--header "Select Directory: Press [ENTER] To Access, [ESC] To Exit" \
+				--preview-label " Directory-Content-Preview " \
+            	--preview '
+                __cd_nxt="$(echo {})";
+                __cd_path="$(echo $(pwd)/${__cd_nxt} | sed "s;//;/;")";
+                echo $__cd_path;
+                echo;
+                eza -1 --color=always --icons -F -a "$__cd_path";
+        ')"
+        [[ ${#dir} != 0 ]] || return 0
+        builtin cd "$dir" &> /dev/null
+    done
+}
