@@ -37,35 +37,41 @@ function sd-factbook() {
 
 
 
-### Pamac list all packages installed
-### Use fzf and interactively show each package info in a preview window
-### Multi select the packages (tab) and press enter to print their respective info 
-### paclist()
+#### Pacman list all packages installed
+#### Use fzf and interactively show each package info in a preview window
+#### Multi select the packages (tab) and press enter to print their respective info 
+#### paclist()
 
-# 'bat -f -l yaml' provides color preview
+# Note '2> /dev/null' is to redirect error output 'warning: database file for 'core' does not exist' to the null device
+# So '2> /dev/null' means throw away stderr (standard error)
+
+# 'bat -f -p -l yaml' provides color preview
+# The big -P is to print the info on the terminal (not use pager)
+# The small -p means plain (no decorations)
 function pac-list() {
-	pamac list -qi | fzf --multi \
-	--preview "pamac info {1} | bat -f -p -l yaml" \
+	pacman -Qq 2> /dev/null | fzf --multi \
 	--preview-window=right,65% \
 	--height 80% \
-	--inline-info \
 	--header-first \
 	--header '[TAB]: Multi-Select, [ENTER]: Print-Info' \
-	--preview-label ' Info_Preview ' \
-	| xargs -I{} pamac info {}
+	--preview-label ' Infomation_Preview ' \
+	--preview "pacman -Qi {1} 2> /dev/null | bat -f -p -l yaml" \
+	--prompt '  Find Packages > ' \
+	| xargs -I{} pacman -Qi {} 2> /dev/null | bat -f -p -l yaml -P
 	}
 
 
 
 
-### Pamac remove or uninstall selected packages
+### Pacman remove or uninstall selected packages
 ### Use fzf and interactively show each package info in a preview window
 ### To remove, select the packages (tab) and press enter to uninstall 
 ### pac-remove()
 
 # Note '2> /dev/null' is to redirect error output 'warning: database file for 'core' does not exist' to the null device
 # So '2> /dev/null' means throw away stderr (standard error)
-# Not working well with xargs, so 'xargs -ro sudo pacman -Rns' does not include '2> /dev/null'
+# Not working well with xargs in this function only, so 'xargs -ro sudo pacman -Rns' does not include '2> /dev/null'
+# It gets rid of the question 'Do you want to remove these packages? [Y/n]'
 
 # 'bat -f -p -l yaml' provides color preview
 function pac-remove() {

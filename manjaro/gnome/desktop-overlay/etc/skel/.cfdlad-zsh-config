@@ -31,7 +31,7 @@ source /usr/share/fzf/completion.zsh
 #export FZF_BASE="$HOME/.fzf"
 export FZF_DEFAULT_COMMAND='rg --hidden --no-ignore --files -g "!.git/"'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-export FZF_DEFAULT_OPTS='--height 60% --layout=reverse --border'
+export FZF_DEFAULT_OPTS='--height 70% --layout=reverse --border'
 
 ### Functions 
 source ~/.zfunctions
@@ -91,7 +91,7 @@ alias ch-path="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"				# N
 alias ch-preview='cheat -l | fzf --preview="cheat -c {1}" --preview-window=right,80% --height 70%'		# Preview only and paste cheat file path
 
 # tldr
-alias tldr-fzf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
+alias tldr-fzf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,80% --height 70% | xargs -I{} tldr {}'
 
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
