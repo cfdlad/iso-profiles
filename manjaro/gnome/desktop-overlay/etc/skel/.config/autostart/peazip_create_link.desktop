@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/home/manjaro/Applications/files/peazip_gtk_create_link.sh
+Name=peazip_create_link
+Comment=Create link files for peazip portable version
+Type=Application

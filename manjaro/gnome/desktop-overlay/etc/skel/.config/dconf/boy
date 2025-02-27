@@ -14,6 +14,20 @@ transparent=false
 xpos=750
 ypos=273
 
+[apps/seahorse/listing]
+keyrings-selected=['gnupg://']
+
+[apps/seahorse/windows/key-manager]
+height=525
+width=1049
+
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/file-roller/listing/list-mode'
+saved-view='/org/gnome/file-roller/listing/'
+window-height=516
+window-is-maximized=false
+window-width=1050
+
 [com/gexperts/Tilix]
 close-with-last-session=false
 control-scroll-zoom=true
@@ -112,7 +126,9 @@ source-currency=''
 source-units='degree'
 target-currency=''
 target-units='radian'
+window-maximized=false
 window-position=(503, 161)
+window-size=(360, 509)
 word-size=64
 
 [org/gnome/control-center]
@@ -141,7 +157,7 @@ name='Accessories'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/accessoriess]
-apps=['org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.FileRoller.desktop', '7zFM.desktop', 'org.gnome.SystemMonitor.desktop', 'systemd-pilot.desktop', 'systemd-manager.desktop', 'onboard.desktop', 'scrcpy.desktop', 'me.dusansimic.DynamicWallpaper.desktop', 'hp-uiscan.desktop', 'scrcpy-console.desktop', 'onboard-settings.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'florence.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop', 'yelp.desktop']
+apps=['org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.SystemMonitor.desktop', 'systemd-pilot.desktop', 'systemd-manager.desktop', 'onboard.desktop', 'alacarte.desktop', 'scrcpy.desktop', 'hp-uiscan.desktop', 'scrcpy-console.desktop', 'onboard-settings.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop', 'yelp.desktop']
 name='Accessories'
 translate=true
 
@@ -161,7 +177,7 @@ name='Games'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/gnome-apps]
-apps=['org.gnome.Extensions.desktop', 'com.github.finefindus.eyedropper.desktop', 'org.gnome.BreakTimer.Daemon.desktop', 'de.haeckerfelix.Shortwave.desktop', 'dev.geopjr.Collision.desktop', 'com.belmoussaoui.Decoder.desktop', 'de.haeckerfelix.Fragments.desktop', 'com.github.GradienceTeam.Gradience.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Boxes.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Tour.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Evince.desktop']
+apps=['org.gnome.Calculator.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.BreakTimer.desktop', 'info.febvre.Komikku.desktop', 'org.gnome.Podcasts.desktop', 'de.haeckerfelix.Shortwave.desktop', 'com.github.finefindus.eyedropper.desktop', 'dev.geopjr.Collision.desktop', 'com.belmoussaoui.Authenticator.desktop', 'com.belmoussaoui.Decoder.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Evince.desktop']
 name='Gnome Apps'
 translate=true
 
@@ -173,6 +189,11 @@ translate=true
 [org/gnome/desktop/app-folders/folders/libreoffice]
 apps=['libreoffice-startcenter.desktopx', 'libreoffice-base.desktopx', 'libreoffice-writer.desktopx', 'libreoffice-calc.desktopx', 'libreoffice-math.desktopx', 'libreoffice-impress.desktopx', 'libreoffice-draw.desktopx', 'libreoffice-xsltfilter.desktopx']
 name='Libre Office'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/manjaro-tools]
+apps=['manjaro-hello.desktop', 'manjaro-starter.desktop', 'manjaro-log-helper.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'toolbox.desktop', 'calamares.desktop']
+name='Manjaro Tools'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/octopi-and-system-monitors]
@@ -193,7 +214,7 @@ name='System Tools'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/system-toolss]
-apps=['manjaro-hello.desktop', 'manjaro-log-helper.desktop', 'manjaro-starter.desktop', 'toolbox.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'calamares.desktop', 'st.desktop', 'timeshift-gtk.desktop', 'org.gnome.Firmware.desktop', 'com.github.joseexposito.touche.desktop', 'snapper-gui.desktop', 'gsmartcontrol.desktop', 'gtk-lshw.desktop', 'qvidcap.desktop', 'hp-uiscan.desktop', 'qv4l2.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'btrfs-assistant.desktop', 'manjaro-rescue.desktop', 'org.kde.kuserfeedback-console.desktop', 'electron30.desktop']
+apps=['manjaro-hello.desktop', 'manjaro-log-helper.desktop', 'toolbox.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'calamares.desktop', 'st.desktop', 'org.freedesktop.MalcontentControl.desktop', 'timeshift-gtk.desktop', 'lstopo.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Firmware.desktop', 'com.github.joseexposito.touche.desktop', 'snapper-gui.desktop', 'gsmartcontrol.desktop', 'gtk-lshw.desktop', 'qvidcap.desktop', 'hp-uiscan.desktop', 'qv4l2.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'btrfs-assistant.desktop', 'manjaro-rescue.desktop', 'org.kde.kuserfeedback-console.desktop', 'electron32.desktop', 'electron33.desktop']
 name='System Tools'
 translate=false
 
@@ -203,7 +224,7 @@ name='Terminal Tools'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/theming]
-apps=['com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'kvantummanager.desktop', 'ca.desrt.dconf-editor.desktop', 'qt5ct.desktop', 'qt6ct.desktop', 'org.gnome.Extensions.desktop', 'gnome-layouts.desktop', 'me.dusansimic.DynamicWallpaper.desktop']
+apps=['com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'kvantummanager.desktop', 'ca.desrt.dconf-editor.desktop', 'io.github.realmazharhussain.GdmSettings.desktop', 'qt5ct.desktop', 'qt6ct.desktop', 'org.gnome.Extensions.desktop', 'gnome-layouts.desktop', 'dev.qwery.AddWater.desktop']
 name='Theming'
 translate=true
 
@@ -230,7 +251,7 @@ enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Noto Sans 11'
-gtk-theme='Adw-dark'
+gtk-theme='adw-gtk3-dark'
 icon-theme='Papirus-Dark-Maia'
 monospace-font-name='FiraCode Nerd Font weight=450 12'
 toolkit-accessibility=false
@@ -302,18 +323,18 @@ window-size=(-1, -1)
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
 name-column-width=249
-show-path=true
+show-path=false
 sort-method='name'
 sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=236
 view-sidebar=true
-window-height=550
-window-width=931
+window-height=581
+window-width=1051
 
 [org/gnome/gedit/plugins]
-active-plugins=['wordcompletion', 'textsize', 'terminal', 'spell', 'sort', 'sessionsaver', 'quickhighlight', 'openlinks', 'multiedit', 'modelines', 'joinlines', 'findinfiles', 'filebrowser', 'externaltools', 'docinfo', 'colorpicker', 'codecomment', 'bracketcompletion', 'bookmarks']
+active-plugins=['wordcompletion', 'textsize', 'terminal', 'spell', 'sort', 'sessionsaver', 'quickhighlight', 'multiedit', 'modelines', 'metagedit', 'joinlines', 'filebrowser', 'docinfo', 'colorpicker', 'codecomment', 'bracketcompletion', 'bookmarks']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
@@ -321,8 +342,9 @@ tree-view=false
 virtual-root='file:///run/media/manjaro/BB/Manjaro/Build/build_files/app-grid-stuff/main_reduced_apps/schemas'
 
 [org/gnome/gedit/plugins/metagedit]
-prefer-dark-theme=false
+prefer-dark-theme=true
 resume-session=false
+scroll-past-bottom=true
 
 [org/gnome/gedit/preferences/editor]
 display-overview-map=false
@@ -336,10 +358,13 @@ show-tabs-mode='auto'
 [org/gnome/gedit/state/window]
 bottom-panel-active-page='GeditExternalToolsShellOutput'
 bottom-panel-size=140
+height=534
+maximized=false
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
 size=(1044, 534)
 state=87168
+width=1049
 
 [org/gnome/gnome-subtitles]
 view-window-height=699
@@ -380,8 +405,8 @@ thumbnail-list-visible=false
 use-startup-location=false
 viewer-sidebar='hidden'
 viewer-thumbnails-orientation='vertical'
-window-height=576
-window-width=1107
+window-height=529
+window-width=1053
 
 [org/gnome/gthumb/data-migration]
 catalogs-2-10=true
@@ -407,6 +432,9 @@ attach-modal-dialogs=false
 center-new-windows=true
 edge-tiling=false
 
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small-plus'
 
@@ -418,6 +446,7 @@ default-visible-columns=['name', 'size', 'date_modified', 'date_created']
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
+show-create-link=true
 
 [org/gnome/nautilus/window-state]
 initial-size=(1045, 578)
@@ -427,7 +456,7 @@ maximized=false
 magnifier=['<Super>z']
 
 [org/gnome/shell]
-app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'org.gnome.Calculator.desktop': <{'position': <9>}>, 'opera.desktop': <{'position': <10>}>, 'org.kde.kate.desktop': <{'position': <11>}>, 'org.kde.okular.desktop': <{'position': <12>}>, 'xdman.desktop': <{'position': <13>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'net.nokyan.Resources.desktop': <{'position': <18>}>, 'org.gnome.Terminal.desktop': <{'position': <19>}>, 'com.gexperts.Tilix.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'wpsoffice': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'gnome-apps': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'obsidian.desktop': <{'position': <10>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <11>}>, 'org.gnome.Meld.desktop': <{'position': <12>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <13>}>, 'org.gnome.OCRFeeder.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.gnome.gThumb.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'pinta.desktop': <{'position': <19>}>, 'org.kde.krita.desktop': <{'position': <20>}>, 'org.kde.kdenlive.desktop': <{'position': <21>}>, 'audacity.desktop': <{'position': <22>}>, 'com.obsproject.Studio.desktop': <{'position': <23>}>}, {'octopi-and-system-monitors': <{'position': <0>}>, 'org.inkscape.Inkscape.desktop': <{'position': <1>}>, 'subtitleedit.desktop': <{'position': <2>}>, 'fr.handbrake.ghb.desktop': <{'position': <3>}>, 'projectM-pulseaudio.desktop': <{'position': <4>}>, 'org.gnome.Characters.desktop': <{'position': <5>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <6>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'hplip.desktop': <{'position': <10>}>, 'gnome-printers-panel.desktop': <{'position': <11>}>, 'org.gnome.Logs.desktop': <{'position': <12>}>, 'qjournalctl.desktop': <{'position': <13>}>, 'org.kde.kwrite.desktop': <{'position': <14>}>, 'gufw.desktop': <{'position': <15>}>, 'system-toolss': <{'position': <16>}>}]
+app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'qalculate-gtk.desktop': <{'position': <9>}>, 'org.kde.kate.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'xdman.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'opera.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'net.nokyan.Resources.desktop': <{'position': <18>}>, 'org.gnome.Terminal.desktop': <{'position': <19>}>, 'com.gexperts.Tilix.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'wpsoffice': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'gnome-apps': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'obsidian.desktop': <{'position': <10>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <11>}>, 'org.gnome.Meld.desktop': <{'position': <12>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <13>}>, 'org.gnome.OCRFeeder.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.gnome.gThumb.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'pinta.desktop': <{'position': <19>}>, 'org.kde.krita.desktop': <{'position': <20>}>, 'org.kde.kdenlive.desktop': <{'position': <21>}>, 'audacity.desktop': <{'position': <22>}>, 'com.obsproject.Studio.desktop': <{'position': <23>}>}, {'octopi-and-system-monitors': <{'position': <0>}>, 'org.inkscape.Inkscape.desktop': <{'position': <1>}>, 'subtitleedit.desktop': <{'position': <2>}>, 'fr.handbrake.ghb.desktop': <{'position': <3>}>, 'org.gnome.Characters.desktop': <{'position': <4>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <5>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <6>}>, 'org.kde.kwrite.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'hplip.desktop': <{'position': <10>}>, 'gnome-printers-panel.desktop': <{'position': <11>}>, 'cups.desktop': <{'position': <12>}>, 'system-config-printer.desktop': <{'position': <13>}>, 'org.gnome.Logs.desktop': <{'position': <14>}>, 'qjournalctl.desktop': <{'position': <15>}>, 'system-toolss': <{'position': <16>}>, 'winegui.desktop': <{'position': <17>}>, 'dosbox.desktop': <{'position': <18>}>, 'com.libretro.RetroArch.desktop': <{'position': <19>}>, 'snes9x-gtk.desktop': <{'position': <20>}>, 'blastem.desktop': <{'position': <21>}>, 'GameConqueror.desktop': <{'position': <22>}>, 'gufw.desktop': <{'position': <23>}>}]
 command-history=['r']
 disable-user-extensions=false
 disabled-extensions=['gsconnect@andyholmes.github.io', 'top-bar-organizer@julian.gse.jsts.xyz', 'just-perfection-desktop@just-perfection']
@@ -557,8 +586,9 @@ debugging-free-rects=@as []
 debugging-show-tiled-rects=@as []
 default-move-mode=0
 dynamic-keybinding-behavior=2
+focus-hint-color='rgb(22,160,133)'
 import-layout-examples=false
-last-version-installed=47
+last-version-installed=49
 overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>}
 restore-window=['<Alt>Down']
 search-popup-layout=@as []
@@ -613,8 +643,16 @@ scrollback-unlimited=true
 use-system-font=true
 
 [org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
 show-hidden=true
+sidebar-width=140
+sort-column='name'
 sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(894, 495)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -626,7 +664,7 @@ show-type-column=true
 sidebar-width=171
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(35, 32)
 window-size=(933, 477)
