@@ -4,6 +4,7 @@
 networkmanager                     # optional for gnome-control-center
 >extra networkmanager-openconnect
 >extra networkmanager-openvpn
+>extra networkmanager-pptp
 >extra network-manager-sstp
 >extra networkmanager-strongswan
 >extra networkmanager-vpnc
@@ -87,7 +88,7 @@ gnome-disk-utility
 #gnome-keyring                     # required by xdg-desktop-portal-gnome
 gnome-logs
 #>extra gnome-maps
-gnome-menus                       # optional for gnome-shell-extension-arc-menu (alacarte.desktop,it is the menu editor or main menu)
+gnome-menus                        # optional for gnome-shell-extension-arc-menu (needed by alacarte, the menu editor)
 #gnome-music                       # lollypop included instead
 >extra gnome-remote-desktop        # optional for gnome-control-center
 #gnome-session                     # required by gdm & gnome-shell
@@ -301,7 +302,8 @@ xorg-server                        # required by gdm
 #>extra nautilus-admin                  # already included above by manjaro
 extension-manager												# (chaotic aur) #for downloading new extensions without using firefox extension plugin
 >extra gtk2														# just incase
-zsh-autocomplete												# (in my repo)
+zsh-autocomplete												# (in my repo and manjaro repo)
+>extra alacarte													# Gnome menu editor
 
 
 
@@ -353,9 +355,8 @@ deadbeef														# chaotic ?
 >extra strawberry
 >extra blanket
 #cozy-audiobooks                								# cozy is not in the manjaro repo and arch repo (in aur chaotic)
->extra projectm
->extra projectm-pulseaudio
->extra projectm-sdl
+>extra projectm-git
+>extra projectm-sdl-git
 #>extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
 #>extra gnome-subtitles
 subtitleedit                          							# The best (chaotic aur)
@@ -528,6 +529,9 @@ bibata-extra-cursor-theme										# cursor extra themes from bibata (chaotic)
 >extra decoder 													# QR code checker  (chaotic)
 >extra shortwave												# Internet radio (over 30,000 channels) (chaotic)
 >extra eyedropper												# color picker and palet generator
+>extra authenticator
+>extra komikku
+>extra gnome-podcasts
 
 ## Thumbnailers
 >extra gnome-epub-thumbnailer									# Epub file format thumbnailer
@@ -550,14 +554,44 @@ octopi															# (in aur and chaotic)
 >extra onboard
 #florence														# (in my repo)
 
-## Games (add nintendo snes, sega genesis)
+## Games and Emulators
 >extra aisleriot
 >extra snes9x-gtk
-#add retroarch, xmb and some libretro cores. It is bookmarked
+blastem-hg														# (my repo) mega-drive emulator nigthly version
+>extra lib32-pipewire   										# needed for sound of some 32bit emulators like kega fusion
+>extra lib32-libpipewire										# needed for sound of some 32bit emulators like kega fusion												
+#retroarch, assets and cores
+>extra retroarch
+>extra retroarch-assets-glui
+>extra retroarch-assets-ozone
+>extra retroarch-assets-xmb
+>extra libretro-core-info
+>extra libretro-overlays
+>extra libretro-beetle-psx
+>extra libretro-beetle-psx-hw
+>extra libretro-blastem
+>extra libretro-bsnes
+>extra libretro-desmume
+>extra libretro-gambatte
+>extra libretro-genesis-plus-gx
+>extra libretro-mame
+>extra libretro-mame2016
+>extra libretro-melonds
+>extra libretro-mesen
+>extra libretro-mesen-s
+>extra libretro-mgba
+>extra libretro-mupen64plus-next
+>extra libretro-nestopia
+>extra libretro-parallel-n64
+>extra libretro-picodrive
+>extra libretro-snes9x
+libretro-beetle-saturn-git										# (in my repo)
+retro-dosbox-pure-git											# (in my repo)
+libchdr-git														# (in my repo)
 
-## Emulators and gaming tools
-#>extra scanmem
-#>extra gameconqueror
+## Gaming tools
+>extra gameconqueror											# Game cheat software
+>extra scanmem													# dep for gameconqueror
 xboxdrv															# (in aur and chaotic)
 ds4drv															# (in my repo) (in aur but not in chaotic, not in chinese aur)
 
@@ -588,7 +622,7 @@ fsearch	           												# no fsearch in the manjaro repo (in aur and chao
 
 
 ## Education
-#>extra qalculate-gtk
+>extra qalculate-gtk
 #>extra sagemath
 #>extra sagemath-doc
 #>extra jupyterlab
@@ -637,6 +671,7 @@ moar															# pager, alternative to less (ivasilev repo)
 >extra gum														# A tool for glamarous shell scripts, for yt-x
 >extra jq														# cli json processor (formater)
 >extra pastel													# cli color analyzer, picker
+isd																# (in my repo) interactve systemd
 
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
@@ -653,7 +688,7 @@ cheat															# (in my repo) (in aur)  (not in chaotic, not in chinese aur
 >extra ghostty
 >extra ghostty-shell-integration
 >extra ghostty-terminfo
-nautilus-open-any-terminal										# my repo
+#nautilus-open-any-terminal										# my repo
 #ptyxis															# chaotic
 #nautilus-open-in-ptyxis										# my repo
 
@@ -742,7 +777,7 @@ lib32-ocl-icd
 lib32-pcsclite
 lib32-sdl2
 lib32-v4l-utils
-lib32-vulkan-icd-loader
+lib32-vulkan-icd-loader			# it adds vulkan-radeon as a dep, vulkan-radeon causes the laptop to freeze
 libgphoto2
 libgcrypt
 libgpg-error
@@ -764,7 +799,7 @@ sane
 sdl2
 #unixodbc
 v4l-utils
-vulkan-icd-loader
+vulkan-icd-loader					# it adds vulkan-radeon as a dep, vulkan-radeon causes the laptop to freeze
 
 ## Dependencies for hyper ligth drifter
 lib32-glibc

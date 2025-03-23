@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/home/manjaro/Applications/files/peazip_script_permissions.sh
+Name=peazip_script_permissions
+Comment=Add read write and execute permissions to peazip nautilus scripts
+Type=Application

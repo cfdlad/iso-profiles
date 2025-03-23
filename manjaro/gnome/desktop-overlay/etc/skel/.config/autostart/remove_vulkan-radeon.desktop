@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/home/manjaro/Applications/files/remove_vulkan-radeon.sh
+Name=remove_vulkan-radeon
+Comment=Removes vulkan radeon due to it causing the system to crash
+Type=Application
