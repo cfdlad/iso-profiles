@@ -356,7 +356,7 @@ deadbeef														# chaotic ?
 >extra blanket
 #cozy-audiobooks                								# cozy is not in the manjaro repo and arch repo (in aur chaotic)
 >extra projectm-git
->extra projectm-sdl-git
+>extra projectm-sdl2-git
 #>extra libvisual												# Provides an API for apps to use visualizers, Abstraction library between applications and visualizers
 #>extra gnome-subtitles
 subtitleedit                          							# The best (chaotic aur)
@@ -586,7 +586,7 @@ blastem-hg														# (my repo) mega-drive emulator nigthly version
 >extra libretro-picodrive
 >extra libretro-snes9x
 libretro-beetle-saturn-git										# (in my repo)
-retro-dosbox-pure-git											# (in my repo)
+libretro-dosbox-pure-git											# (in my repo)
 libchdr-git														# (in my repo)
 
 ## Gaming tools
