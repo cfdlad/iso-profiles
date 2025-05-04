@@ -233,12 +233,11 @@ xdg-utils
 #>extra kernel-alive
 
 ## Misc
->basic squashfs-tools
 xiccd # enable color profile settings
 #tlp
 
 ## OEM
-calamares5
+calamares
 calamares-oem-modules
 calamares-oem-starlabs-xfce-settings
 #starlabs-tweaks

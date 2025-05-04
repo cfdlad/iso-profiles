@@ -31,24 +31,14 @@ grub-btrfs
 
 ## Fonts
 
-#adobe-source-code-pro-fonts       # required by gsettings-desktop-schemas
-#adobe-source-han-sans-cn-fonts
-#adobe-source-han-sans-hk-fonts
-#adobe-source-han-sans-jp-fonts
-#adobe-source-han-sans-kr-fonts
-#adobe-source-han-sans-otc-fonts
-#adobe-source-han-sans-tw-fonts
-#adobe-source-sans-fonts
+#adwaita-fonts                     # required by gsettings-desktop-schemas
 noto-fonts                         # default font
 >extra noto-fonts-cjk              # Asian fonts, optional for noto-fonts
 >extra noto-fonts-emoji            # required by gnome-characters, optional for noto-fonts
 >extra noto-fonts-extra            # additional languages, optional for noto-fonts
-#ttf-dejavu                        # required by firefox
-#ttf-droid                         # required by firefox
-ttf-hack                           # default monspace font
-#ttf-inconsolata
+ttf-hack-nerd                      # default monospace font
+ttf-meslo-nerd-font-powerlevel10k  # default GNOME Console font for manjaro-zsh-config
 >extra ttf-indic-otf               # India fonts
-#ttf-liberation                    # required by firefox
 
 
 ## Package management
@@ -68,8 +58,9 @@ pamac-gtk
 ## GNOME group
 
 >extra baobab
+decibels
 #epiphany                          # Firefox included as default browser
-evince
+evince                             # required by sushi; evince soon to be replaced by papers
 gdm
 gnome-backgrounds
 gnome-calculator
@@ -78,7 +69,7 @@ gnome-calendar
 gnome-clocks
 #gnome-color-manager               # required by gnome-control-center
 >extra gnome-connections
-#gnome-console                     # gnome-terminal included instead
+gnome-console
 >extra gnome-contacts
 gnome-control-center
 gnome-disk-utility
@@ -113,7 +104,7 @@ gvfs
 >extra gvfs-smb
 >extra gvfs-wsdd
 >basic loupe                       # gthumb in full edition
->extra malcontent                  # optional for gnome-control-center
+malcontent                         # optional for gnome-control-center
 nautilus
 #orca
 >extra rygel                       # optional for gnome-control-center
@@ -123,7 +114,7 @@ sushi
 #tecla                             # required by gnome-control-center
 totem
 #xdg-desktop-portal-gnome          # required by gnome-session
-xdg-user-dirs-gtk                  # will be required by nautilus with next version
+#xdg-user-dirs-gtk                 # required by nautilus
 #yelp                              # required by gnome-user-docs
 
 
@@ -149,12 +140,11 @@ file-roller
 #gnome-dictionary
 #gnome-games
 #gnome-multi-writer
-#gnome-nettool
 #gnome-notes
 #gnome-photos
 #gnome-recipes
 #gnome-sound-recorder
-gnome-terminal
+#gnome-terminal                   # gnome-console used instead
 gnome-tweaks
 #gnome-usage
 #polari
@@ -164,8 +154,6 @@ gnome-tweaks
 
 ## GNOME Extra games
 
-#five-or-more
-#four-in-a-row
 #gnome-2048
 >extra gnome-chess
 #gnome-klotski
@@ -196,7 +184,7 @@ gnome-tweaks
 >extra gnome-shell-extension-gsconnect
 >extra gnome-shell-extension-legacy-theme-auto-switcher
 >extra gnome-shell-extension-space-bar
->extra gnome-shell-extension-x11gestures
+#>extra gnome-shell-extension-x11gestures  # not updated for GNOME 48
 
 
 ## Themes
@@ -250,29 +238,35 @@ manjaro-settings-manager-notifier
 #mousetweaks
 >extra nautilus-admin
 nautilus-empty-file
+nautilus-open-any-terminal
 #>extra onlyoffice-desktopeditors  # office program is chosen during install
 #polkit-gnome                      # deprecated
->extra power-profiles-daemon       # optional for gnome-control-center
+power-profiles-daemon              # optional for gnome-control-center
 >extra thunderbird
 >extra timeshift
 #tlp                               # conflicts with power-profiles-daemon
->extra touche
+#>extra touche                     # only works with Xorg
 >extra webapp-manager
 #xdg-utils                         # already a dependency of anything that requires it
 
+
 ## Optional dependencies for file-roller
->extra lrzip
->extra p7zip
+>extra 7zip
 >extra squashfs-tools
 >extra unace
 >extra unrar
+#>extra unzip                      # required by gnome-shell
+>extra zip
+
 
 ## Optional dependencies for inxi
 dmidecode
 mesa-utils
 
+
 ## Documentation
 #manjaro-documentation-en
+
 
 ## Settings packages
 #>extra lighter-gnome
@@ -282,8 +276,10 @@ manjaro-browser-settings
 manjaro-gnome-settings
 >extra manjaro-settings-samba
 
+
 ## Xorg Input Drivers
 >extra manjaro-input
+
 
 ## Xorg Server
 #numlockx                          # not used and not needed
