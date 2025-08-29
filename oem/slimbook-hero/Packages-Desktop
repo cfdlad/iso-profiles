@@ -14,7 +14,7 @@ calamares-oem-kde-settings
 slimbook-qc71-dkms
 slimbook-rgb-keyboard
 slimbook_service
-slimbookbattery 
+#slimbookbattery 
 KERNEL-headers
 KERNEL-acpi_call
 
@@ -31,17 +31,17 @@ KERNEL-acpi_call
 #>extra gamescope-session-git
 >extra gamemode
 >multilib lib32-gamemode
->extra opengamepadui-bin
+>extra opengamepadui-git
 >extra opengamepadui-session-git
->extra inputplumber-bin
->extra powerstation-bin
+>extra inputplumber-git
+>extra powerstation-git
 >extra winetricks
 >extra discord
 >extra mangohud
 
 ## Proprietary bundles
 >extra crossover
->extra crossover-extras
+#>extra crossover-extras
 
 #### Regular Profile
 
@@ -253,7 +253,7 @@ manjaro-settings-manager-knotifier
 plasma-systemmonitor
 powertop
 #>extra qbittorrent
-neofetch
+fastfetch
 plymouth-kcm
 #>extra thunderbird
 >extra vlc
@@ -292,4 +292,4 @@ perl-file-mimeinfo
 xdg-utils
 >extra timeshift
 #>extra kernel-alive
-power-profiles-daemon
+#power-profiles-daemon

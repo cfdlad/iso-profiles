@@ -24,7 +24,7 @@ import os
 import logging
 import hashlib
 import secrets
-from shutil import copytree
+from shutil import copy2, copytree
 from os.path import join, exists
 from libcalamares.utils import target_env_call
 
@@ -33,8 +33,6 @@ class ConfigOem:
     def __init__(self):
         self.__root = libcalamares.globalstorage.value("rootMountPoint")
         self.__groups = 'video,audio,power,disk,storage,optical,network,lp,scanner,wheel,autologin'
-        libcalamares.globalstorage.insert("autoLoginUser", "gamer")
-        libcalamares.globalstorage.insert("username", "gamer")
 
     @property
     def root(self):
@@ -70,6 +68,10 @@ class ConfigOem:
                 if os.path.islink(path):
                     os.unlink(path)
 
+    def copy_file(self, file):
+        if exists("/" + file):
+            copy2("/" + file, join(self.root, file))
+
     def copy_folder(self, source, target):
         if exists("/" + source):
             copytree("/" + source, join(self.root, target), symlinks=True, ignore_dangling_symlinks=True,
@@ -88,6 +90,20 @@ class ConfigOem:
 
         # Copy skel to root
         self.copy_folder('etc/skel', 'root')
+
+        # Workaround for BTRFS amd-ucode.img bug
+        # https://gitlab.manjaro.org/release-plan/calamares/-/issues/2
+        # We have to copy the amd-ucode.img from the live-session over to target
+        self.copy_file('boot/amd-ucode.img')
+
+        # There is a nasty bug in *something*, probably grub and BTRFS, that causes us to be completely
+        # unable to boot once the system is installed with a kernel higher than 6.12
+        # https://codeberg.org/Calamares/calamares/issues/2440
+        # We have to do some nasty dd nonsense to fix it
+        # TODO remove me when this is fixed
+        if exists(join(self.root, "usr/bin/dd")):
+            # Create temporary directory, copy /boot/vmlinuz-* to it, copy back with dd
+            target_env_call(["sh", "-c", 'mkdir -p /tmp/vmlinuz-hack && mv /boot/vmlinuz-* /tmp/vmlinuz-hack/ && find /tmp/vmlinuz-hack/ -maxdepth 1 -type f -exec sh -c \'dd if="$1" of="/boot/$(basename "$1")"\' sh {} \;'])
 
         # Enable 'menu_auto_hide' when supported in grubenv
         if exists(join(self.root, "usr/bin/grub-set-bootflag")):

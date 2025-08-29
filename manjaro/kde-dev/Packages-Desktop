@@ -1,3 +1,6 @@
+## OEM
+plasma-kiss-git
+
 ## Network
 avahi
 networkmanager
@@ -128,6 +131,10 @@ breeze-gtk
 plymouth
 plymouth-theme-manjaro
 
+# needed by manjaro-application-utility
+# category icons(Browsers, Backup,etc)
+papirus-icon-theme
+
 ## KDE Applications
 ark
 #>extra digikam
@@ -201,15 +208,15 @@ kaccounts-providers                # required by kio-gdrive
 #>extra libreoffice-still
 manjaro-hello
 manjaro-application-utility
-#manjaro-settings-manager-kcm
-manjaro-settings-manager-knotifier
+manjaro-settings-manager
+#manjaro-settings-manager-knotifier
 plasma-systemmonitor
 powertop
 #>extra qbittorrent
-neofetch
+fastfetch
 plymouth-kcm
 #>extra thunderbird
->extra vlc
+#>extra vlc
 yakuake
 
 ## Documentation
@@ -239,6 +246,7 @@ xorg-twm
 xorg-xinit
 xorg-xkill
 xorg-mkfontscale
+plasma-x11-session
 
 ## Desktop Utils
 perl-file-mimeinfo
