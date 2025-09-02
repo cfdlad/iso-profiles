@@ -45,8 +45,16 @@
 
 # # theme
   # theme = AdventureTime
+  #
   # theme = light:theme-name,dark:theme-name
+  #
   # theme = light:Adwaita,dark:Andromeda
+  # theme = light:AtomOneLight,dark:Andromeda
+  # theme = light:catppuccin-latte,dark:catppuccin-mocha
+  # theme = light:GitHub-Light-Default,dark:Ghostty Default StyleDark
+  # theme = light:GitLab-Light,dark:GitLab-Dark
+  # theme = light:OneHalfLight,dark:OneHalfDark
+  # theme = light:OneHalfLight,dark:Snazzy Soft
 
 # # window-themes
   # auto - Determine the theme based on the configured terminal background color.
@@ -60,13 +68,18 @@
   # flat - Top and bottom bars are flat with the terminal window.
   # raised - Top and bottom bars cast a shadow on the terminal area.
   # raised-border - Similar to raised but the shadow is replaced with a more subtle border.
-
-
-theme = light:AtomOneLight,dark:Andromeda
+  
+  
+font-family = FiraCode Nerd Font
+font-size = 12
+  
+theme = light:OneHalfLight,dark:Snazzy Soft
 window-theme = ghostty
 window-decoration = true
 window-padding-x = 10
-window-padding-y = 2
+window-padding-y = 0
+
+background-opacity = 1
 
 mouse-scroll-multiplier = 0.5
 
@@ -76,5 +89,5 @@ adw-toolbar-style = flat
 gtk-wide-tabs = true
 gtk-adwaita = true
 
-window-height = 26
+window-height = 29
 window-width = 103
