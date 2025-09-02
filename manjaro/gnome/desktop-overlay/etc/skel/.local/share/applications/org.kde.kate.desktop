@@ -1,0 +1,20 @@
+[Desktop Entry]
+Actions=Session a02841025ae7fd2c94d7d2771e058706;
+Categories=Qt;KDE;Utility;TextEditor;Development;
+Comment=KDE Advanced Text Editor
+Exec=kate --start "Default Session" -b %U
+GenericName=Advanced Text Editor
+Icon=kate
+InitialPreference=9
+Keywords=text;txt;editor;programming;programmer;development;developer;code;
+MimeType=text/plain;inode/directory;
+Name=Kate
+StartupNotify=true
+StartupWMClass=kate
+Type=Application
+X-DocPath=kate/index.html
+X-KDE-HasTempFileOption=true
+
+[Desktop Action Session a02841025ae7fd2c94d7d2771e058706]
+Exec=kate -n -s 'Default Session'
+Name=Default Session

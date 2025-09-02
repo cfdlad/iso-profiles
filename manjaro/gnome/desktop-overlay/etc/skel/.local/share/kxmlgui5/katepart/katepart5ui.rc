@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui name="KatePartView" translationDomain="ktexteditor6" version="106">
+<gui name="KatePartView" translationDomain="ktexteditor6" version="109">
  <MenuBar>
   <Menu name="file" noMerge="1">
    <text translationDomain="ktexteditor6">&amp;File</text>
@@ -9,7 +9,7 @@
    <Action group="save_merge" name="file_save_copy_as"/>
    <Action group="revert_merge" name="file_reload"/>
    <Menu group="print_merge" name="file_export" noMerge="1">
-    <text translationDomain="ktexteditor6">Print/Export</text>
+    <text translationDomain="ktexteditor6">&amp;Print/Export</text>
     <Action group="print_merge" name="file_print"/>
     <Action group="print_merge" name="file_print_preview"/>
     <Action group="print_merge" name="file_export_html"/>
@@ -26,6 +26,7 @@
    <Action group="edit_paste_merge" name="edit_copy_file_location"/>
    <Action group="edit_paste_merge" name="edit_paste"/>
    <Action group="edit_paste_merge" name="edit_paste_selection"/>
+   <Action group="edit_paste_merge" name="edit_paste_from_file"/>
    <Action group="edit_paste_merge" name="edit_swap_with_clipboard"/>
    <Action group="edit_paste_merge" name="clipboard_history_paste"/>/>
     <Separator group="edit_select_merge"/>
@@ -60,6 +61,8 @@
    </Menu>
    <Separator group="edit_selection"/>
    <Action group="edit_selection" name="tools_cleanIndent"/>
+   <Action group="edit_selection" name="tools_convertTabsSpaces"/>
+   <Action group="edit_selection" name="tools_convertSpacesTabs"/>
    <Action group="edit_selection" name="tools_formatIndent"/>
    <Action group="edit_selection" name="tools_alignOn"/>
    <Action group="edit_selection" name="tools_apply_wordwrap"/>
@@ -189,12 +192,37 @@
  </Menu>
  <ToolBar name="mainToolBar" noMerge="1">
   <text translationDomain="ktexteditor6">Main Toolbar</text>
-  <Action group="file_operations" name="file_save"/>
+  <Action name="file_save"/>
   <Separator name="separator_0"/>
-  <Action group="file_operations" name="file_save_as"/>
+  <Action name="file_save_as"/>
   <Separator name="separator_1"/>
-  <Action group="edit_operations" name="edit_undo"/>
+  <Action name="edit_undo"/>
   <Separator name="separator_2"/>
-  <Action group="edit_operations" name="edit_redo"/>
+  <Action name="edit_redo"/>
+  <Separator name="separator_3"/>
+  <Action name="tools_scripts"/>
+  <Spacer name="spacer_0"/>
+  <Action name="edit_find"/>
+  <Separator name="separator_4"/>
+  <Action name="view_dynamic_word_wrap"/>
+  <Separator name="separator_5"/>
+  <Action name="edit_select_all"/>
+  <Separator name="separator_6"/>
+  <Action name="edit_deselect"/>
+  <Separator name="separator_7"/>
+  <Action name="edit_copy"/>
+  <Separator name="separator_8"/>
+  <Action name="edit_cut"/>
+  <Separator name="separator_9"/>
+  <Action name="edit_paste"/>
+  <Spacer name="spacer_1"/>
+  <Action name="view_inc_font_sizes"/>
+  <Separator name="separator_10"/>
+  <Action name="view_dec_font_sizes"/>
+  <Separator name="separator_11"/>
+  <Action name="view_reset_font_sizes"/>
  </ToolBar>
+ <ActionProperties scheme="Default">
+  <Action icon="code-context-symbolic" name="tools_scripts_Emmet"/>
+ </ActionProperties>
 </gui>

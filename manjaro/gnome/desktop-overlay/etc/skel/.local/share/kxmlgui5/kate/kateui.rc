@@ -1,5 +1,5 @@
 <!DOCTYPE gui>
-<gui name="kate" translationDomain="kate" version="103">
+<gui name="kate" translationDomain="kate" version="106">
  <MenuBar alreadyVisited="1">
   <Menu alreadyVisited="1" name="file" noMerge="1">
    <text translationDomain="kate">&amp;File</text>
@@ -27,7 +27,7 @@
    <DefineGroup name="close_merge"/>
    <Separator/>
    <Menu name="file_file_actions" noMerge="1">
-    <text translationDomain="kate">File Actions</text>
+    <text translationDomain="kate">File Act&amp;ions</text>
     <Action name="file_rename"/>
     <Action name="file_delete"/>
     <Action name="file_compare"/>
@@ -51,7 +51,7 @@
    <Separator/>
   </Menu>
   <Menu append="before_view" name="selection" noMerge="1">
-   <text translationDomain="kate">&amp;Selection</text>
+   <text translationDomain="kate">Sele&amp;ction</text>
   </Menu>
   <Menu alreadyVisited="1" name="view" noMerge="1">
    <text translationDomain="kxmlgui6">&amp;View</text>
@@ -75,6 +75,7 @@
     <Action name="view_close_others"/>
     <Separator/>
     <Action name="view_hide_others"/>
+    <Action name="toggle_active_viewspace_scroll_sync"/>
     <Separator/>
     <Action name="view_split_move_left"/>
     <Action name="view_split_move_right"/>
@@ -129,6 +130,7 @@
   </Menu>
   <Menu alreadyVisited="1" name="settings" noMerge="1">
    <text translationDomain="kxmlgui6">&amp;Settings</text>
+   <Action name="settings_style"/>
    <Action group="color" name="colorscheme_menu"/>
    <DefineGroup name="color"/>
    <Separator weakSeparator="1"/>
@@ -166,27 +168,19 @@
   <Action name="file_new"/>
   <Separator name="separator_0"/>
   <Action name="file_open"/>
-  <Separator name="separator_1"/>
   <DefineGroup name="file_operations"/>
-  <Separator name="separator_2"/>
   <DefineGroup name="print_merge"/>
-  <Separator name="separator_3"/>
   <DefineGroup name="edit_operations"/>
-  <Separator name="separator_4"/>
   <DefineGroup name="find_operations"/>
-  <Separator name="separator_5"/>
   <DefineGroup name="zoom_operations"/>
+  <Separator name="separator_1"/>
  </ToolBar>
  <Merge/>
  <ToolBar name="hamburgerBar" noMerge="1">
   <text translationDomain="kate">Hamburger Menu Toolbar</text>
-  <Spacer/>
+  <Spacer name="spacer_0"/>
   <Action name="hamburger_menu"/>
  </ToolBar>
- <Menu name="ktexteditor_popup" noMerge="1">
-  <DefineGroup name="popup_operations"/>
-  <DefineGroup name="popup_operations2"/>
- </Menu>
  <Menu name="viewspace_popup" noMerge="1">
   <Action name="view_split_vert"/>
   <Action name="view_split_horiz"/>
