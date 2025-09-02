@@ -31,6 +31,9 @@ $time\
 [ ](fg:color_bg1)\
 $line_break$character"""
 
+# Disable the blank line at the start of the prompt
+add_newline = false
+
 palette = 'gruvbox_dark'
 
 [palettes.gruvbox_dark]
