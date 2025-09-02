@@ -33,21 +33,27 @@ chsh -s /bin/fish && echo 'Now log out and log back in to change shell to fish.'
 source .zshrc
 nvim
 fc-cache -fv && echo '!!!! Reloading font cache
+sudo ds4drv --emulate-xboxdrv
 projectMSDL
+sudo pacman -U -d ./*zst
+pamac list
+pac-zstd
+pac-zst
 micro -plugin list
 micro -help
 micro -plugin available
 micro
-tldr-fzf
-ch
 rga
+fuz
 rga-fzf
 fuzp
-fuz
+navi
+tldr-fzf
+ch
 makepkg
-pac-zstd
-pac-zst
+unlock
 clear
-pamac list
-sudo pacman -U -d ./*zst
+pac-remove
+pac-install
+pac-list
 sudo pacman -U ./*zst
