@@ -1,0 +1,139 @@
+[file:///home/manjaro/.bash_functions]
+Checksum=bb9ab67fc19e3df06b3e9926c70076b26a646578
+Mode=Bash
+Mode Set By User=true
+Time=2025,4,7,7,29,34.922
+URL=file:///home/manjaro/.bash_functions
+
+[file:///home/manjaro/.bash_logout]
+Checksum=0e4e4f1845f2f4a355889e7cdb27f398da1b0869
+Mode=Bash
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.bash_logout
+
+[file:///home/manjaro/.cfdlad-manjaro-zsh-config]
+Checksum=6c20183b8a2f6b3e1ac014ef736a63daa36ebb93
+Mode=Zsh
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.cfdlad-manjaro-zsh-config
+
+[file:///home/manjaro/.cfdlad-zsh-config]
+Checksum=d23f418720b35f4096ea602591ad33af1e8512aa
+Mode=Zsh
+Mode Set By User=true
+Time=2025,4,7,18,10,23.298
+URL=file:///home/manjaro/.cfdlad-zsh-config
+
+[file:///home/manjaro/.config/dconf/boy]
+Checksum=fa5ea238c72257e74e71faa8934c15c9f30441e4
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/dconf/boy
+
+[file:///home/manjaro/.config/ghostty/config]
+Checksum=439d004ce8c1efe61b183d0889003a8379234328
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/ghostty/config
+
+[file:///home/manjaro/.config/ghostty/configx]
+Checksum=0e099652302fb05bea99aca1d80435fa157cb198
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/ghostty/configx
+
+[file:///home/manjaro/.config/harunarc]
+Checksum=4e5f37962bf3a51cc8f69cc7cd16a48cd6bf5a9c
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/harunarc
+
+[file:///home/manjaro/.config/kate-externaltoolspluginrc]
+Checksum=f32343da48150776961859ad56397264053a84b5
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/kate-externaltoolspluginrc
+
+[file:///home/manjaro/.config/katemetainfos]
+Checksum=cbaa2ed02c121eec3862732881021a0864769241
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/katemetainfos
+
+[file:///home/manjaro/.config/katerc]
+Checksum=346b0af0d81291009cf04b2d10c267a524819f90
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/katerc
+
+[file:///home/manjaro/.config/katevirc]
+Checksum=cdea46f5f34de64a0b0ef5eee148cdf71ebc4342
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/katevirc
+
+[file:///home/manjaro/.config/kdenliverc]
+Checksum=9202d0c58c19b4fe7f436c1d6e1a4d65d16daa2c
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/kdenliverc
+
+[file:///home/manjaro/.config/kritarc]
+Checksum=885f95779ce976becba2ec0e50cc86c7be143585
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/kritarc
+
+[file:///home/manjaro/.config/mimeapps.list]
+Checksum=6f77fd32aac044894597fae449349ade044e6bea
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/mimeapps.list
+
+[file:///home/manjaro/.config/peazip/conf.txt]
+Checksum=8615086fc10e458c7e3ab2fa4a38468e23f3e3e4
+Mode=INI Files
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/peazip/conf.txt
+
+[file:///home/manjaro/.config/starship.toml.mine]
+Checksum=c9bdc7a923926f40468506385d10c46daf5c2837
+Mode=TOML
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.config/starship.toml.mine
+
+[file:///home/manjaro/.dir_colors]
+Checksum=89c085daa5f64a657d46aafe83fac8606d66ea81
+Mode=Bash
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.dir_colors
+
+[file:///home/manjaro/.screenrc]
+Checksum=9a94b7a4c653f0b6759f7b59a9cf2f8c620fe6fd
+Mode=Bash
+Mode Set By User=true
+Time=2025,4,7,18,44,7.543
+URL=file:///home/manjaro/.screenrc
+
+[file:///home/manjaro/.zfunctions]
+Checksum=1aa4aa238538b2a468261d44fd37ed78419b6cdf
+Mode=Zsh
+Mode Set By User=true
+Time=2025,4,7,18,28,20.181
+URL=file:///home/manjaro/.zfunctions
