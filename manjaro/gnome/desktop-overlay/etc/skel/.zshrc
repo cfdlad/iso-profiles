@@ -1,14 +1,15 @@
 ##################################################################################################################################
 ## cfdlad's .zshrc for manjaro os
 ## It checks for the name of the terminal in use
-## If konsole (kde) or gnome-terminal (gnome) is used then 'USE_POWERLINE' is set to true and 'manjaro-zsh-prompt' prompt is used
+## If konsole (kde) or gnome-console (gnome) is used then 'USE_POWERLINE' is set to true and 'manjaro-zsh-prompt' prompt is used
 ## Else for any other terminal the starship prompt is used
 ## Both options make use of the cfdlad-zsh-config and cfdlad-manjaro-zsh-config
 ## 'cfdlad-zsh-config' is my personal zsh config with settings not available in the 'manjaro-zsh-config'
 ## 'cfdlad-manjaro-zsh-config' is my modified manjaro zsh config and is kept as close as possible to the original 'manjaro-zsh-config'
+## If using gnome-terminal and not gnome-console replace "/usr/bin/kgx --gapplication-service" with "/usr/lib/gnome-terminal-server"
 #################################################################################################################################
 
-if [[ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" =  "/usr/bin/konsole" ]] || [[ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" =  "/usr/lib/gnome-terminal-server" ]]; then
+if [[ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" =  "/usr/bin/konsole" ]] || [[ "$(ps -o 'cmd=' -p $(ps -o 'ppid=' -p $$))" =  "/usr/bin/kgx --gapplication-service" ]]; then
 
     #echo "USE_POWERLINE=true";
     #echo "Use manjaro zsh prompt=true";

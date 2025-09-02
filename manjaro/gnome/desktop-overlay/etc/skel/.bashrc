@@ -200,14 +200,6 @@ alias la='eza -a --icons --color=always --group-directories-first'  # row (all f
 alias lt='eza -aT --color=always --group-directories-first' # tree listing
 alias l.='eza -a | grep -E "^\."'
 
-# cheat and fzf
-alias ch="cheat -l -c | awk '{print \$1}' | fzf --preview='cheat --colorize {}' --preview-window=right,75% --height 70% | xargs -I{} cheat {}"	# Preview and paste code
-alias ch-path="cheat -l | fzf |  awk '{print \$1}' | xargs -I{} cheat {}"				# No preview, only path and paste code
-alias ch-preview='cheat -l | fzf --preview="cheat -c {1}" --preview-window=right,80% --height 70%'		# Preview only and paste cheat file path
-
-# tldr
-alias tldrf='tldr --list | fzf --preview "tldr --color always {1}" --preview-window=right,65% --height 70% | xargs -I{} tldr {}'
-
 # for ranger, to exit or cd into the current folder
 alias ranger='source ranger'
 

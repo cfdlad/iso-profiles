@@ -37,15 +37,68 @@ function sd-factbook() {
 
 
 
-#### Pacman list all packages installed
-#### Use fzf and interactively show each package info in a preview window
-#### Multi select the packages (tab) and press enter to print their respective info 
-#### paclist()
+### Cheat
+### Displays the cheat and previews the code 
+### Press enter to paste the code
+function ch() {
+    cheat -l -c | awk '{print $1}' | fzf \
+    --preview="cheat {} | bat -f -pp -l sh --theme='ansi'" \
+    --preview-window=right,80% \
+    --height 80% | \
+      xargs -I{} cheat {} | bat -f -pp -l sh --theme='ansi'
+	}
+
+
+
+
+### Cheat-Path
+### Displays only the cheat name and path (No code preview)
+### Press enter to paste the code	
+function ch-path() {
+	cheat -l | fzf | awk '{print $1}' | \
+	xargs -I{} cheat {} | bat -f -pp -l sh --theme='ansi'
+	}
+
+
+
+
+### Cheat-preview
+### Displays only the code preview
+### Press enter to paste cheat name and file path	
+function ch-preview() {
+	cheat -l | fzf \
+	--preview="cheat -c {1}" \
+	--preview-window=right,80% \
+	--height 80%
+	}
+	
+
+
+
+
+### To long did not read
+### Displays the cheat and previews the code 
+### Press enter to paste the code
+function tldr-fzf() {
+	tldr --list | fzf \
+	--preview "tldr --color always {1}" \
+	--preview-window=right,80% \
+	--height 80% | xargs -I{} tldr {}	
+	}
+
+
+
+
+### Pacman list all packages installed
+### Use fzf and interactively show each package info in a preview window
+### Multi select the packages (tab) and press enter to print their respective info 
+### pac-list()
 
 # Note '2> /dev/null' is to redirect error output 'warning: database file for 'core' does not exist' to the null device
 # So '2> /dev/null' means throw away stderr (standard error)
 
 # 'bat -f -p -l yaml' provides color preview
+# use 'base16', 'OneHalfLight', 'Monokai Extended Light', 'ansi' for the theme
 # The big -P is to print the info on the terminal (not use pager)
 # The small -p means plain (no decorations)
 function pac-list() {
@@ -55,9 +108,9 @@ function pac-list() {
 	--header-first \
 	--header '[TAB]: Multi-Select, [ENTER]: Print-Info' \
 	--preview-label ' Infomation_Preview ' \
-	--preview "pacman -Qi {1} 2> /dev/null | bat -f -p -l yaml" \
+	--preview "pacman -Qi {1} 2> /dev/null | bat -f -p -l yaml --theme='ansi'" \
 	--prompt '  Find Packages > ' \
-	| xargs -I{} pacman -Qi {} 2> /dev/null | bat -f -p -l yaml -P
+	| xargs -I{} pacman -Qi {} 2> /dev/null | bat -f -p -l yaml --theme='ansi' -P
 	}
 
 
@@ -85,7 +138,7 @@ function pac-remove() {
 	--prompt '  List Preview > ' \
 	--bind 'ctrl-t:transform:[[ ! {fzf:prompt} =~ List ]] &&
         echo "change-prompt(  List Preview > )+change-preview:bat -n -f \{+f}" ||
-        echo "change-prompt(  Info Preview > )+change-preview:pacman -Qi \{} 2> /dev/null | bat -f -p -l yaml"' \
+        echo "change-prompt(  Info Preview > )+change-preview:pacman -Qi \{} 2> /dev/null | bat -f -p -l yaml --theme='ansi'"' \
 	| xargs -ro sudo pacman -Rns
 	}
 
