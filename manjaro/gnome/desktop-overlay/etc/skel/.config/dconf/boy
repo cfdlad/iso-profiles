@@ -59,19 +59,15 @@ window-height=uint32 689
 window-position=(0, 0)
 window-width=uint32 1366
 
-[com/github/stunkymonkey/nautilus-open-any-terminal]
-keybindings='<Ctrl><Alt>t'
-terminal='ghostty'
-
 [com/github/unrud/VideoDownloader]
 mode='video'
 prefer-mpeg=true
 resolution=uint32 360
 
 [com/mattjakeman/ExtensionManager]
-height=600
+height=580
 last-used-version='0.5.1'
-width=800
+width=1050
 
 [io/bassi/Amberol]
 window-height=665
@@ -98,6 +94,11 @@ window-width=998
 [org/gnome/Connections]
 first-run=false
 
+[org/gnome/Console]
+ignore-scrollback-limit=true
+last-window-maximised=false
+last-window-size=(1050, 580)
+
 [org/gnome/Extensions]
 window-height=579
 window-maximized=false
@@ -113,6 +114,20 @@ window-size=(uint32 103, uint32 26)
 bold-is-bright=false
 limit-scrollback=false
 palette='Adventure Time'
+
+[org/gnome/TextEditor]
+custom-font='FiraCode Nerd Font 12'
+highlight-current-line=true
+restore-session=true
+show-grid=false
+show-line-numbers=true
+show-map=true
+show-right-margin=false
+spellcheck=false
+style-scheme='solarized-dark'
+style-variant='follow'
+tab-width=uint32 4
+use-system-font=false
 
 [org/gnome/calculator]
 accuracy=9
@@ -147,7 +162,7 @@ mag-factor=1.5
 mouse-tracking='proportional'
 
 [org/gnome/desktop/app-folders]
-folder-children=['accessoriess', 'theming', 'octopi-and-system-monitors', 'libreoffice', 'wpsoffice', 'terminal-tools', 'gamess', 'system-toolss', 'gnome-apps', 'hard-disk-tools']
+folder-children=['accessoriess', 'theming', 'octopi', 'libreoffice', 'wpsoffice', 'terminal-tools', 'gamess', 'system-toolss', 'gnome-apps', 'hard-disk-tools', 'manjaro-tools']
 
 [org/gnome/desktop/app-folders/folders/accessories]
 apps=['yad-icon-browser.desktop', 'de.haeckerfelix.Fragments.desktop']
@@ -157,7 +172,7 @@ name='Accessories'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/accessoriess]
-apps=['org.gnome.Extensions.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.SystemMonitor.desktop', 'systemd-pilot.desktop', 'systemd-manager.desktop', 'onboard.desktop', 'alacarte.desktop', 'scrcpy.desktop', 'hp-uiscan.desktop', 'scrcpy-console.desktop', 'onboard-settings.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop', 'yelp.desktop']
+apps=['org.gnome.TextEditor.desktop', 'org.gnome.gedit.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.SystemMonitor.desktop', 'systemd-pilot.desktop', 'systemd-manager.desktop', 'onboard.desktop', 'org.kde.kwrite.desktop', 'alacarte.desktop', 'scrcpy.desktop', 'hp-uiscan.desktop', 'scrcpy-console.desktop', 'onboard-settings.desktop', 'yad-icon-browser.desktop', 'yad-settings.desktop', 'stoken-gui.desktop', 'stoken-gui-small.desktop', 'yelp.desktop']
 name='Accessories'
 translate=true
 
@@ -172,12 +187,12 @@ name='Games'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/gamess]
-apps=['org.gnome.TwentyFortyEight.desktop', 'sol.desktop', 'org.gnome.Mahjongg.desktop', 'org.gnome.Chess.desktop', 'org.gnome.Mines.desktop', 'org.gnome.Quadrapassel.desktop', 'org.gnome.Sudoku.desktop', 'org.gnome.Reversi.desktop']
+apps=['org.gnome.TwentyFortyEight.desktop', 'sol.desktop', 'org.gnome.Mahjongg.desktop', 'org.gnome.Chess.desktop', 'org.gnome.Mines.desktop', 'org.gnome.Quadrapassel.desktop', 'org.gnome.Sudoku.desktop', 'org.gnome.Reversi.desktop', 'org.gnome.Chess.desktop']
 name='Games'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/gnome-apps]
-apps=['org.gnome.Calculator.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.BreakTimer.desktop', 'info.febvre.Komikku.desktop', 'org.gnome.Podcasts.desktop', 'de.haeckerfelix.Shortwave.desktop', 'com.github.finefindus.eyedropper.desktop', 'dev.geopjr.Collision.desktop', 'com.belmoussaoui.Authenticator.desktop', 'com.belmoussaoui.Decoder.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Evince.desktop']
+apps=['org.gnome.Calculator.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.BreakTimer.desktop', 'info.febvre.Komikku.desktop', 'org.gnome.Podcasts.desktop', 'de.haeckerfelix.Shortwave.desktop', 'com.github.finefindus.eyedropper.desktop', 'dev.geopjr.Collision.desktop', 'com.belmoussaoui.Authenticator.desktop', 'com.belmoussaoui.Decoder.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Maps.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Weather.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Evince.desktop']
 name='Gnome Apps'
 translate=true
 
@@ -192,13 +207,13 @@ name='Libre Office'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/manjaro-tools]
-apps=['manjaro-hello.desktop', 'manjaro-starter.desktop', 'manjaro-log-helper.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'toolbox.desktop', 'calamares.desktop']
+apps=['manjaro-hello.desktop', 'manjaro-starter.desktop', 'manjaro-log-helper.desktop', 'application-utility.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'toolbox.desktop', 'calamares.desktop']
 name='Manjaro Tools'
 translate=true
 
-[org/gnome/desktop/app-folders/folders/octopi-and-system-monitors]
-apps=['octopi.desktop', 'deepin-system-monitor.desktop', 'io.github.hakandundar34coding.system-monitoring-center.desktop', 'octopi-cachecleaner.desktop', 'octopi-notifier.desktop', 'octopi-repoeditor.desktop']
-name='Octopi and System Monitors'
+[org/gnome/desktop/app-folders/folders/octopi]
+apps=['octopi.desktop', 'io.github.hakandundar34coding.system-monitoring-center.desktop', 'octopi-cachecleaner.desktop', 'octopi-notifier.desktop', 'octopi-repoeditor.desktop']
+name='Octopi'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/office]
@@ -214,12 +229,12 @@ name='System Tools'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/system-toolss]
-apps=['manjaro-hello.desktop', 'manjaro-log-helper.desktop', 'toolbox.desktop', 'manjaro-settings-manager.desktop', 'msm_notifier_settings.desktop', 'calamares.desktop', 'st.desktop', 'org.freedesktop.MalcontentControl.desktop', 'timeshift-gtk.desktop', 'lstopo.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Firmware.desktop', 'com.github.joseexposito.touche.desktop', 'snapper-gui.desktop', 'gsmartcontrol.desktop', 'gtk-lshw.desktop', 'qvidcap.desktop', 'hp-uiscan.desktop', 'qv4l2.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'btrfs-assistant.desktop', 'manjaro-rescue.desktop', 'org.kde.kuserfeedback-console.desktop', 'electron32.desktop', 'electron33.desktop']
+apps=['org.gnome.Boxes.desktop', 'org.gnome.DejaDup.desktop', 'st.desktop', 'org.freedesktop.MalcontentControl.desktop', 'timeshift-gtk.desktop', 'lstopo.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Firmware.desktop', 'com.github.joseexposito.touche.desktop', 'snapper-gui.desktop', 'gsmartcontrol.desktop', 'gtk-lshw.desktop', 'qvidcap.desktop', 'hp-uiscan.desktop', 'qv4l2.desktop', 'bssh.desktop', 'bvnc.desktop', 'avahi-discover.desktop', 'btrfs-assistant.desktop', 'manjaro-rescue.desktop', 'org.kde.kuserfeedback-console.desktop', 'electron34.desktop', 'electron35.desktop', 'electron36.desktop']
 name='System Tools'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/terminal-tools]
-apps=['scrcpy.desktop', 'scrcpy-console.desktop', 'ranger.desktop', 'htop.desktop', 'btop.desktop', 'fish.desktop', 'micro.desktop', 'nvim.desktop', 'nnn.desktop', 'bandwhich.desktop', 'nethogs.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'xdvi.desktop']
+apps=['scrcpy.desktop', 'isd.desktop', 'ranger.desktop', 'htop.desktop', 'btop.desktop', 'fish.desktop', 'micro.desktop', 'nvim.desktop', 'nnn.desktop', 'scrcpy-console.desktop', 'systemd-manager-tui.desktop', 'bandwhich.desktop', 'nethogs.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'xdvi.desktop']
 name='Terminal Tools'
 translate=true
 
@@ -456,12 +471,12 @@ maximized=false
 magnifier=['<Super>z']
 
 [org/gnome/shell]
-app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'qalculate-gtk.desktop': <{'position': <9>}>, 'org.kde.kate.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'xdman.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'opera.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'net.nokyan.Resources.desktop': <{'position': <18>}>, 'org.gnome.Terminal.desktop': <{'position': <19>}>, 'com.gexperts.Tilix.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'wpsoffice': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'gnome-apps': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'obsidian.desktop': <{'position': <10>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <11>}>, 'org.gnome.Meld.desktop': <{'position': <12>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <13>}>, 'org.gnome.OCRFeeder.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.gnome.gThumb.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'pinta.desktop': <{'position': <19>}>, 'org.kde.krita.desktop': <{'position': <20>}>, 'org.kde.kdenlive.desktop': <{'position': <21>}>, 'audacity.desktop': <{'position': <22>}>, 'com.obsproject.Studio.desktop': <{'position': <23>}>}, {'octopi-and-system-monitors': <{'position': <0>}>, 'org.inkscape.Inkscape.desktop': <{'position': <1>}>, 'subtitleedit.desktop': <{'position': <2>}>, 'fr.handbrake.ghb.desktop': <{'position': <3>}>, 'org.gnome.Characters.desktop': <{'position': <4>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <5>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <6>}>, 'org.kde.kwrite.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'hplip.desktop': <{'position': <10>}>, 'gnome-printers-panel.desktop': <{'position': <11>}>, 'cups.desktop': <{'position': <12>}>, 'system-config-printer.desktop': <{'position': <13>}>, 'org.gnome.Logs.desktop': <{'position': <14>}>, 'qjournalctl.desktop': <{'position': <15>}>, 'system-toolss': <{'position': <16>}>, 'winegui.desktop': <{'position': <17>}>, 'dosbox.desktop': <{'position': <18>}>, 'com.libretro.RetroArch.desktop': <{'position': <19>}>, 'snes9x-gtk.desktop': <{'position': <20>}>, 'blastem.desktop': <{'position': <21>}>, 'GameConqueror.desktop': <{'position': <22>}>, 'gufw.desktop': <{'position': <23>}>}]
+app-picker-layout=[{'accessoriess': <{'position': <0>}>, 'mpv.desktop': <{'position': <1>}>, 'org.kde.haruna.desktop': <{'position': <2>}>, 'vlc.desktop': <{'position': <3>}>, 'org.strawberrymusicplayer.strawberry.desktop': <{'position': <4>}>, 'deadbeef.desktop': <{'position': <5>}>, 'ProjectMSDL2.desktop': <{'position': <6>}>, 'com.rafaelmardojai.Blanket.desktop': <{'position': <7>}>, 'theming': <{'position': <8>}>, 'qalculate-gtk.desktop': <{'position': <9>}>, 'sublime_text.desktop': <{'position': <10>}>, 'org.kde.okular.desktop': <{'position': <11>}>, 'xdman.desktop': <{'position': <12>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <13>}>, 'opera.desktop': <{'position': <14>}>, 'org.gnome.Shell.Extensions.GSConnect.Preferences.desktop': <{'position': <15>}>, 'gamess': <{'position': <16>}>, 'org.gnome.Settings.desktop': <{'position': <17>}>, 'net.nokyan.Resources.desktop': <{'position': <18>}>, 'org.gnome.Console.desktop': <{'position': <19>}>, 'com.gexperts.Tilix.desktop': <{'position': <20>}>, 'org.manjaro.pamac.manager.desktop': <{'position': <21>}>, 'opensnitch_ui.desktop': <{'position': <22>}>, 'peazip.desktop': <{'position': <23>}>}, {'wpsoffice': <{'position': <0>}>, 'libreoffice-startcenter.desktop': <{'position': <1>}>, 'libreoffice-base.desktop': <{'position': <2>}>, 'libreoffice-writer.desktop': <{'position': <3>}>, 'libreoffice-calc.desktop': <{'position': <4>}>, 'libreoffice-math.desktop': <{'position': <5>}>, 'libreoffice-impress.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'gnome-apps': <{'position': <8>}>, 'org.gnome.Snapshot.desktop': <{'position': <9>}>, 'obsidian.desktop': <{'position': <10>}>, 'com.github.fabiocolacio.marker.desktop': <{'position': <11>}>, 'org.gnome.Meld.desktop': <{'position': <12>}>, 'com.github.jeromerobert.pdfarranger.desktop': <{'position': <13>}>, 'org.gnome.OCRFeeder.desktop': <{'position': <14>}>, 'gprename.desktop': <{'position': <15>}>, 'hard-disk-tools': <{'position': <16>}>, 'org.gnome.gThumb.desktop': <{'position': <17>}>, 'nl.hjdskes.gcolor3.desktop': <{'position': <18>}>, 'pinta.desktop': <{'position': <19>}>, 'org.kde.krita.desktop': <{'position': <20>}>, 'gimp.desktop': <{'position': <21>}>, 'org.inkscape.Inkscape.desktop': <{'position': <22>}>, 'com.obsproject.Studio.desktop': <{'position': <23>}>}, {'octopi': <{'position': <0>}>, 'audacity.desktop': <{'position': <1>}>, 'org.kde.kdenlive.desktop': <{'position': <2>}>, 'fr.handbrake.ghb.desktop': <{'position': <3>}>, 'subtitleedit.desktop': <{'position': <4>}>, 'org.gnome.Characters.desktop': <{'position': <5>}>, 'com.github.FontManager.FontManager.desktop': <{'position': <6>}>, 'com.github.FontManager.FontViewer.desktop': <{'position': <7>}>, 'terminal-tools': <{'position': <8>}>, 'simple-scan.desktop': <{'position': <9>}>, 'hplip.desktop': <{'position': <10>}>, 'gnome-printers-panel.desktop': <{'position': <11>}>, 'cups.desktop': <{'position': <12>}>, 'system-config-printer.desktop': <{'position': <13>}>, 'org.gnome.Logs.desktop': <{'position': <14>}>, 'qjournalctl.desktop': <{'position': <15>}>, 'manjaro-tools': <{'position': <16>}>, 'winegui.desktop': <{'position': <17>}>, 'dosbox.desktop': <{'position': <18>}>, 'com.libretro.RetroArch.desktop': <{'position': <19>}>, 'snes9x-gtk.desktop': <{'position': <20>}>, 'blastem.desktop': <{'position': <21>}>, 'GameConqueror.desktop': <{'position': <22>}>, 'sc-controller.desktop': <{'position': <23>}>}, {'system-toolss': <{'position': <0>}>, 'org.gnome.Builder.desktop': <{'position': <1>}>, 'gufw.desktop': <{'position': <2>}>}]
 command-history=['r']
 disable-user-extensions=false
 disabled-extensions=['gsconnect@andyholmes.github.io', 'top-bar-organizer@julian.gse.jsts.xyz', 'just-perfection-desktop@just-perfection']
 enabled-extensions=['pamac-updates@manjaro.org', 'dash-to-dock@micxgx.gmail.com', 'appindicatorsupport@rgcjonas.gmail.com', 'gnome-ui-tune@itstime.tech', 'legacyschemeautoswitcher@joshimukul29.gmail.com', 'x11gestures@joseexposito.github.io', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'custom-accent-colors@demiskp', 'ding@rastersoft.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'custom-hot-corners-extended@G-dH.github.com', 'netspeedsimplified@prateekmedia.extension', 'tiling-assistant@leleat-on-github', 'Vitals@CoreCoding.com', 'gtk4-ding@smedius.gitlab.com', 'blur-my-shell@aunetx']
-favorite-apps=['io.github.cboxdoerfer.FSearch.desktop', 'com.mitchellh.ghostty.desktop', 'firefox.desktop', 'org.gnome.gedit.desktop', 'org.gnome.Nautilus.desktop']
+favorite-apps=['io.github.cboxdoerfer.FSearch.desktop', 'com.mitchellh.ghostty.desktop', 'firefox.desktop', 'org.kde.kate.desktop', 'org.gnome.Nautilus.desktop']
 welcome-dialog-last-shown-version='99.9'
 
 [org/gnome/shell/extensions/blur-my-shell]
@@ -673,7 +688,7 @@ window-size=(933, 477)
 current-settings-page=0
 layout='/usr/share/onboard/layouts/Full Keyboard.onboard'
 schema-version='2.3'
-system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'Adw': '/usr/share/onboard/themes/Ambiance.theme', 'Adw-dark': '/usr/share/onboard/themes/Blackboard.theme'}
+system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': '', 'adw-gtk3': '/usr/share/onboard/themes/Ambiance.theme', 'adw-gtk3-dark': '/usr/share/onboard/themes/Blackboard.theme'}
 theme='/usr/share/onboard/themes/Blackboard.theme'
 use-system-defaults=false
 
