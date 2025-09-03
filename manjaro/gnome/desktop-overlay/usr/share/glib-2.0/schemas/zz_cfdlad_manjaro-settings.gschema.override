@@ -234,7 +234,7 @@ name='System Tools'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/terminal-tools]
-apps=['scrcpy.desktop', 'scrcpy-console.desktop', 'ranger.desktop', 'htop.desktop', 'btop.desktop', 'fish.desktop', 'micro.desktop', 'nvim.desktop', 'nnn.desktop', 'bandwhich.desktop', 'nethogs.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'xdvi.desktop']
+apps=['scrcpy.desktop', 'isd.desktop', 'ranger.desktop', 'htop.desktop', 'btop.desktop', 'fish.desktop', 'micro.desktop', 'nvim.desktop', 'nnn.desktop', 'scrcpy-console.desktop', 'systemd-manager-tui.desktop', 'bandwhich.desktop', 'nethogs.desktop', 'jconsole-java-openjdk.desktop', 'jshell-java-openjdk.desktop', 'xdvi.desktop']
 name='Terminal Tools'
 translate=true
 
