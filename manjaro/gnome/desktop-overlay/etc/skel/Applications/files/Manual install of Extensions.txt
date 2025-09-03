@@ -1,0 +1,24 @@
+Manual installation
+
+Download the extension archive from GNOME Extension website or the aurthur's git repo.
+
+For example: tilingshell@ferrarodomenico.com.zip (For GNOME Shell versions 45, 46, 47 and 48)
+
+To know your GNOME Shell version run: gnome-shell --version.
+
+Extract the downloaded archive from gnome extension website or the aurthur's git repo. 
+Copy its content to '~/.local/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com' directory.
+You need to reload GNOME Shell afterwards (e.g. by logging out). Then you can enable the extension:
+
+/usr/bin/gnome-extensions enable tilingshell@ferrarodomenico.com
+
+****NOTE: The names of the install directory in "~/.local/share/gnome-shell/extensions/" may be differnt from the names of the downloaded archives.
+
+To find the name of the install directory,
+check the extensions 'matadata.json' file in the extracted archive,
+then scroll to the "uuid": line, where it is listed.
+
+For example: vitals has an archive named 'VitalsCoreCoding.com.v73.shell-extension.zip'
+From vitals metadata.json file we get, "uuid": "Vitals@CoreCoding.com",
+The installed directory must be named 'Vitals@CoreCoding.com'
+The full path is now "~/.local/share/gnome-shell/extensions/Vitals@CoreCoding.com"
