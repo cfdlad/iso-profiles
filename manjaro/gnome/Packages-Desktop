@@ -661,13 +661,14 @@ fsearch	           												# no fsearch in the manjaro repo (in aur and chao
 >extra lnav														# a tui tool for viewing and analysing log files
 >extra sdcv														# stardict dictionary console version
 >extra difftastic												# cli diff tool
-sysz															# cli systemd manager (my repo)
+#sysz															# cli systemd manager (my repo) use systemd-manager-tui
 moar															# pager, alternative to less (ivasilev repo)
 >extra chafa													# terminal image viewer, for yt-x
 >extra gum														# A tool for glamarous shell scripts, for yt-x
 >extra jq														# cli json processor (formater)
 >extra pastel													# cli color analyzer, picker
->extra isd														# interactve systemd
+>extra isd														# interactve systemd (tui)
+systemd-manager-tui												# a tui systemd manager (my repo)
 
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
