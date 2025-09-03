@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.1.0-1
+Name=systemd manager tui
+GenericName=systemd manager tui
+Comment= A terminal user interface for systemd units
+Icon=utilities-terminal
+Exec=systemd-manager-tui
+Terminal=true
+Categories=System;systemd;Monitor;ConsoleOnly;
+Keywords=systemd;manager;monitor;process;task
