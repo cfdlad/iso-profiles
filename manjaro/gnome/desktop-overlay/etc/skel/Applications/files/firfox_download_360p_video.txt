@@ -1,0 +1,7 @@
+# (1) type or paste about:config in the address bar and press Enter/Return. Click the button accepting the risk.
+about:config
+
+# (2) In the search box in the page, type or paste 
+media.play-stand-alone
+
+# (3) Double-click the preference to switch the value from true to false

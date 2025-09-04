@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"AutoFileName",
+		"Awk",
+		"ayu",
+		"Bash Completions",
+		"BracketHighlighter",
+		"ColorHelper",
+		"ColorHints",
+		"CommandsBrowser",
+		"Compare Side-By-Side",
+		"CoolBase64",
+		"Dracula Color Scheme",
+		"fish",
+		"GitSavvy",
+		"gruvbox",
+		"INI",
+		"Material Theme",
+		"Materialize",
+		"MonokaiFree",
+		"Package Control",
+		"SideBarEnhancements",
+		"Theme - Soda",
+		"Theme - Sodarized",
+		"Theme - Spacegray",
+		"TOML",
+		"Verilog",
+		"WordingStatus",
+		"ZSH",
+	],
+	"in_process_packages":
+	[
+	],
+}

@@ -1,0 +1,92 @@
+#How to upload iso-profile using the terminal (main or master, its master for iso-profile)
+
+#Log in to your git account using a web browser
+#Get the cloning web (https) address for the repo you want to clone
+#In this case iso-profile
+#By clicking on the 'green Code button' and getting the address
+https://github.com/cfdlad/iso-profiles.git
+
+#Clone the repo in your home directory using 'gnome terminal'
+git clone https://github.com/cfdlad/iso-profiles.git
+
+#A directory named 'iso-profiles' is created
+#Copy all the file you need into this cloned repo (iso-profiles)
+#copy Packages-Desktop, profile.conf, user-repos.conf, skel and usr directory
+
+#Goto the root folder of the cloned repo and open 'gnome terminal' and run the command bellow
+git config --global user.name "your_name"
+git config --global user.email your_email
+
+#NO NEED
+#git config --global init.defaultBranch master (NO NEED, b/c we git cloned)
+#git init (NO NEED, b/c we git cloned)
+
+#Add the copied files to the local git index 
+git add -A
+git status
+git commit -m 'Added my dec-2024 manjaro updates'
+
+
+#Use this to verify the remote repo is recognised 
+git remote -v
+
+# it should show (print on the screen)
+origin	https://github.com/cfdlad/iso-profiles.git (fetch)
+origin	https://github.com/cfdlad/iso-profiles.git (push)
+
+#Use this to get the local branch name
+git branch
+# it prints
+master
+
+#Use this to get the remote ropo branch names
+git branch -r
+# it prints
+origin/HEAD -> origin/master
+origin/aug_2024_iso-profile_testing_wine
+origin/aug_2024_iso-profiles
+origin/dec_2024_iso-profiles
+origin/june_2024_iso-profiles
+origin/master
+
+#We want to use local='master' and remote='dec_2024_iso-profiles'
+
+#Finally run
+git push origin master:dec_2024_iso-profiles
+
+#Type your Username
+
+
+#Type your Access Token
+
+
+#The upload will begin
+#Done
+
+
+#NOTE
+git push origin a:b
+Where a is the local repo
+Where b is the remote repo
+We want to upload the new contents of a into b
+Remember dont include -u or -f (b/c we want this local repo and remote repo to be independent of each other and not linked together) (It is a one time upload and not a continuos thing)
+
+
+
+
+####The Commands (same as above with no explanations)
+
+git clone https://github.com/cfdlad/iso-profiles.git
+cd iso-profiles
+git config --global user.name "your_name"
+git config --global user.email your_email
+git status
+git add -A
+git status
+git commit -m 'Added my dec-2024 manjaro updates'
+git status
+git remote -v
+git branch -r
+git branch --list
+git push origin master:dec_2024_iso-profiles (if just updating from the already cloned 7z just use 'git push')
+

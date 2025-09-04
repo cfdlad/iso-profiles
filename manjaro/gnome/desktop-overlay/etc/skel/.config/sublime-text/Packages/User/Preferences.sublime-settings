@@ -1,0 +1,108 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	
+	"font_face": "FiraCode Nerd Font",
+	"font_size": 12,
+	"default_font_size": 12,
+	
+	"color_scheme": "auto",
+	"light_color_scheme": "Celeste.sublime-color-scheme",
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+
+	"fade_fold_buttons": true,
+
+	"draw_minimap_border": true,
+	"always_show_minimap_viewport": true,
+	"minimap_horizontal_scrolling": false,
+
+	"highlight_line": true,
+	"caret_style": "smooth",
+	
+	"auto_complete_triggers":
+	[
+		{"selector": "text.html, text.xml", "characters": "<",},
+		{"selector": "punctuation.accessor", "rhs_empty": true,},
+		{"selector": "text",},
+
+	],
+	"auto_complete_commit_on_tab": true,
+
+	"close_find_after_find_all": false,
+	"close_find_after_replace_all": false,
+
+
+	// User Interface Settings
+
+	"theme": "Adaptive.sublime-theme",
+	"light_theme": "Default.sublime-theme",
+	"dark_theme": "Default Dark.sublime-theme",
+
+	"highlight_modified_tabs": false,
+
+	"show_encoding": true,
+
+	
+	// Application Behavior Settings
+
+	"console_max_history_lines": 5000,
+
+
+
+
+
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m04": true,*/
+	/*"gnc_w6m12": true,*/
+	/*"gn_hide_tab_dropdown": true,*/
+	/*"gn_overlay_scroll_bars": true,*/
+	/*"gn_sidebar_box": true,*/
+	/*"gn_title_bar": true,*/
+	/*"gnc_002": true,*/
+	/*"gnwidg1": true,*/
+	/*"gnwidgo": true,*/
+	/*"gnc_m05": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m05": true,*/
+	/*"gnc_w6m12": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m07": true,*/
+	/*"gnc_w6m12": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m09": true,*/
+	/*"gnc_w6m12": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m00": true,*/
+	/*"gnc_w6m13": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m01": true,*/
+	/*"gnc_w6m13": true,*/
+	/*"gnc_001": false,*/
+	/*"gnc_002": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m01": true,*/
+	/*"gnc_w6m13": true,*/
+	/*"gnc_001": true,*/
+	/*"gnc_h00": true,*/
+	/*"gnc_m05": true,*/
+	/*"gnc_w6m13": true,*/
+	/*"gnc_m06": true,*/
+}

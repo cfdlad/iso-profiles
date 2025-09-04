@@ -1,0 +1,22 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+	"blue1": "hsla(210, 13%, 40%, 0.2)",
+	"blue2": "hsla(210, 13%, 40%, 0.7)",
+	},
+	
+	"globals":
+	{
+	"line_highlight": "var(blue1)",
+    "selection": "var(blue2)",
+
+    "foreground": "var(white3)",
+    "background": "hsl(210, 15%, 15%)",
+	},
+
+	"rules":
+	[
+		
+	]
+}
