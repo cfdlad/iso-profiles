@@ -62,7 +62,6 @@ patchutils
 subversion
 
 ## Fonts
-cantarell-fonts
 noto-fonts             # default font
 noto-fonts-cjk         # big package, ~76 mb compressed
 noto-fonts-emoji
@@ -160,7 +159,6 @@ xcape
 manjaro-wallpapers-18.0
 wallpapers-2018
 wallpapers-juhraya
-gnome-themes-standard
 grub-theme-manjaro
 matcha-gtk-theme
 xcursor-simpleandsoft
@@ -182,7 +180,6 @@ gimp
 gparted
 gufw
 audacious
-hexchat
 htop
 qpdfview
 inxi
@@ -195,7 +192,6 @@ manjaro-settings-manager-notifier
 mlocate
 mousepad
 mugshot
-pidgin
 powertop
 screenfetch
 poppler-data  # CKJ support for pdf

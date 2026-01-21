@@ -23,7 +23,7 @@ manjaro-pipewire
 
 ## Fonts
 
-cantarell-fonts                    # required by manjaro-cinnamon-settings
+#adwaita-icon-theme                # required by gtk3 & gtk4
 gnu-free-fonts                     # required by vivaldi
 noto-fonts-cjk
 >extra terminus-font
@@ -67,7 +67,7 @@ cinnamon-translations              # optional for various cinnamon packages
 >extra nemo-fileroller
 #nemo-image-converter
 #nemo-pastebin
->extra nemo-preview
+# >extra nemo-preview              # AUR
 >extra nemo-python
 #nemo-repairer                     # AUR
 #nemo-seahorse

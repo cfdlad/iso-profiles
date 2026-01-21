@@ -14,7 +14,6 @@ bison
 >extra blueman
 >extra bluez-utils
 bmenu
->extra cantarell-fonts
 clipit
 >extra deluge
 dfc
@@ -48,7 +47,6 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
->extra hexchat
 htop
 inxi
 json-c
@@ -126,7 +124,7 @@ vi
 >extra vibrancy-icons-teal
 viewnior
 vim
->extra vlc
+#>extra vlc
 volumeicon
 w3m
 >extra wallpapers-juhraya
