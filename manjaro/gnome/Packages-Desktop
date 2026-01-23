@@ -712,13 +712,15 @@ fsearch	           												# no fsearch in the manjaro repo (in aur and chao
 >extra sdcv														# stardict dictionary console version
 >extra difftastic												# cli diff tool
 #sysz															# cli systemd manager (my repo) use systemd-manager-tui
-moar															# pager, alternative to less (ivasilev repo)
+moor															# pager, alternative to less (ivasilev repo)
 >extra chafa													# terminal image viewer, for yt-x
 >extra gum														# A tool for glamarous shell scripts, for yt-x
 >extra jq														# cli json processor (formater)
 >extra pastel													# cli color analyzer, picker
 >extra isd														# interactve systemd (tui)
 systemd-manager-tui												# a tui systemd manager (my repo)
+bluetui
+impala
 
 ## Cli Cheat tools
 >extra navi														# when creating iso put cheat files in etc/skel/home.....
@@ -752,7 +754,7 @@ kitty
 >extra btop														# System monitor
 >extra net-tools												# configuration tools for linux networking
 >extra nmap														# Utility for network discovery and security auditing
->extra gnu-netcat												# GNU version of netcat a network piping application
+>extra openbsd-netcat											# openbsd version of netcat a network piping application
 >extra qjournalctl												# gui for journalctl
 #>extra languagetool											# open source language and grammer checker (libreoffice uses it)
 >extra lsof														# list open files for running unix processes

@@ -11,8 +11,8 @@ export TERM="xterm-256color"                   	# getting proper colors
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 export EDITOR=/usr/bin/micro
 export VISUAL=/usr/bin/micro
-export PAGER=moar
-export MOAR='--colors=16M --terminal-fg --reformat --style=gruvbox'
+export PAGER=moor
+export MOOR='--colors=16M --terminal-fg --reformat --style=gruvbox'
 export MANROFFOPT='-c'							# to force manpage colors
 export COLORTERM=truecolor
 
