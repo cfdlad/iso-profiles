@@ -1,4 +1,4 @@
-Created with MILKDROP 3.30 on 21/02/2024 at 23:36:15
+Created with MILKDROP 3.27 on 24/12/2024 at 01:05:40
 https://twitter.com/MilkDrop2077
 
 sprite=1
@@ -515,7 +515,7 @@ comp_22=`}
 [SPRITE1_BEGIN]
 SpriteName=sprites\skull1.png
 SpriteColorKey=0x000000
-SpriteLayer=0
+SpriteLayer=1
 SpriteBlend=4
 SpriteAlpha=0.500000
 SpriteBurn=1
@@ -527,7 +527,5 @@ SpriteRot=0.000000
 SpriteSpeed=0.000000
 SpriteRepeatX=1.000000
 SpriteRepeatY=1.000000
-code_1=new_scale=1.0+0.05*bass_att;
-code_2=sx=new_scale;
-code_3=sy=new_scale;
+code_1=a=0.25*bass;
 [SPRITE1_END]

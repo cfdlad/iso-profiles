@@ -115,7 +115,7 @@ comp_15=`}
 [SPRITE1_BEGIN]
 SpriteName=sprites\rose1.png
 SpriteColorKey=0x000000
-SpriteLayer=0
+SpriteLayer=1
 SpriteBlend=7
 SpriteAlpha=1.000000
 SpriteBurn=1

@@ -1,4 +1,4 @@
-Created with MILKDROP 3.26 on 27/06/2024 at 16:38:08
+Created with MILKDROP 3.27 on 24/12/2024 at 01:01:16
 https://twitter.com/MilkDrop2077
 
 sprite=1
@@ -155,7 +155,7 @@ bDarken=1
 bSolarize=0
 bInvert=0
 fWaveAlpha=100.000
-fWaveScale=6.053
+fWaveScale=0.740
 fWaveSmoothing=0.207
 fWaveParam=0.220
 fModWaveAlphaStart=0.750

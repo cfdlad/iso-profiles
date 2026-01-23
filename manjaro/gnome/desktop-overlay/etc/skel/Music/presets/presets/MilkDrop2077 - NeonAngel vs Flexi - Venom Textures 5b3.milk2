@@ -13,8 +13,8 @@ random_5=0.201355
 [PRESET1_BEGIN]
 NAME=MilkDrop2077.011 Flexi Red Fan
 MILKDROP_PRESET_VERSION=201
-PSVERSION=4
-PSVERSION_WARP=4
+PSVERSION=3
+PSVERSION_WARP=3
 PSVERSION_COMP=3
 [preset00]
 fRating=3.000
@@ -92,113 +92,36 @@ per_frame_3=wave_b = wave_b + 0.400*( 0.60*sin(0.910*time) + 0.40*sin(0.920*time
 per_frame_4=zoom = zoom + 0.023*( 0.60*sin(0.339*time) + 0.40*sin(0.276*time) );
 per_frame_5=warp =0;
 per_pixel_1=zoom=zoom-max(0.04,(avg_bass*3))*sin(ang+rad*12*cos(time-ang*3)*tan(rad)-time);
-warp_1=`//sampler sampler_colors3;
-warp_2=`
-warp_3=`shader_body
-warp_4=`{
-warp_5=`
-warp_6=`float2 uv2 = uv;
-warp_7=`//if(uv2.x >= 0.5) {uv2.x = 1-uv2.x;}
-warp_8=`//if(uv2.y >= 0.5) {uv2.y = 1-uv2.y;}
-warp_9=`
-warp_10=`//float1 cs = cos(0.25*3.14159);
-warp_11=`//float1 sn = sin(0.25*3.14159);
-warp_12=`//float2 uv3 = uv2;
-warp_13=`//uv2.x = uv3.x * cs - uv3.y * sn;
-warp_14=`//uv2.y = uv3.x * sn + uv3.y * cs;
-warp_15=`
-warp_16=`uv.x=uv2.x;
-warp_17=`uv.y=uv2.y;
-warp_18=`
-warp_19=`    // sample previous frame
-warp_20=`    ret = tex2D( sampler_main, uv ).xyz;
-warp_21=`    
-warp_22=`    // darken (decay) over time
-warp_23=`    ret *= 0.7;
-warp_24=`
-warp_25=`float1 a = uv.x;
-warp_26=`float1 b = uv.y;
-warp_27=`float1 ca;
-warp_28=`float1 cb;
-warp_29=`if(q9 == 5){
-warp_30=`    ca = 0.285;
-warp_31=`    cb = 0;
-warp_32=`}
-warp_33=`else if(q9 == 6){
-warp_34=`    ca = -0.66176 + 0.03*q20;
-warp_35=`    cb = -0.3842;
-warp_36=`}
-warp_37=`else if(q9 == 0) {
-warp_38=`    ca = -0.7269 + 0.01*q21 ;
-warp_39=`    cb = 0.1889 + 0.01*q22;
-warp_40=`}
-warp_41=`else {
-warp_42=`    ca = a;
-warp_43=`    cb = b;
-warp_44=`}
-warp_45=`float1 aa;
-warp_46=`float1 bb;
-warp_47=`
-warp_48=`float1 n = 0;
-warp_49=`float1 maxiter = 60;
-warp_50=`float1 m=0;
-warp_51=`float1 r = 20;
-warp_52=`float1 r2 = r*r;
-warp_53=`//float1 dist = length(z);
-warp_54=`float3 col;
-warp_55=`
-warp_56=`float1 pa;
-warp_57=`float1 pb;
-warp_58=`float2 z;
-warp_59=`float2 pz;
-warp_60=`while(n < maxiter && m==0)
-warp_61=`{
-warp_62=`    aa = a*a - b*b;
-warp_63=`    bb = 2*a*b;
-warp_64=`    pa = a;
-warp_65=`    pb = b;
-warp_66=`    pz = float2(pa,pb);
-warp_67=`    a = aa + ca;
-warp_68=`    b = bb + cb;
-warp_69=`    z = float2(a,b);
-warp_70=`    //if(sqrt(a*a + b*b) > r2) // no
-warp_71=`    //if(sqrt(pow(a-pa,2) + pow(b-pb,2)) > r2)
-warp_72=`    //if(dot(z,pz) > r2) // creates the leaves outside the mandelbrot set
-warp_73=`    if(sqrt(a*a + b*b) > r2) 
-warp_74=`    {
-warp_75=`        m = 1;
-warp_76=`    }
-warp_77=`    else
-warp_78=`    {
-warp_79=`        n++;
-warp_80=`    }
-warp_81=`}
-warp_82=`
-warp_83=`//col = tex2D(sampler_colors3, float2(0.5 + 0.5*sin(n*0.05),0.5 + 0.5*cos(n*0.05+time))).xyz;
-warp_84=`
-warp_85=`float1 dist = (sqrt(a*a + b*b));
-warp_86=`float1 fraciter = (dist - r) / (r2 - r);
-warp_87=`fraciter = log2(log(dist) / log(r));
-warp_88=`n -= fraciter; // makes the colors smoother, outside of the mandelbrot set
-warp_89=`float3 color; 
-warp_90=`
-warp_91=`color.x = 0.5 + 0.5*sin(0.21*n*3.5 + 0.5*time + 0.2*q5);
-warp_92=`color.y = 0.5 + 0.5*cos(0.33*n*3.5 + 0.7*time + 0.2*q6);
-warp_93=`color.z = 0.5 + 0.5*sin(0.45*n*3.5 + 0.9*time + 0.2*q7);
-warp_94=`
-warp_95=`if(m == 1)
-warp_96=`{
-warp_97=`    ret = color;
-warp_98=`}
-warp_99=`else
-warp_100=`{
-warp_101=`    //ret.x=0.1;
-warp_102=`    //ret.y=0.5;
-warp_103=`    //ret.z=0;
-warp_104=`    ret=color;
-warp_105=`}
-warp_106=`
-warp_107=`}
+warp_1=`shader_body
+warp_2=`{
+warp_3=`    ret = tex2D(sampler_main, uv).xyz * 0.7; // Sample and decay
+warp_4=`
+warp_5=`    float2 z = uv;
+warp_6=`    float2 c;
+warp_7=`    
+warp_8=`    if(q9 == 5) c = float2(0.285, 0);
+warp_9=`    else if(q9 == 6) c = float2(-0.66176 + 0.03*q20, -0.3842);
+warp_10=`    else if(q9 == 0) c = float2(-0.7269 + 0.01*q21, 0.1889 + 0.01*q22);
+warp_11=`    else c = z;
+warp_12=`
+warp_13=`    int n = 0;
+warp_14=`    const int maxiter = 24; 
+warp_15=`    const float r = 20;
+warp_16=`    const float r2 = r*r;
+warp_17=`    
+warp_18=`    while(n < maxiter && dot(z,z) < r2) {
+warp_19=`        z = float2(z.x*z.x - z.y*z.y, 2*z.x*z.y) + c;
+warp_20=`        n++;
+warp_21=`    }
+warp_22=`
+warp_23=`    float smooth_iter = n - log2(log(length(z))/log(r));
+warp_24=`    
+warp_25=`    ret = float3(
+warp_26=`        0.5 + 0.5*tan(0.21*smooth_iter*3.5 + 0.5*time + 0.2*q5),
+warp_27=`        0.5 + 0.5*cos(0.33*smooth_iter*3.5 + 0.7*time + 0.2*q6),
+warp_28=`        0.5 + 0.5*tan(0.45*smooth_iter*3.5 + 0.9*time + 0.2*q7)
+warp_29=`    );
+warp_30=`}
 comp_1=`shader_body
 comp_2=`{
 comp_3=`

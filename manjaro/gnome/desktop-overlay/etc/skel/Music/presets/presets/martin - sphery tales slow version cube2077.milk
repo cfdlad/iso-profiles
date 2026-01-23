@@ -352,8 +352,8 @@ warp_16=`//ret = 0;
 warp_17=`}
 comp_1=`sampler sampler_pw_noise_lq;
 comp_2=`float2 uv0, uv1, uv2,uv4,rsk,dz1,Kugel1;;
-comp_3=`static const float sw1 =  (rand_preset.x) >= .4;
-comp_4=`static const float sw2 =  (rand_preset.y);
+comp_3=`static const float sw1 =  (1.0) >= .4;
+comp_4=`static const float sw2 =  (1.0);
 comp_5=`
 comp_6=`shader_body {
 comp_7=`uv0 = uv;

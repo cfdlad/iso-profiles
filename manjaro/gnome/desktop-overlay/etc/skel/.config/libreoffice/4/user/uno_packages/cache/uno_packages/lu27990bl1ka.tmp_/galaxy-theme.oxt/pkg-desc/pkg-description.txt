@@ -1,2 +1,0 @@
-Galaxy icon theme as shipped with LibreOffice before version 6.1
-Original artwork http://www.openoffice.org/ui/VisualDesign/OOo_galaxy.html
