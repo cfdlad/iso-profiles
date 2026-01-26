@@ -375,13 +375,13 @@ peazip-gtk2-bin													# my repo
 #peazip-additional-formats-plugin-zpaq							# my repo (already in peazip-gtk2-bin)
 
 ## Art and Graphics design
->extra gimp
->extra krita
+#>extra gimp
+#>extra krita
 #>extra drawing													# use pinta
->extra pinta													# a paint.net clone (gtk4 based)
->extra inkscape
+#>extra pinta													# a paint.net clone (gtk4 based)
+#>extra inkscape
 #>extra blender
->extra gcolor3               									# color picker
+#>extra gcolor3               									# color picker
 #>extra darktable
 
 ## Video, Audio and Media-tools
@@ -428,7 +428,7 @@ subtitleedit                          							# The best (chaotic aur)
 #>extra gnome-pie
 
 ## Document Apps
->extra libreoffice-fresh  										# Office software
+#>extra libreoffice-fresh  										# Office software
 >extra okular
 #>extra gedit-plugins
 #metagedit-git                            						# (in my repo)
@@ -440,7 +440,7 @@ subtitleedit                          							# The best (chaotic aur)
 sublime-text-4													# (in aur and chaotic)
 #>extra foliate													# gtk ebook reader
 >extra neovim
->extra emacs
+#>extra emacs
 #>extra code                  									# visual studio code
 >extra pandoc-cli
 >extra pandoc-crossref
@@ -456,13 +456,13 @@ sublime-text-4													# (in aur and chaotic)
 #>extra stardict
 
 ## wps office
-wps-office-cn                           						# (chaotic aur)
-wps-office-bwrap												# (in my repo)
-freetype2-wps													# (in my repo)
-wps-office-all-dicts-win-languages     							# (chaotic aur)
+#wps-office-cn                           						# (chaotic aur)
+#wps-office-bwrap												# (in my repo)
+#freetype2-wps													# (in my repo)
+#wps-office-all-dicts-win-languages     							# (chaotic aur)
 #wps-office-fonts                       						# (chaotic aur) chinese fonts
-wps-office-mime                        							# (chaotic aur)
-ttf-wps-fonts                          							# (chaotic aur)
+#wps-office-mime                        							# (chaotic aur)
+#ttf-wps-fonts                          							# (chaotic aur)
 
 ## libre office optionals
 >extra libpaper
