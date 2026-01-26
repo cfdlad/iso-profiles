@@ -386,7 +386,7 @@ peazip-gtk2-bin													# my repo
 
 ## Video, Audio and Media-tools
 >extra vlc
->extra vlc-plugins-all
+#>extra vlc-plugins-all
 >extra libva-intel-driver										# optional intel integrated driver for vlc (very important)
 >extra haruna
 >extra mpv
