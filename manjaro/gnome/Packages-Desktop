@@ -375,13 +375,13 @@ peazip-gtk2-bin													# my repo
 #peazip-additional-formats-plugin-zpaq							# my repo (already in peazip-gtk2-bin)
 
 ## Art and Graphics design
-#>extra gimp
-#>extra krita
+>extra gimp
+>extra krita
 #>extra drawing													# use pinta
-#>extra pinta													# a paint.net clone (gtk4 based)
-#>extra inkscape
-#>extra blender
-#>extra gcolor3               									# color picker
+>extra pinta													# a paint.net clone (gtk4 based)
+>extra inkscape
+>extra blender
+>extra gcolor3               									# color picker
 #>extra darktable
 
 ## Video, Audio and Media-tools
