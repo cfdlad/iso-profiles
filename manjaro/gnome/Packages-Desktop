@@ -868,23 +868,23 @@ lib32-glu
 
 ## Gnome Builder
 #gnome-builder                                                  # Already listed by manjaro
-bash-language-server                                            # bash shell code assistance (tree sitter)
-bash-completion                                                 # for bash cli args completions
-man-db                                                          # a utility for reading man pages
-shellcheck                                                      # for bash linting support
-shfmt                                                           # for bash formating support
-python-lsp-server                                               # for python code assistance
-yapf															# for python code formating
-python-whatthepatch												# required for yapf support
-python-flake8													# for python code error checking
-python-mccabe													# python code complexity checking
-python-pycodestyle												# python linter - style checkig
-python-pydocstyle												# python linter - docstring style checkig
-python-pyflakes													# python linter to detect various errors
-python-pylint													# python code linting
-python-rope														# for python completions and renaming
+#bash-language-server                                            # bash shell code assistance (tree sitter)
+#bash-completion                                                 # for bash cli args completions
+#man-db                                                          # a utility for reading man pages
+#shellcheck                                                      # for bash linting support
+#shfmt                                                           # for bash formating support
+#python-lsp-server                                               # for python code assistance
+#yapf															# for python code formating
+#python-whatthepatch												# required for yapf support
+#python-flake8													# for python code error checking
+#python-mccabe													# python code complexity checking
+#python-pycodestyle												# python linter - style checkig
+#python-pydocstyle												# python linter - docstring style checkig
+#python-pyflakes													# python linter to detect various errors
+#python-pylint													# python code linting
+#python-rope														# for python completions and renaming
 
-ruff 															# An extremely fast python linter written in rust
+#ruff 															# An extremely fast python linter written in rust
 
 
 ## Python My additions (for easy aur install from terminal)
