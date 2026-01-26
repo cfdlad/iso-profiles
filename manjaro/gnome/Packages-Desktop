@@ -128,7 +128,7 @@ xdg-user-dirs-gtk                 # required by nautilus
 file-roller
 #ghex
 >extra gnome-boxes                 # developer tools
-gnome-builder                     # developer tools
+#gnome-builder                     # developer tools
 #gnome-calls                       # gnome-mobile
 #gnome-sound-recorder
 gnome-tweaks
