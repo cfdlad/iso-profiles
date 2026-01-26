@@ -386,7 +386,7 @@ peazip-gtk2-bin													# my repo
 
 ## Video, Audio and Media-tools
 >extra vlc
->extra vlc-plugins-all
+#>extra vlc-plugins-all
 >extra libva-intel-driver										# optional intel integrated driver for vlc (very important)
 >extra haruna
 >extra mpv
@@ -394,7 +394,7 @@ deadbeef														# chaotic ?
 #>extra celluloid
 #clapper														# Not in the repo (in aur chaotic)
 >extra strawberry
->extra blanket                                                 # Listed above by manjaro in gnome circle section
+#>extra blanket                                                 # Listed above by manjaro in gnome circle section
 #cozy-audiobooks                								# cozy is not in the manjaro repo and arch repo (in aur chaotic)
 >extra projectm-git												# (in my repo)
 >extra projectm-sdl2-git										# (in my repo)
@@ -614,7 +614,7 @@ blastem-hg														# (my repo) mega-drive emulator nigthly version
 #>extra libretro-beetle-psx-hw
 #>extra libretro-blastem
 #>extra libretro-bsnes
->extra libretro-desmume
+#>extra libretro-desmume
 >extra libretro-gambatte
 >extra libretro-genesis-plus-gx
 >extra libretro-mame
@@ -705,7 +705,7 @@ fsearch	           												# no fsearch in the manjaro repo (in aur and chao
 >extra bat-extras												# scripts to join bat with other aaps
 >extra zoxide													# better cd alternative
 >extra nnn														# cli file manager
->extra rclone													#sync files to online storage like gdrive, s3, dropbox etc
+#>extra rclone													#sync files to online storage like gdrive, s3, dropbox etc
 >extra procs													# ps alternative
 >extra duf														# disk usage free utility
 >extra lnav														# a tui tool for viewing and analysing log files
