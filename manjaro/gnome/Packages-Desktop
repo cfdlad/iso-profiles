@@ -428,7 +428,7 @@ subtitleedit                          							# The best (chaotic aur)
 #>extra gnome-pie
 
 ## Document Apps
-#>extra libreoffice-fresh  										# Office software
+>extra libreoffice-fresh  										# Office software
 >extra okular
 #>extra gedit-plugins
 #metagedit-git                            						# (in my repo)
