@@ -386,7 +386,7 @@ peazip-gtk2-bin													# my repo
 
 ## Video, Audio and Media-tools
 >extra vlc
-#>extra vlc-plugins-all
+>extra vlc-plugins-all
 >extra libva-intel-driver										# optional intel integrated driver for vlc (very important)
 >extra haruna
 >extra mpv
@@ -460,7 +460,7 @@ wps-office-cn                           						# (chaotic aur)
 wps-office-bwrap												# (in my repo)
 freetype2-wps													# (in my repo)
 wps-office-all-dicts-win-languages     							# (chaotic aur)
-wps-office-fonts                       						# (chaotic aur) chinese fonts
+#wps-office-fonts                       						# (chaotic aur) chinese fonts
 wps-office-mime                        							# (chaotic aur)
 ttf-wps-fonts                          							# (chaotic aur)
 
@@ -526,7 +526,7 @@ ttf-inconsolata
 
 ##OCR Tools
 >extra ocrfeeder												# Gui for tesseract (good)
-#ocrmypdf 														# cli for tesseract (chaotic)
+ocrmypdf 														# cli for tesseract (chaotic)
 #cuneiform
 #gocr
 #ocrad
@@ -705,7 +705,7 @@ fsearch	           												# no fsearch in the manjaro repo (in aur and chao
 >extra bat-extras												# scripts to join bat with other aaps
 >extra zoxide													# better cd alternative
 >extra nnn														# cli file manager
-#>extra rclone													#sync files to online storage like gdrive, s3, dropbox etc
+>extra rclone													#sync files to online storage like gdrive, s3, dropbox etc
 >extra procs													# ps alternative
 >extra duf														# disk usage free utility
 >extra lnav														# a tui tool for viewing and analysing log files
@@ -867,24 +867,24 @@ lib32-glu
 
 
 ## Gnome Builder
-#gnome-builder                                                  # Already listed by manjaro
-#bash-language-server                                            # bash shell code assistance (tree sitter)
+gnome-builder                                                  # Already listed by manjaro
+bash-language-server                                            # bash shell code assistance (tree sitter)
 bash-completion                                                 # for bash cli args completions
-#man-db                                                          # a utility for reading man pages
-#shellcheck                                                      # for bash linting support
-#shfmt                                                           # for bash formating support
-#python-lsp-server                                               # for python code assistance
-#yapf															# for python code formating
-#python-whatthepatch												# required for yapf support
-#python-flake8													# for python code error checking
-#python-mccabe													# python code complexity checking
-#python-pycodestyle												# python linter - style checkig
-#python-pydocstyle												# python linter - docstring style checkig
-#python-pyflakes													# python linter to detect various errors
-#python-pylint													# python code linting
-#python-rope														# for python completions and renaming
+man-db                                                          # a utility for reading man pages
+shellcheck                                                      # for bash linting support
+shfmt                                                           # for bash formating support
+python-lsp-server                                               # for python code assistance
+yapf															# for python code formating
+python-whatthepatch												# required for yapf support
+python-flake8													# for python code error checking
+python-mccabe													# python code complexity checking
+python-pycodestyle												# python linter - style checkig
+python-pydocstyle												# python linter - docstring style checkig
+python-pyflakes													# python linter to detect various errors
+python-pylint													# python code linting
+python-rope														# for python completions and renaming
 
-#ruff 															# An extremely fast python linter written in rust
+ruff 															# An extremely fast python linter written in rust
 
 
 ## Python My additions (for easy aur install from terminal)
