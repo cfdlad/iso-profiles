@@ -66,7 +66,7 @@ gnome-backgrounds
 gnome-calculator
 gnome-calendar
 >extra gnome-characters
-#gnome-clocks
+gnome-clocks
 #gnome-color-manager               # required by gnome-control-center
 >extra gnome-connections
 gnome-console
@@ -76,20 +76,20 @@ gnome-disk-utility
 #>extra gnome-font-viewer
 #gnome-keyring                     # required by xdg-desktop-portal-gnome
 gnome-logs
-#>extra gnome-maps
+>extra gnome-maps
 gnome-menus                       # optional for gnome-shell-extension-arc-menu (needed by alacarte, the menu editor)
 #gnome-music
-#>extra gnome-remote-desktop        # optional for gnome-control-center
+>extra gnome-remote-desktop        # optional for gnome-control-center
 #gnome-session                     # required by gdm & gnome-shell
 #gnome-settings-daemon             # required by gnome-control-center, gnome-shell & mutter
 gnome-shell
 #gnome-software                    # pamac-gtk used instead
-#gnome-system-monitor
+gnome-system-monitor
 #gnome-text-editor
 #gnome-tour
-#gnome-user-docs
-#>extra gnome-user-share            # optional for gnome-control-center
-#gnome-weather
+gnome-user-docs
+>extra gnome-user-share            # optional for gnome-control-center
+gnome-weather
 #>extra grilo-plugins               # required by gnome-music, optional for totem
 gvfs
 >extra gvfs-afc
@@ -107,7 +107,7 @@ malcontent                         # optional for gnome-control-center
 nautilus
 #orca
 papers
-#>extra rygel                       # optional for gnome-control-center
+>extra rygel                       # optional for gnome-control-center
 #showtime
 >extra simple-scan
 >extra snapshot
@@ -127,8 +127,8 @@ xdg-user-dirs-gtk                 # required by nautilus
 #>extra endeavour				   # no need, use planify
 file-roller
 #ghex
-#>extra gnome-boxes                 # developer tools
-#gnome-builder                     # developer tools
+>extra gnome-boxes                 # developer tools
+gnome-builder                     # developer tools
 #gnome-calls                       # gnome-mobile
 #gnome-sound-recorder
 gnome-tweaks
@@ -195,7 +195,7 @@ komikku
 #obfuscate
 #paper-clip
 #pika-backup
-#polari
+polari
 #raider
 #railway
 resources
@@ -440,7 +440,7 @@ subtitleedit                          							# The best (chaotic aur)
 sublime-text-4													# (in aur and chaotic)
 #>extra foliate													# gtk ebook reader
 >extra neovim
-#>extra emacs
+>extra emacs
 #>extra code                  									# visual studio code
 >extra pandoc-cli
 >extra pandoc-crossref
@@ -482,7 +482,7 @@ ttf-wps-fonts                          							# (chaotic aur)
 #>extra festival												# voice synthesizer like espeak
 #>extra festival-english
 #>extra festival-us
-#>extra enchant	 												# optional for stardict
+>extra enchant	 												# optional for stardict
 
 
 ## Fonts (everything needed by libreoffice, onlyoffice is here, starship)
@@ -867,7 +867,7 @@ lib32-glu
 
 
 ## Gnome Builder
-gnome-builder                                                  # Already listed by manjaro
+#gnome-builder                                                  # Already listed by manjaro
 bash-language-server                                            # bash shell code assistance (tree sitter)
 bash-completion                                                 # for bash cli args completions
 man-db                                                          # a utility for reading man pages
